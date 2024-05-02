@@ -46,6 +46,6 @@ class Controller
         $this->openDatabaseConnection();
         require APP . "model/$model.php";
         // create new "model" (and pass the database connection)
-        return new Model($this->db);
+        return new $model($this->db);
     }
 }
