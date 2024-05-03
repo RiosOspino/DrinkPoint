@@ -37,7 +37,7 @@
                             class="mailus">email us:</span> <a href="#">info@drinkpoint.com</a></p>
                 </div>
                 <div class="col-12 col-md d-flex justify-content-md-end">
-                    <p class="mb-0">Mon - Fri / 9:00-21:00, Sat - Sun / 10:00-20:00</p>
+                    <p class="mb-0">Lun - Vier / 9:00am-11:00pm, Sab - Dom / 10:00-20:00</p>
                     <div class="social-media">
                         <p class="mb-0 d-flex">
                             <a href="#" class="d-flex align-items-center justify-content-center"><span
