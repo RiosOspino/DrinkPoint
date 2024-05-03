@@ -103,8 +103,8 @@
                     <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
                         <div class="col-md-12 ftco-animate">
                             <div class="text w-100 mt-5 text-center">
-                                <span class="subheading">DRINK POINT EN TODO EL MUNDO</h2></span>
-                                <h1>EXPERTOS EN VINOS</h1>
+                                <span class="subheading">Drink Point en todo el mundo</h2></span>
+                                <h1>Expertos en vinos</h1>
                                 <span class="subheading-2 sub">1958</span>
                             </div>
                         </div>
