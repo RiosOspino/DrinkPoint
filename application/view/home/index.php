@@ -33,21 +33,21 @@
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-12 col-md d-flex align-items-center">
-                    <p class="mb-0 phone"><span class="mailus">Phone no:</span> <a href="#">+00 1234 567</a> or <span
-                            class="mailus">email us:</span> <a href="#">info@drinkpoint.com</a></p>
+                    <p class="mb-0 phone"><span class="mailus">Teléfono:</span> <a href="#">+57 3014874236</a> <span
+                            class="mailus">Gmail:</span> <a href="#">info@drinkpoint.com</a></p>
                 </div>
                 <div class="col-12 col-md d-flex justify-content-md-end">
-                    <p class="mb-0">Lun - Vier / 9:00am-11:00pm, Sab - Dom / 10:00-20:00</p>
+                    <p class="mb-0">Lun - Vier / 9:00am-11:00pm, Sab - Dom / 10:00-10:00</p>
                     <div class="social-media">
                         <p class="mb-0 d-flex">
-                            <a href="#" class="d-flex align-items-center justify-content-center"><span
+                            <a href="https://www.facebook.com" target= "_blank" class="d-flex align-items-center justify-content-center"><span
                                     class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
-                            <a href="#" class="d-flex align-items-center justify-content-center"><span
+                            <a href="https://twitter.com" target= "_blank" class="d-flex align-items-center justify-content-center"><span
                                     class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
-                            <a href="#" class="d-flex align-items-center justify-content-center"><span
+                            <a href="https://instagram.com" target= "_blank" class="d-flex align-items-center justify-content-center"><span
                                     class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
-                            <a href="#" class="d-flex align-items-center justify-content-center"><span
-                                    class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
+                            <a href="https://www.whatsapp.com" target= "_blank"   class="d-flex align-items-center justify-content-center"><span
+                                    class="fa fa-whatsapp"><i class="sr-only">Whatsapp</i></span></a>
                         </p>
                     </div>
                 </div>
@@ -58,7 +58,7 @@
     <!-- SECCION DEL MENU DE NAVEGACION -->
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Taste.<span>it</span></a>
+            <a class="navbar-brand" href="<?php echo URL; ?>">Drink<span>Point</span></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
                 aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="oi oi-menu"></span> Menu
@@ -66,11 +66,11 @@
 
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"><a href="<?php echo URL; ?>" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="<?php echo URL; ?>#about" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="<?php echo URL; ?>#products" class="nav-link">Products</a></li>
-                    <li class="nav-item"><a href="<?php echo URL; ?>#testimonial" class="nav-link">Testimonial</a></li>
-                    <li class="nav-item"><a href="<?php echo URL; ?>#contact" class="nav-link">Contact</a></li>
+                    <li class="nav-item active"><a href="<?php echo URL; ?>" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="<?php echo URL; ?>#about" class="nav-link">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a href="<?php echo URL; ?>#products" class="nav-link">Productos</a></li>
+                    <li class="nav-item"><a href="<?php echo URL; ?>#testimonial" class="nav-link">Testimonios</a></li>
+                    <li class="nav-item"><a href="<?php echo URL; ?>#contact" class="nav-link">Contactanos</a></li>
                 </ul>
             </div>
         </div>
@@ -87,8 +87,8 @@
                     <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
                         <div class="col-md-12 ftco-animate">
                             <div class="text w-100 mt-5 text-center">
-                                <span class="subheading">Taste.it Restaurant</h2></span>
-                                <h1>Cooking Since</h1>
+                                <span class="subheading">Tu mejor version</h2></span>
+                                <h1>Vinos exclusivos </h1>
                                 <span class="subheading-2">1958</span>
                             </div>
                         </div>
@@ -103,9 +103,9 @@
                     <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
                         <div class="col-md-12 ftco-animate">
                             <div class="text w-100 mt-5 text-center">
-                                <span class="subheading">Taste.it Restaurant</h2></span>
-                                <h1>Best Quality</h1>
-                                <span class="subheading-2 sub">Food</span>
+                                <span class="subheading">DRINK POINT EN TODO EL MUNDO</h2></span>
+                                <h1>EXPERTOS EN VINOS</h1>
+                                <span class="subheading-2 sub">1958</span>
                             </div>
                         </div>
                     </div>
