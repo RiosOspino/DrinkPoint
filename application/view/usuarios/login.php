@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login V18</title>
+	<title>Iniciar Sesión</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -30,38 +30,41 @@
 <body style="background-color: #666666;">
 	
 	<div class="limiter">
+	
+            <img src="images/logoDrinkPoint.png" alt="" class="user">
+        </div>
 		<div class="container-login100">
 			<div class="wrap-login100">
 				<form class="login100-form validate-form">
 					<span class="login100-form-title p-b-43">
-						Login to continue
+						Iniciar Sesión
 					</span>
 					
 					
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
 						<input class="input100" type="text" name="email">
 						<span class="focus-input100"></span>
-						<span class="label-input100">Email</span>
+						<span class="label-input100">Correo</span>
 					</div>
 					
 					
 					<div class="wrap-input100 validate-input" data-validate="Password is required">
 						<input class="input100" type="password" name="pass">
 						<span class="focus-input100"></span>
-						<span class="label-input100">Password</span>
+						<span class="label-input100">Contraseña</span>
 					</div>
 
 					<div class="flex-sb-m w-full p-t-3 p-b-32">
 						<div class="contact100-form-checkbox">
 							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
 							<label class="label-checkbox100" for="ckb1">
-								Remember me
+							Recuérdame.
 							</label>
 						</div>
 
 						<div>
 							<a href="#" class="txt1">
-								Forgot Password?
+							Olvidaste la contraseña?
 							</a>
 						</div>
 					</div>
@@ -69,13 +72,13 @@
 
 					<div class="container-login100-form-btn">
 						<button class="login100-form-btn">
-							Login
+							Iniciar Sesión
 						</button>
 					</div>
 					
 					<div class="text-center p-t-46 p-b-20">
 						<span class="txt2">
-							or sign up using
+						Sigue nuestras redes
 						</span>
 					</div>
 
@@ -90,7 +93,7 @@
 					</div>
 				</form>
 
-				<div class="login100-more" style="background-image: url(<?php echo URL; ?>login/css/'images/bg-01.jpg');">
+				<div class="login100-more" style="background-image: url(<?php echo URL; ?>login/css/'images/imglogin.jpg');">
 				</div>
 			</div>
 		</div>
