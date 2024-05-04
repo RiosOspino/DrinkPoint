@@ -58,7 +58,7 @@
     <!-- SECCION DEL MENU DE NAVEGACION -->
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Taste.<span>it</span></a>
+            <a class="navbar-brand" href="<?php echo URL; ?>">Taste.<span>it</span></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
                 aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="oi oi-menu"></span> Menu
@@ -1343,27 +1343,26 @@
             <div class="row mb-5">
                 <div class="col-md-6 col-lg-3">
                     <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2">Taste.it</h2>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                            there live the blind texts. Separated they live in Bookmarksgrove</p>
+                        <h2 class="ftco-heading-2">DrinkPoint</h2>
+                        <p>Muy muy lejos, detrás de las montañas de la palabra, lejos de los países Vokalia y Consonantia, Allí viven los textos ciegos. Separados viven en Bookmarksgrove</p>
                         <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
-                            <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
-                            <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
-                            <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+                            <li class="ftco-animate"><a href="https://www.twitter.com/" target= "_blank" ><span class="fa fa-twitter"></span></a></li>
+                            <li class="ftco-animate"><a href="https://www.facebook.com/" target= "_blank" ><span class="fa fa-facebook"></span></a></li>
+                            <li class="ftco-animate"><a href="https://www.instagram.com/" target= "_blank" ><span class="fa fa-instagram"></span></a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2">Open Hours</h2>
+                        <h2 class="ftco-heading-2">Horarios</h2>
                         <ul class="list-unstyled open-hours">
-                            <li class="d-flex"><span>Monday</span><span>9:00 - 24:00</span></li>
-                            <li class="d-flex"><span>Tuesday</span><span>9:00 - 24:00</span></li>
-                            <li class="d-flex"><span>Wednesday</span><span>9:00 - 24:00</span></li>
-                            <li class="d-flex"><span>Thursday</span><span>9:00 - 24:00</span></li>
-                            <li class="d-flex"><span>Friday</span><span>9:00 - 02:00</span></li>
-                            <li class="d-flex"><span>Saturday</span><span>9:00 - 02:00</span></li>
-                            <li class="d-flex"><span>Sunday</span><span> Closed</span></li>
+                            <li class="d-flex"><span>Lunes</span><span>9:00am - 11:00pm</span></li>
+                            <li class="d-flex"><span>Mastes</span><span>9:00am - 11:00pm</span></li>
+                            <li class="d-flex"><span>Miércoles</span><span>9:00am - 11:00pm</span></li>
+                            <li class="d-flex"><span>Jueves</span><span>9:00am - 11:00pm</span></li>
+                            <li class="d-flex"><span>Viernes</span><span>9:00am - 11:00pm</span></li>
+                            <li class="d-flex"><span>Sábado</span><span>10:00am - 10:00pm</span></li>
+                            <li class="d-flex"><span>Domingo</span><span> 10:00am - 10:00pm</span></li>
                         </ul>
                     </div>
                 </div>
@@ -1397,12 +1396,12 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="ftco-footer-widget mb-4">
                         <h2 class="ftco-heading-2">Newsletter</h2>
-                        <p>Far far away, behind the word mountains, far from the countries.</p>
+                        <p>Muy muy lejos, detrás de la palabra montañas, lejos de los países.</p>
                         <form action="#" class="subscribe-form">
                             <div class="form-group">
                                 <input type="text" class="form-control mb-2 text-center"
-                                    placeholder="Enter email address">
-                                <input type="submit" value="Subscribe" class="form-control submit px-3">
+                                    placeholder="Introducir correo electrónico">
+                                <input type="submit" value="Suscribir" class="form-control submit px-3">
                             </div>
                         </form>
                     </div>
