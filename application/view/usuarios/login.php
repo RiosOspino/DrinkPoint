@@ -17,12 +17,12 @@
     <div class="main">
 
             <!-- Sing in  Form -->
-            <section class="sign-in">
+            <section id="singnin" class="sign-in">
             <div class="container">
                 <div class="signin-content">
                     <div class="signin-image">
                     <figure><img src="<?php echo URL; ?>login/images/sesion.webp" alt="sing up image"></figure>
-                    <a href="#" class="signup-image-link">Crea una cuenta nueva</a>
+                    <a href="#signup" class="signup-image-link">Crea una cuenta nueva</a>
                     </div>
 
                     <div class="signin-form">
@@ -60,7 +60,7 @@
     </div>
 
         <!-- Sign up form -->
-        <section class="signup">
+        <section id="signup" class="signup">
             <div class="container">
                 <div class="signup-content">
                     <div class="signup-form">
@@ -93,7 +93,7 @@
                     </div>
                     <div class="signup-image">
                     <figure><img src=" <?php echo URL; ?>login/images/JAMEL_16e44d6b-1475-45b4-a474-aff7163fa283.webp" alt="sing up image"></figure>
-                    <a href="#" class="signup-image-link">Ya soy miembro</a>
+                    <a href="#singnin" class="signup-image-link">Ya soy miembro</a>
                     </div>
                 </div>
             </div>
