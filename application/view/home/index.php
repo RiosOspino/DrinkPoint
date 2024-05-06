@@ -148,8 +148,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <span>Now Booking</span>
-                    <h2>Private Dinners &amp; Happy Hours</h2>
+                    <span>Los mejores viñedos</span>
+                    <h2>al alcance &amp; en tu mesa.</h2>
                 </div>
             </div>
         </div>
@@ -994,8 +994,8 @@
         <div class="container">
             <div class="row justify-content-center mb-3 pb-2">
                 <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
-                    <span class="subheading">Testimony</span>
-                    <h2 class="mb-4">Happy Customer</h2>
+                    <span class="subheading">Nuestros</span>
+                    <h2 class="mb-4">Clientes</h2>
                 </div>
             </div>
             <div class="row ftco-animate justify-content-center">
@@ -1004,8 +1004,8 @@
                         <div class="item">
                             <div class="testimony-wrap text-center">
                                 <div class="text p-3">
-                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries
-                                        Vokalia and Consonantia, there live the blind texts.</p>
+                                    <p class="mb-4">Los productos de calidad y la frescura de sus viñedos hacen que nos convirtamos
+                                         en sus clientes fieles y fidelicemos a los nuestros.</p>
                                     <div class="user-img mb-4"
                                         style="background-image: url(<?php echo URL; ?>drinkPoint/images/person_1.jpg)">
                                         <span class="quote d-flex align-items-center justify-content-center">
@@ -1013,7 +1013,39 @@
                                         </span>
                                     </div>
                                     <p class="name">John Gustavo</p>
-                                    <span class="position">Customer</span>
+                                    <span class="position">Gerente general "La Causa"</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimony-wrap text-center">
+                                <div class="text p-3">
+                                    <p class="mb-4">La flexibilidad y el buen servicio que nos dan a los clientes son el principal 
+                                        pilar, para considerarlos nuestro mejor proveedor.</p>
+                                    <div class="user-img mb-4"
+                                        style="background-image: url(<?php echo URL; ?>drinkPoint/images/person_1.jpg)">
+                                        <span class="quote d-flex align-items-center justify-content-center">
+                                            <i class="fa fa-quote-left"></i>
+                                        </span>
+                                    </div>
+                                    <p class="name">Jairo Alonso</p>
+                                    <span class="position">Gerente general "Hotel ClickClack"</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimony-wrap text-center">
+                                <div class="text p-3">
+                                    <p class="mb-4">Sus productos de excelente calidad cumplen a cabalidad todas las expectativas de 
+                                        nuestros clientes, ayudándonos a ser un bar exitoso y de calidad  en la ciudad.</p>
+                                    <div class="user-img mb-4"
+                                        style="background-image: url(<?php echo URL; ?>drinkPoint/images/person_1.jpg)">
+                                        <span class="quote d-flex align-items-center justify-content-center">
+                                            <i class="fa fa-quote-left"></i>
+                                        </span>
+                                    </div>
+                                    <p class="name">Clara Rojas</p>
+                                    <span class="position">Gerente de "La Chula"</span>
                                 </div>
                             </div>
                         </div>
@@ -1033,54 +1065,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="testimony-wrap text-center">
-                                <div class="text p-3">
-                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries
-                                        Vokalia and Consonantia, there live the blind texts.</p>
-                                    <div class="user-img mb-4"
-                                        style="background-image: url(<?php echo URL; ?>drinkPoint/images/person_1.jpg)">
-                                        <span class="quote d-flex align-items-center justify-content-center">
-                                            <i class="fa fa-quote-left"></i>
-                                        </span>
-                                    </div>
-                                    <p class="name">John Gustavo</p>
-                                    <span class="position">Customer</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimony-wrap text-center">
-                                <div class="text p-3">
-                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries
-                                        Vokalia and Consonantia, there live the blind texts.</p>
-                                    <div class="user-img mb-4"
-                                        style="background-image: url(<?php echo URL; ?>drinkPoint/images/person_1.jpg)">
-                                        <span class="quote d-flex align-items-center justify-content-center">
-                                            <i class="fa fa-quote-left"></i>
-                                        </span>
-                                    </div>
-                                    <p class="name">John Gustavo</p>
-                                    <span class="position">Customer</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimony-wrap text-center">
-                                <div class="text p-3">
-                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries
-                                        Vokalia and Consonantia, there live the blind texts.</p>
-                                    <div class="user-img mb-4"
-                                        style="background-image: url(<?php echo URL; ?>drinkPoint/images/person_1.jpg)">
-                                        <span class="quote d-flex align-items-center justify-content-center">
-                                            <i class="fa fa-quote-left"></i>
-                                        </span>
-                                    </div>
-                                    <p class="name">John Gustavo</p>
-                                    <span class="position">Customer</span>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
