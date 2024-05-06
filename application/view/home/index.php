@@ -71,6 +71,8 @@
                     <li class="nav-item"><a href="<?php echo URL; ?>#products" class="nav-link">Productos</a></li>
                     <li class="nav-item"><a href="<?php echo URL; ?>#testimonial" class="nav-link">Testimonios</a></li>
                     <li class="nav-item"><a href="<?php echo URL; ?>#contact" class="nav-link">Contactanos</a></li>
+                    <li class="nav-item"><a href="<?php echo URL; ?>usuarioController/login" class="nav-link">Login</a></li>
+                    
                 </ul>
             </div>
         </div>
