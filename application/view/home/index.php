@@ -148,7 +148,7 @@
 
     <!-- SECCION DE UN MINI BANNER -->
     <section class="ftco-section ftco-intro"
-        style="background-image: url(<?php echo URL; ?>drinkPoint/images/bg_3.jpg);">
+        style="background-image: url(<?php echo URL; ?>drinkPoint/images/bg_33.jpg);">
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
@@ -994,7 +994,7 @@
 
     <!-- SECCION DE TESTIMONIOS -->
     <section id="testimonial" class="ftco-section testimony-section"
-        style="background-image: url(<?php echo URL; ?>drinkPoint/images/bg_5.jpg);">
+        style="background-image: url(<?php echo URL; ?>drinkPoint/images/bg_55.jpg);">
         <div class="overlay"></div>
         <div class="container">
             <div class="row justify-content-center mb-3 pb-2">
