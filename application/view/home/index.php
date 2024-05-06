@@ -1022,7 +1022,7 @@
                                     <p class="mb-4">La flexibilidad y el buen servicio que nos dan a los clientes son el principal 
                                         pilar, para considerarlos nuestro mejor proveedor.</p>
                                     <div class="user-img mb-4"
-                                        style="background-image: url(<?php echo URL; ?>drinkPoint/images/person_1.jpg)">
+                                        style="background-image: url(<?php echo URL; ?>drinkPoint/images/person_2.jpg)">
                                         <span class="quote d-flex align-items-center justify-content-center">
                                             <i class="fa fa-quote-left"></i>
                                         </span>
@@ -1038,7 +1038,7 @@
                                     <p class="mb-4">Sus productos de excelente calidad cumplen a cabalidad todas las expectativas de 
                                         nuestros clientes, ayudándonos a ser un bar exitoso y de calidad  en la ciudad.</p>
                                     <div class="user-img mb-4"
-                                        style="background-image: url(<?php echo URL; ?>drinkPoint/images/person_1.jpg)">
+                                        style="background-image: url(<?php echo URL; ?>drinkPoint/images/person_3.jpg)">
                                         <span class="quote d-flex align-items-center justify-content-center">
                                             <i class="fa fa-quote-left"></i>
                                         </span>
@@ -1053,7 +1053,7 @@
                                 <div class="text p-3">
                                     <p class="mb-4">Tu satisfacción es nuestro mayor objetivo. Calidad y amor en cada gota de vino.</p>
                                     <div class="user-img mb-4"
-                                        style="background-image: url(<?php echo URL; ?>drinkPoint/images/person_1.jpg)">
+                                        style="background-image: url(<?php echo URL; ?>drinkPoint/images/person_4.jpg)">
                                         <span class="quote d-flex align-items-center justify-content-center">
                                             <i class="fa fa-quote-left"></i>
                                         </span>
