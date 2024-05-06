@@ -148,8 +148,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <span>Los mejores viñedos</span>
-                    <h2>al alcance &amp; en tu mesa.</h2>
+                    <span>Los mejores vinos</span>
+                    <h2>Al alcance & en tu mesa.</h2>
                 </div>
             </div>
         </div>
@@ -507,15 +507,15 @@
 
       <div class="col-md-12 text-center heading-section mb-5 ftco-animate fadeInUp ftco-animated">
             <span class="subheading">Carta</span>
-            <h2 class="mb-4">Lo que tenemos</h2>
+            <h2 class="mb-4">Todos los productos</h2>
         </div>
 
       <ul class="filters_menu">
-        <li class="active" data-filter="*">All</li>
-        <li data-filter=".burger">Burger</li>
-        <li data-filter=".pizza">Pizza</li>
-        <li data-filter=".pasta">Pasta</li>
-        <li data-filter=".fries">Fries</li>
+        <li class="active" data-filter="*">Todos</li>
+        <li data-filter=".burger">Vino Tinto</li>
+        <li data-filter=".pizza">Vino Blanco</li>
+        <li data-filter=".pasta">Vino Rosado</li>
+        <li data-filter=".fries">Vino Espumoso</li>
       </ul>
 
       <div class="filters-content">
@@ -528,14 +528,14 @@
                 </div>
                 <div class="detail-box">
                   <h5>
-                    Delicious Pizza
+                  Black Label Malbec
                   </h5>
                   <p>
-                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                  Color tinta oscuro, notas especiadas y picantes con frutas maduras en nariz. Sigue la nariz con cocos, vainilla y especias. Elegante buena longitud.
                   </p>
                   <div class="options">
                     <h6>
-                      $20
+                      $84.000
                     </h6>
                     <a href="">
                       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -604,14 +604,14 @@
                 </div>
                 <div class="detail-box">
                   <h5>
-                    Delicious Burger
+                  Riscal Verdejo
                   </h5>
                   <p>
-                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                  Un vino de color amarillo pajizo brillante. En nariz tiene una intensidad aromática alta con frutas tropicales.En general es un vino fresco y equilibrado.
                   </p>
                   <div class="options">
                     <h6>
-                      $15
+                      $75.000
                     </h6>
                     <a href="">
                       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -680,14 +680,14 @@
                 </div>
                 <div class="detail-box">
                   <h5>
-                    Delicious Pizza
+                  Montes Cherub
                   </h5>
                   <p>
-                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                  Un vino rosado elegante.Este vino seductor es fresco y bien equilibrado. Muestra riqueza en textura en todo el paladar que conduce a un final deliciosamente largo.
                   </p>
                   <div class="options">
                     <h6>
-                      $17
+                      $82.000
                     </h6>
                     <a href="">
                       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -756,14 +756,13 @@
                 </div>
                 <div class="detail-box">
                   <h5>
-                    Delicious Pasta
+                  Chandon Rose
                   </h5>
                   <p>
-                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
-                  </p>
+                  Deliciosos frutos rojos y notas cítricas, se entrelazan frescas y notorias pieles de durazno. Un vino muy suave y amigable en boca y un clásico para cualquier ocasión.
                   <div class="options">
                     <h6>
-                      $18
+                      $76.000
                     </h6>
                     <a href="">
                       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -832,14 +831,14 @@
                 </div>
                 <div class="detail-box">
                   <h5>
-                    French Fries
+                  Mionetto Brut
                   </h5>
                   <p>
-                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                  El vino Prosecco Mionetto Brut es un espumoso italiano. El tipo de uva es Glera 100%. ¡Disfruta de un espumoso en tus celebraciones!
                   </p>
                   <div class="options">
                     <h6>
-                      $10
+                      $68.000
                     </h6>
                     <a href="">
                       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -908,14 +907,14 @@
                 </div>
                 <div class="detail-box">
                   <h5>
-                    Delicious Pizza
+                  Montes Alpha
                   </h5>
                   <p>
-                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                  De color rojo rubí profundo, la expresión del cabernet sauvignon es evidente aportando estructura y elegancia. Muchas frutas del bosque y toques de tabaco y vainilla.
                   </p>
                   <div class="options">
                     <h6>
-                      $15
+                      $115.000
                     </h6>
                     <a href="">
                       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -995,7 +994,7 @@
             <div class="row justify-content-center mb-3 pb-2">
                 <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
                     <span class="subheading">Nuestros</span>
-                    <h2 class="mb-4">Clientes</h2>
+                    <h2 class="mb-4">Testimonios</h2>
                 </div>
             </div>
             <div class="row ftco-animate justify-content-center">
@@ -1004,7 +1003,7 @@
                         <div class="item">
                             <div class="testimony-wrap text-center">
                                 <div class="text p-3">
-                                    <p class="mb-4">Los productos de calidad y la frescura de sus viñedos hacen que nos convirtamos
+                                    <p class="mb-4">Los productos de calidad y la frescura de sus vinos hacen que nos convirtamos
                                          en sus clientes fieles y fidelicemos a los nuestros.</p>
                                     <div class="user-img mb-4"
                                         style="background-image: url(<?php echo URL; ?>drinkPoint/images/person_1.jpg)">
@@ -1012,8 +1011,8 @@
                                             <i class="fa fa-quote-left"></i>
                                         </span>
                                     </div>
-                                    <p class="name">John Gustavo</p>
-                                    <span class="position">Gerente general "La Causa"</span>
+                                    <p class="name">Fredholms Vin</p>
+                                    <span class="position">Excelentes profesionales y conocedores en el área</span>
                                 </div>
                             </div>
                         </div>
@@ -1023,13 +1022,13 @@
                                     <p class="mb-4">La flexibilidad y el buen servicio que nos dan a los clientes son el principal 
                                         pilar, para considerarlos nuestro mejor proveedor.</p>
                                     <div class="user-img mb-4"
-                                        style="background-image: url(<?php echo URL; ?>drinkPoint/images/person_1.jpg)">
+                                        style="background-image: url(<?php echo URL; ?>drinkPoint/images/person_2.jpg)">
                                         <span class="quote d-flex align-items-center justify-content-center">
                                             <i class="fa fa-quote-left"></i>
                                         </span>
                                     </div>
-                                    <p class="name">Jairo Alonso</p>
-                                    <span class="position">Gerente general "Hotel ClickClack"</span>
+                                    <p class="name">Pierre Ragon</p>
+                                    <span class="position"> Amables y muy profesionales. Recomendados 100%</span>
                                 </div>
                             </div>
                         </div>
@@ -1039,29 +1038,28 @@
                                     <p class="mb-4">Sus productos de excelente calidad cumplen a cabalidad todas las expectativas de 
                                         nuestros clientes, ayudándonos a ser un bar exitoso y de calidad  en la ciudad.</p>
                                     <div class="user-img mb-4"
-                                        style="background-image: url(<?php echo URL; ?>drinkPoint/images/person_1.jpg)">
+                                        style="background-image: url(<?php echo URL; ?>drinkPoint/images/person_3.jpg)">
                                         <span class="quote d-flex align-items-center justify-content-center">
                                             <i class="fa fa-quote-left"></i>
                                         </span>
                                     </div>
-                                    <p class="name">Clara Rojas</p>
-                                    <span class="position">Gerente de "La Chula"</span>
+                                    <p class="name">Vincent Grall</p>
+                                    <span class="position">Calidad en el trabajo, la organización y las respuestas rápidas</span>
                                 </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="testimony-wrap text-center">
                                 <div class="text p-3">
-                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries
-                                        Vokalia and Consonantia, there live the blind texts.</p>
+                                    <p class="mb-4">Tu satisfacción es nuestro mayor objetivo. Calidad y amor en cada gota de vino.</p>
                                     <div class="user-img mb-4"
-                                        style="background-image: url(<?php echo URL; ?>drinkPoint/images/person_1.jpg)">
+                                        style="background-image: url(<?php echo URL; ?>drinkPoint/images/person_4.jpg)">
                                         <span class="quote d-flex align-items-center justify-content-center">
                                             <i class="fa fa-quote-left"></i>
                                         </span>
                                     </div>
-                                    <p class="name">John Gustavo</p>
-                                    <span class="position">Customer</span>
+                                    <p class="name">Domaine Coirier</p>
+                                    <span class="position">Proactivos 100%. Inspiran confianza con su trabajo y dedicación. </span>
                                 </div>
                             </div>
                         </div>
