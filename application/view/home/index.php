@@ -83,7 +83,7 @@
     <section class="hero-wrap">
         <div class="home-slider owl-carousel js-fullheight">
             <div class="slider-item js-fullheight"
-                style="background-image:url(<?php echo URL; ?>drinkPoint/images/bg_1.jpg);">
+                style="background-image:url(<?php echo URL; ?>drinkPoint/images/bg_11.jpg);">
                 <div class="overlay"></div>
                 <div class="container">
                     <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
@@ -99,7 +99,7 @@
             </div>
 
             <div class="slider-item js-fullheight"
-                style="background-image:url(<?php echo URL; ?>drinkPoint/images/bg_2.jpg);">
+                style="background-image:url(<?php echo URL; ?>drinkPoint/images/bg_22.jpg);">
                 <div class="overlay"></div>
                 <div class="container">
                     <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
@@ -122,7 +122,7 @@
 
         
                 <div class="col-sm-10 wrap-about py-5 ftco-animate img"
-                    style="background-image: url(<?php echo URL; ?>drinkPoint/images/about.jpg);">
+                    style="background-image: url(<?php echo URL; ?>drinkPoint/images/aboutt.png);">
                     <div class="row pb-5 pb-md-0">
                         <div class="col-md-12 col-lg-7">
                             <div class="heading-section mt-5 mb-4">
