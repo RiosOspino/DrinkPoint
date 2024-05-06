@@ -127,17 +127,12 @@
                         <div class="col-md-12 col-lg-7">
                             <div class="heading-section mt-5 mb-4">
                                 <div class="pl-lg-3 ml-md-5">
-                                    <span class="subheading">About</span>
-                                    <h2 class="mb-4">Welcome to Taste.it</h2>
+                                    <span class="subheading">ACERCA DE</span>
+                                    <h2 class="mb-4">DRINK POINT</h2>
                                 </div>
                             </div>
                             <div class="pl-lg-3 ml-md-5">
-                                <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came
-                                    from it would have been rewritten a thousand times and everything that was left from
-                                    its origin would be the word "and" and the Little Blind Text should turn around and
-                                    return to its own, safe country. A small river named Duden flows by their place and
-                                    supplies it with the necessary regelialia. It is a paradisematic country, in which
-                                    roasted parts of sentences fly into your mouth.</p>
+                                <p>Jorge Mario Correa R,inicialmente a través de viajes a destinos Vitivinícolas, visitas a diferentes productores, estudiar, probar, probar,En el mes de Junio de 2006, creamos la Sociedad Importadora Libation SAS; y para el 1 de Diciembre del mismo año, abrió en el sector de El Poblado la primera tienda especializada en Vinos de la Ciudad de Medellín, llamada inicialmente “El Mundo del Vino“, la cual después se transformó en “DRINK POINT”.</p>
                             </div>
                         </div>
                     </div>
