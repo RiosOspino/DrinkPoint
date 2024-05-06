@@ -122,7 +122,7 @@
 
         
                 <div class="col-sm-10 wrap-about py-5 ftco-animate img"
-                    style="background-image: url(<?php echo URL; ?>drinkPoint/images/aboutt.png);">
+                    style="background-image: url(<?php echo URL; ?>drinkPoint/images/aboutt.jpg);">
                     <div class="row pb-5 pb-md-0">
                         <div class="col-md-12 col-lg-7">
                             <div class="heading-section mt-5 mb-4">
