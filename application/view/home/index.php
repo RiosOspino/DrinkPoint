@@ -994,7 +994,7 @@
             <div class="row justify-content-center mb-3 pb-2">
                 <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
                     <span class="subheading">Nuestros</span>
-                    <h2 class="mb-4">Clientes</h2>
+                    <h2 class="mb-4">Testimonios</h2>
                 </div>
             </div>
             <div class="row ftco-animate justify-content-center">
