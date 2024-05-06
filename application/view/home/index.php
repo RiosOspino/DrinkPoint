@@ -1261,28 +1261,28 @@
         <div class="container">
             <div class="row d-flex contact-info">
                 <div class="col-md-12 text-center heading-section mb-5 ftco-animate fadeInUp ftco-animated">
-                    <span class="subheading">Contact</span>
+                    <span class="subheading">Contacto</span>
                     <h2 class="mb-4">Contactenos</h2>
                 </div>
                 <div class="w-100"></div>
                 <div class="col-md-3 d-flex">
                     <div class="dbox">
-                        <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+                        <p><span>DIRECCIÓN:</span> Poblado, Medellín Antioquia</p>
                     </div>
                 </div>
                 <div class="col-md-3 d-flex">
                     <div class="dbox">
-                        <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+                        <p><span>TELÉFONO:</span> <a href="tel://1234567920">+57 3014874236</a></p>
                     </div>
                 </div>
                 <div class="col-md-3 d-flex">
                     <div class="dbox">
-                        <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+                        <p><span>Correo:</span> <a href="mailto:info@yoursite.com"> info@drinkpoint.com</a></p>
                     </div>
                 </div>
                 <div class="col-md-3 d-flex">
                     <div class="dbox">
-                        <p><span>Website</span> <a href="#">yoursite.com</a></p>
+                        <p><span>SITIO WEB:</span> <a href="#">www.drinkpoint.com</a></p>
                     </div>
                 </div>
             </div>
@@ -1292,28 +1292,31 @@
         <div class="container">
             <div class="row d-flex align-items-stretch no-gutters">
                 <div class="col-md-6 p-5 order-md-last">
-                    <h2 class="h4 mb-5 font-weight-bold">Contact Us</h2>
+                    <h2 class="h4 mb-5 font-weight-bold">Contactanos</h2>
                     <form action="#">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Name">
+                            <input type="text" class="form-control" placeholder="Nombre">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Email">
+                            <input type="text" class="form-control" placeholder="Correo">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Subject">
+                            <input type="text" class="form-control" placeholder="Asunto">
                         </div>
                         <div class="form-group">
                             <textarea name="" id="" cols="30" rows="7" class="form-control"
-                                placeholder="Message"></textarea>
+                                placeholder="Mensaje"></textarea>
                         </div>
                         <div class="form-group">
-                            <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+                            <input type="submit" value="Enviar Mensaje" class="btn btn-primary py-3 px-5">
                         </div>
                     </form>
                 </div>
                 <div class="col-md-6 d-flex align-items-stretch">
-                    <div id="map"></div>
+                    <!-- <div id="map"></div> -->
+                    <div> 
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.4114972117086!2d-75.57026262588637!3d6.209331643778538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428299b5aa6d9%3A0x2020c055ff96b671!2sEl%20Poblado%2C%20Medell%C3%ADn%2C%20El%20Poblado%2C%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses-419!2sco!4v1715037658373!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1432,6 +1435,8 @@
     </script>
     <script src="<?php echo URL; ?>drinkPoint/js/google-map.js"></script>
     <script src="<?php echo URL; ?>drinkPoint/js/main.js"></script>
+
+    
 
 </body>
 
