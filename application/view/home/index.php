@@ -148,7 +148,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <span>Los mejores vinos</span>
+                    <span>Los mejores viñedos</span>
                     <h2>Al alcance & en tu mesa.</h2>
                 </div>
             </div>
@@ -1327,7 +1327,7 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="ftco-footer-widget mb-4">
                         <h2 class="ftco-heading-2">DrinkPoint</h2>
-                        <p>Muy muy lejos, detrás de las montañas de la palabra, lejos de los países Vokalia y Consonantia, Allí viven los textos ciegos. Separados viven en Bookmarksgrove</p>
+                        <p>Compra online vinos y licores exclusivos y recibe a domicilio en Medellín. Compra rápida, fácil y segura.</p>
                         <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
                             <li class="ftco-animate"><a href="https://www.twitter.com/" target= "_blank" ><span class="fa fa-twitter"></span></a></li>
                             <li class="ftco-animate"><a href="https://www.facebook.com/" target= "_blank" ><span class="fa fa-facebook"></span></a></li>
@@ -1353,24 +1353,24 @@
                     <div class="ftco-footer-widget mb-4">
                         <h2 class="ftco-heading-2">Instagram</h2>
                         <div class="thumb d-sm-flex">
-                            <a href="#" class="thumb-menu img"
+                            <a href="https://instagram.com" class="thumb-menu img"
                                 style="background-image: url(<?php echo URL; ?>drinkPoint/images/insta-1.jpg);">
                             </a>
-                            <a href="#" class="thumb-menu img"
+                            <a href="https://instagram.com" class="thumb-menu img"
                                 style="background-image: url(<?php echo URL; ?>drinkPoint/images/insta-2.jpg);">
                             </a>
-                            <a href="#" class="thumb-menu img"
+                            <a href="https://instagram.com" class="thumb-menu img"
                                 style="background-image: url(<?php echo URL; ?>drinkPoint/images/insta-3.jpg);">
                             </a>
                         </div>
                         <div class="thumb d-flex">
-                            <a href="#" class="thumb-menu img"
+                            <a href="https://instagram.com" class="thumb-menu img"
                                 style="background-image: url(<?php echo URL; ?>drinkPoint/images/insta-4.jpg);">
                             </a>
-                            <a href="#" class="thumb-menu img"
+                            <a href="https://instagram.com" class="thumb-menu img"
                                 style="background-image: url(<?php echo URL; ?>drinkPoint/images/insta-5.jpg);">
                             </a>
-                            <a href="#" class="thumb-menu img"
+                            <a href="https://instagram.com" class="thumb-menu img"
                                 style="background-image: url(<?php echo URL; ?>drinkPoint/images/insta-6.jpg);">
                             </a>
                         </div>
@@ -1378,13 +1378,13 @@
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2">Newsletter</h2>
-                        <p>Muy muy lejos, detrás de la palabra montañas, lejos de los países.</p>
+                        <h2 class="ftco-heading-2">Boletin informativo</h2>
+                        <p>Recibe las mejores ofertas directamente en tu buzón</p>
                         <form action="#" class="subscribe-form">
                             <div class="form-group">
                                 <input type="text" class="form-control mb-2 text-center"
                                     placeholder="Introducir correo electrónico">
-                                <input type="submit" value="Suscribir" class="form-control submit px-3">
+                                <input type="submit" value="Suscribirse" class="form-control submit px-3">
                             </div>
                         </form>
                     </div>
@@ -1400,7 +1400,7 @@
                         Copyright &copy;<script>
                         document.write(new Date().getFullYear());
                         </script> All rights reserved | This template is made with <i class="fa fa-heart"
-                            aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                            aria-hidden="true"></i> by: <a href="https://colorlib.com" target="_blank">Drink point S.A.S</a>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </p>
                 </div>
