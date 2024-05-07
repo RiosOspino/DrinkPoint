@@ -524,7 +524,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="<?php echo URL; ?>public/img/f2.png" alt="">
+                  <img src="<?php echo URL; ?>public/img/p1.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -600,7 +600,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                <img src="<?php echo URL; ?>public/img/f2.png" alt="">
+                <img src="<?php echo URL; ?>public/img/p2.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -676,7 +676,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                <img src="<?php echo URL; ?>public/img/f2.png" alt="">
+                <img src="<?php echo URL; ?>public/img/p3.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -752,7 +752,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                <img src="<?php echo URL; ?>public/img/f2.png" alt="">
+                <img src="<?php echo URL; ?>public/img/p4.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -827,7 +827,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                <img src="<?php echo URL; ?>public/img/f2.png" alt="">
+                <img src="<?php echo URL; ?>public/img/p5.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -903,7 +903,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                <img src="<?php echo URL; ?>public/img/f2.png" alt="">
+                <img src="<?php echo URL; ?>public/img/p2.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
