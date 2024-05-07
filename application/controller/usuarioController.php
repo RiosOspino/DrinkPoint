@@ -47,5 +47,13 @@
             }
             require APP . 'view/usuarios/login.php';
         }
+
+        public function main(){
+            require APP . 'view/_templates/header.php';
+            require APP . 'view/usuarios/main.php';
+            require APP . 'view/_templates/footer.php';
+        }
+
+
     }
 ?>
