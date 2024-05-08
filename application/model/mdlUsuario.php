@@ -38,7 +38,28 @@ class mdlUsuario extends mdlPersona{
         //crear una variable para la respuesta de los datos
         $user = $stm->fetch(PDO::FETCH_ASSOC);
         return $user;
+    }
 
+    //Metodo para  registrar los usuarios
+    public function userRegister(){
+        //Vamos a crear la consulta
+        $sql = "INSERT INTO usuarios(idPersona, Usuario, Clave, idRol, Estado) VALUES (?,?,?,?,?)";
+        
+        //Vamos a crear una variable para mandaar el estado activo por defecto
+        $estado = 1;
+
+        //Vamos a enviar los parametros a la base de datos
+        $stm = $this->db->prepare($sql);
+
+        $stm->bindParam(1, $this->idPersona);
+        $stm->bindParam(2, $this->usuario);
+        $stm->bindParam(3, $this->clave);
+        $stm->bindParam(4, $this->idRol);
+        $stm->bindParam(5, $estado);
+
+        //Respuesta
+        $resul = $stm->execute();
+        return $resul;
     }
 }
 ?>

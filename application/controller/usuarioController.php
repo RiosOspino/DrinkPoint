@@ -54,6 +54,16 @@
             require APP . 'view/_templates/footer.php';
         }
 
+        //Metodo para cerrar sesion
+        public function logOut(){
+            //Validamos que hallan sesiones iniciadas
+            if (isset($_SESSION['SESSION_START'])){
+                session_destroy();
+            }
+            header("Location:".URL."home/index");
+            exit();
+        }
+
 
     }
 ?>
