@@ -33,11 +33,11 @@
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-12 col-md d-flex align-items-center">
-                    <p class="mb-0 phone"><span class="mailus">Teléfono:</span> <a href="#">+57 3014874236</a> <span
-                            class="mailus">Gmail:</span> <a href="#">info@drinkpoint.com</a></p>
+                    <p class="mb-0 phone"><span class="mailus">Tel:</span> <a href="#">+57 3014874236  </a> <span
+                            class="mailus">Correo:</span> <a href="#">info@drinkpoint.com</a></p>
                 </div>
                 <div class="col-12 col-md d-flex justify-content-md-end">
-                    <p class="mb-0">Lun - Vier / 9:00am-11:00pm, Sab - Dom / 10:00-10:00</p>
+                    <p class="mb-0">Lun - Vie / 9:00am-11:00pm, Sab - Dom / 10:00am-10:00pm</p>
                     <div class="social-media">
                         <p class="mb-0 d-flex">
                             <a href="https://www.facebook.com" target= "_blank" class="d-flex align-items-center justify-content-center"><span
@@ -47,7 +47,7 @@
                             <a href="https://instagram.com" target= "_blank" class="d-flex align-items-center justify-content-center"><span
                                     class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
                             <a href="https://www.whatsapp.com" target= "_blank"   class="d-flex align-items-center justify-content-center"><span
-                                    class="fa fa-whatsapp"><i class="sr-only">Whatsapp</i></span></a>
+                                    class="fa fa-whatsapp"><i class="sr-only">WhatsApp</i></span></a>
                         </p>
                     </div>
                 </div>
@@ -70,7 +70,7 @@
                     <li class="nav-item"><a href="<?php echo URL; ?>#about" class="nav-link">Sobre Nosotros</a></li>
                     <li class="nav-item"><a href="<?php echo URL; ?>#products" class="nav-link">Productos</a></li>
                     <li class="nav-item"><a href="<?php echo URL; ?>#testimonial" class="nav-link">Testimonios</a></li>
-                    <li class="nav-item"><a href="<?php echo URL; ?>#contact" class="nav-link">Contactanos</a></li>
+                    <li class="nav-item"><a href="<?php echo URL; ?>#contact" class="nav-link">Contacto</a></li>
                     <li class="nav-item"><a href="<?php echo URL; ?>usuarioController/login" class="nav-link">Login</a></li>
                     
                 </ul>
@@ -132,7 +132,7 @@
                                 </div>
                             </div>
                             <div class="pl-lg-3 ml-md-5">
-                                <p>Jorge Mario Correa R,inicialmente a través de viajes a destinos Vitivinícolas, visitas a diferentes productores, estudiar, probar, probar,En el mes de Junio de 2006, creamos la Sociedad Importadora Libation SAS; y para el 1 de Diciembre del mismo año, abrió en el sector de El Poblado la primera tienda especializada en Vinos de la Ciudad de Medellín, llamada inicialmente “El Mundo del Vino“, la cual después se transformó en “DRINK POINT”.</p>
+                                <p>Jorge Mario Correa R, inicialmente a través de viajes a destinos Vitivinícolas, visitas a diferentes productores, estudiar, probar, probar. En el mes de Junio de 2006, creamos la Sociedad Importadora Libation SAS; y para el 1 de Diciembre del mismo año, abrió en el sector de El Poblado la primera tienda especializada en Vinos de la Ciudad de Medellín, llamada inicialmente “El Mundo del Vino“, la cual después se transformó en “DRINK POINT”.</p>
                             </div>
                         </div>
                     </div>
@@ -1353,24 +1353,24 @@
                     <div class="ftco-footer-widget mb-4">
                         <h2 class="ftco-heading-2">Instagram</h2>
                         <div class="thumb d-sm-flex">
-                            <a href="https://instagram.com" class="thumb-menu img"
+                            <a href="https://instagram.com" target= "_blank" class="thumb-menu img"
                                 style="background-image: url(<?php echo URL; ?>drinkPoint/images/wine-88.jpg);">
                             </a>
-                            <a href="https://instagram.com" class="thumb-menu img"
+                            <a href="https://instagram.com" target= "_blank" class="thumb-menu img"
                                 style="background-image: url(<?php echo URL; ?>drinkPoint/images/wine-2.jpg);">
                             </a>
-                            <a href="https://instagram.com" class="thumb-menu img"
+                            <a href="https://instagram.com" target= "_blank" class="thumb-menu img"
                                 style="background-image: url(<?php echo URL; ?>drinkPoint/images/wine-1.jpg);">
                             </a>
                         </div>
                         <div class="thumb d-flex">
-                            <a href="https://instagram.com" class="thumb-menu img"
+                            <a href="https://instagram.com" target= "_blank" class="thumb-menu img"
                                 style="background-image: url(<?php echo URL; ?>drinkPoint/images/insta-4.jpg);">
                             </a>
-                            <a href="https://instagram.com" class="thumb-menu img"
+                            <a href="https://instagram.com" target= "_blank" class="thumb-menu img"
                                 style="background-image: url(<?php echo URL; ?>drinkPoint/images/insta-5.jpg);">
                             </a>
-                            <a href="https://instagram.com" class="thumb-menu img"
+                            <a href="https://instagram.com" target= "_blank" class="thumb-menu img"
                                 style="background-image: url(<?php echo URL; ?>drinkPoint/images/wine-6.jpg);">
                             </a>
                         </div>
@@ -1400,7 +1400,7 @@
                         Copyright &copy;<script>
                         document.write(new Date().getFullYear());
                         </script> All rights reserved | This template is made with <i class="fa fa-heart"
-                            aria-hidden="true"></i> by: <a href="https://colorlib.com" target="_blank">by color</a>
+                            aria-hidden="true"></i> by: <a href="https://colorlib.com" target="_blank">Colorlib</a>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </p>
                 </div>
