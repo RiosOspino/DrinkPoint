@@ -1354,13 +1354,13 @@
                         <h2 class="ftco-heading-2">Instagram</h2>
                         <div class="thumb d-sm-flex">
                             <a href="https://instagram.com" class="thumb-menu img"
-                                style="background-image: url(<?php echo URL; ?>drinkPoint/images/insta-1.jpg);">
+                                style="background-image: url(<?php echo URL; ?>drinkPoint/images/wine-88.jpg);">
                             </a>
                             <a href="https://instagram.com" class="thumb-menu img"
-                                style="background-image: url(<?php echo URL; ?>drinkPoint/images/insta-2.jpg);">
+                                style="background-image: url(<?php echo URL; ?>drinkPoint/images/wine-2.jpg);">
                             </a>
                             <a href="https://instagram.com" class="thumb-menu img"
-                                style="background-image: url(<?php echo URL; ?>drinkPoint/images/insta-3.jpg);">
+                                style="background-image: url(<?php echo URL; ?>drinkPoint/images/wine-1.jpg);">
                             </a>
                         </div>
                         <div class="thumb d-flex">
@@ -1371,7 +1371,7 @@
                                 style="background-image: url(<?php echo URL; ?>drinkPoint/images/insta-5.jpg);">
                             </a>
                             <a href="https://instagram.com" class="thumb-menu img"
-                                style="background-image: url(<?php echo URL; ?>drinkPoint/images/insta-6.jpg);">
+                                style="background-image: url(<?php echo URL; ?>drinkPoint/images/wine-6.jpg);">
                             </a>
                         </div>
                     </div>
@@ -1400,7 +1400,7 @@
                         Copyright &copy;<script>
                         document.write(new Date().getFullYear());
                         </script> All rights reserved | This template is made with <i class="fa fa-heart"
-                            aria-hidden="true"></i> by: <a href="https://colorlib.com" target="_blank">Drink point S.A.S</a>
+                            aria-hidden="true"></i> by: <a href="https://colorlib.com" target="_blank">by color</a>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </p>
                 </div>
