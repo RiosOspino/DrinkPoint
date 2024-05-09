@@ -64,6 +64,54 @@
             exit();
         }
 
+        //Metodo para llamar al formulario de registro de usuario
+        public function userRegister(){
+            //Con un condicional para el formulario y modelo
+            if (isset($_SESSION['SESSION_START'])){
+            if(isset($_POST['btnRegister'])){
+                 //Comunicacion modelo y formulario
+                $this->modeloU->__SET('idTipoDocumento',$_POST['selDocType']);
+                $this->modeloU->__SET('documento', $_POST['txtDocument']);
+                $this->modeloU->__SET('nombres', $_POST['txtNames']);
+                $this->modeloU->__SET('apellidos', $_POST['txtLastname']);
+                $this->modeloU->__SET('fechaNacimiento', $_POST['txtBirthdate']);
+                $this->modeloU->__SET('telefono', $_POST['txtPhone']);
+                $this->modeloU->__SET('direccion', $_POST['txtAdress']);
+                $this->modeloU->__SET('email', $_POST['txtEmail']);
+                $this->modeloU->__SET('genero', $_POST['txtGenere']);
+
+                //Vamos a crear una variable que llamara al metodo del modelo para poder registrar los datos
+                $person = $this->modeloU->registerPerson();
+
+                //Vamos a validar que registre a partir de la ultima persona registrada 
+                if($person == ture){
+                    $ultimoId = $this->modeloU->lastIdPerson();
+
+                    //foreach que se encarga de tomar los datos explicitos 
+                    foreach($ultimoId as $value){
+                        $ultimoIdValue = $value['lastIdPerson'];
+                    }
+                }
+
+            //Aqui vamos a enviar los datos para el registro de el usuario
+            $this->modeloU->__SET('idPersona', $ultimoIdValue);
+            $this->modeloU->__SET('usuario', $_POST['txtUser']);
+            $this->modeloU->__SET('clave', $_POST['txtPassword']);
+            $this->modeloU->__SET('idRol', $_POST['selRol']);
+
+                //Vamos a crear una variable que llamara al metodo del modelo para poder registrar los datos
+                $user = $this->modeloU->userRegister();
+
+            }
+        
+            require APP . 'view/_templates/header.php';
+            require APP . 'view/usuarios/userRegister.php';
+            require APP . 'view/_templates/footer.php';
+        }
+
+
+    }
+
 
     }
 ?>
