@@ -44,7 +44,7 @@
     <script src="<?php echo URL;?>gen/vendors/DateJS/build/date.js"></script>
     <!-- JQVMap -->
     <script src="<?php echo URL;?>gen/vendors/jqvmap/dist/jquery.vmap.js"></script>
-    <script src=<?php echo URL;?>gen./vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+    <script src="<?php echo URL;?>gen/vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
     <script src="<?php echo URL;?>gen/vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
     <!-- bootstrap-daterangepicker -->
     <script src="<?php echo URL;?>gen/vendors/moment/min/moment.min.js"></script>
