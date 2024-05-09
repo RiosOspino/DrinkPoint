@@ -6,9 +6,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="<?php echo URL;?>gen/production/images/favicon.ico" type="image/ico" />
+	<link rel="icon" href="<?php echo URL;?>gen/production/images/favicon.png" type="image/ico" />
 
-    <title>Gentelella Alela!</title>
+    <title>DrinkPoint</title>
 
     <!-- Bootstrap -->
     <link href="<?php echo URL;?>gen/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -36,7 +36,7 @@
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Gentelella Alela!</span></a>
+              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span> Dasboard </span></a>
             </div>
 
             <div class="clearfix"></div>
