@@ -67,7 +67,6 @@
         //Metodo para llamar al formulario de registro de usuario
         public function userRegister(){
             //Con un condicional para el formulario y modelo
-            if (isset($_SESSION['SESSION_START'])){
             if(isset($_POST['btnRegister'])){
                  //Comunicacion modelo y formulario
                 $this->modeloU->__SET('idTipoDocumento',$_POST['selDocType']);
@@ -103,15 +102,10 @@
                 $user = $this->modeloU->userRegister();
 
             }
-        
             require APP . 'view/_templates/header.php';
             require APP . 'view/usuarios/userRegister.php';
             require APP . 'view/_templates/footer.php';
         }
-
-
     }
-
-
-    }
+    
 ?>
