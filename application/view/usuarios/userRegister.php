@@ -23,24 +23,32 @@
 								<div class="x_content">
 									<br />
 									<form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
-									
+
 									<div class="form-group row">
-                                            <label class="col-form-label col-md-3 col-sm-3 label-align">Type Document</label>
-                                            <div class="col-md-6 col-sm-6 ">
-                                                <select class="form-control" name="selDocType" id="selDocType">
-                                                    <option>Choose option</option>
-                                                    <?php foreach($tipoDocumentos as $value):?>
-                                                        <option value="<?php echo $value['idTipoDocumento'];?>"><?php echo $value['doc'];?></option>
-                                                    <?php endforeach;?>    
-                                                </select>
-                                            </div>
-                                        </div>
-										
+											<label class="col-form-label col-md-3 col-sm-3 label-align">Document Type</label>
+											<div class="col-md-6 col-sm-6 ">
+												<select class="form-control">
+													<option>Choose option</option>
+													<?php foreach($documentType as $value):?>
+														<option value="<?php echo $value['idTipoDocumento'];?>"><?php echo $value['doc'];?></option>
+													<?php endforeach;?>
+												</select>
+											</div>
+										</div>
+
+										<div class="item form-group">
+											<label class="col-form-label col-md-3 col-sm-3 label-align" for="Document">Document <span class="required">*</span>
+											</label>
+											<div class="col-md-6 col-sm-6 ">
+												<input type="text" id="txtDocument" required="required" class="form-control " name=txtNames>
+											</div>
+										</div>
+																		
 										<div class="item form-group">
 											<label class="col-form-label col-md-3 col-sm-3 label-align" for="first-name">First Name <span class="required">*</span>
 											</label>
 											<div class="col-md-6 col-sm-6 ">
-												<input type="text" id="first-name" required="required" class="form-control ">
+												<input type="text" id="txtNames" required="required" class="form-control ">
 											</div>
 										</div>
 										<div class="item form-group">
