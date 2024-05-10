@@ -4,11 +4,13 @@
         //atributos normalmente suelen ser en este caso una variable para llamar los modelos
 
         private $modeloU;
+        private $modeloR;
 
         //vamos a crear el constructor
         public function __construct(){
             //instanciar los modelos necesarios
             $this->modeloU = $this->loadModel("mdlUsuario");
+            $this->modeloR = $this->loadModel("mdlRoles");
         }
 
         //vamos a crear un método para iniciar sesión 
@@ -102,11 +104,15 @@
                 $user = $this->modeloU->userRegister();
 
             }
+
+            //Vamos a crear variables para hacer los llamados a los metodos a los diversos modelos
+            $documentType = $this->modeloU->getTypeDocument();
+            $roles = $this ->modeloR->getRoles();
+
             require APP . 'view/_templates/header.php';
             require APP . 'view/usuarios/userRegister.php';
             require APP . 'view/_templates/footer.php';
         }
     }
     
-    //AAAAAiuda
 ?>
