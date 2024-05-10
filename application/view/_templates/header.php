@@ -28,6 +28,7 @@
 
     <!-- Custom Theme Style -->
     <link href="<?php echo URL;?>gen/build/css/custom.min.css" rel="stylesheet">
+    <link href="<?php echo URL;?>gen/build/css/estilos_admin.css" rel="stylesheet">
   </head>
 
   <body class="nav-md">
@@ -60,7 +61,7 @@
               <div class="menu_section">
                 <h3>General</h3>
                 <ul class="nav side-menu">
-                  <li><a><i class="fa fa-users"></i> Management User <span class="fa fa-chevron-down"></span></a>
+                  <li><a><i class="fa fa-users"></i>Management User <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="<?php echo URL; ?>usuarioController/userRegister">Register User</a></li>
                       <li><a href="#"></a></li>
@@ -152,7 +153,7 @@
                         </li>
                     </ul>
                   </li>                  
-                  <li><a href="javascript:void(0)"><i class="fa fa-laptop"></i> Landing Page <span class="label label-success pull-right">Coming Soon</span></a></li>
+                  <!-- <li><a href="javascript:void(0)"><i class="fa fa-laptop"></i> Landing Page <span class="label label-success pull-right">Coming Soon</span></a></li> -->
                 </ul>
               </div>
 
