@@ -1,0 +1,57 @@
+.x_panel {
+    background: #191c24;
+    border: black;
+}
+
+.x_title h2 {
+    color: white;
+    border: #2A3038;
+}
+
+.form-control {
+    background: #2A3038;
+}
+
+.x_title {
+    border-bottom: #191c24;
+}
+
+.form-control {
+    color: #495057;
+    background-color: #2A3038;
+    border: 1px solid #2A3038;
+
+}
+
+.form-control:focus {
+    border-color: #2A3038;
+
+}
+
+.ln_solid {
+    border-top: 1px solid #191c24;;
+    color: #191c24;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #e52b34;
+    border-color: #e52b34;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: black;
+    border-color: black;
+}
+
+.btn-success {
+    background: #495057;
+    border: #495057;
+}
+
+.btn-success:hover {
+    color: #fff;
+    background-color: #495057;
+    border-color: #495057;
+}
