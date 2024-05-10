@@ -1627,18 +1627,7 @@ table.no-margin .progress {
 	float: none !important
 }
 
-=======
-  font-family: "Glyphicons Halflings";
-  src: url("https://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.eot");
-  src: url("https://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.woff")
-      format("woff"),
-    url("https://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.ttf")
-      format("truetype"),
-    url("https://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular")
-      format("svg");
-}
+
 .glyphicon {
   position: relative;
   top: 1px;
@@ -2893,7 +2882,6 @@ table.no-margin .progress {
   margin: 0 auto;
   float: none !important;
 }
->>>>>>> 40568c6d45cc3dc53b4bf41dfa4ce5e84f1f22a0
 .col-md-55,
 .col-xs-12,
 .col-sm-1,
@@ -2942,12 +2930,11 @@ table.no-margin .progress {
 .col-sm-12,
 .col-md-12,
 .col-lg-12 {
-<<<<<<< HEAD
-	position: relative;
-	min-height: 1px;
-	float: left;
-	padding-right: 10px;
-	padding-left: 10px
+  position: relative;
+  min-height: 1px;
+  float: left;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .row {
@@ -2959,13 +2946,6 @@ table.no-margin .progress {
 	padding: 0 40px
 }
 
-=======
-  position: relative;
-  min-height: 1px;
-  float: left;
-  padding-right: 10px;
-  padding-left: 10px;
-}
 .row {
   margin-right: -10px;
   margin-left: -10px;
@@ -2973,32 +2953,19 @@ table.no-margin .progress {
 .grid_slider .col-md-6 {
   padding: 0 40px;
 }
->>>>>>> 40568c6d45cc3dc53b4bf41dfa4ce5e84f1f22a0
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3 {
-<<<<<<< HEAD
-	margin-top: 10px;
-	margin-bottom: 10px
-}
+
 
 a {
 	color: #5A738E;
 	text-decoration: none
 }
 
-=======
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
+
 a {
   color: #5a738e;
   text-decoration: none;
 }
->>>>>>> 40568c6d45cc3dc53b4bf41dfa4ce5e84f1f22a0
+
 a,
 a:visited,
 a:focus,
@@ -3012,8 +2979,7 @@ a:active,
 .btn.focus,
 .btn:active.focus,
 .btn.active.focus {
-<<<<<<< HEAD
-	outline: 0
+  outline: 0;
 }
 
 a:hover,
@@ -5038,9 +5004,6 @@ select.parsley-error {
 	border-radius: 3px
 }
 
-=======
-  outline: 0;
-}
 a:hover,
 a:focus {
   text-decoration: none;
@@ -6750,13 +6713,11 @@ select.parsley-error {
 .btn {
   border-radius: 3px;
 }
->>>>>>> 40568c6d45cc3dc53b4bf41dfa4ce5e84f1f22a0
 a.btn-success,
 a.btn-primary,
 a.btn-warning,
 a.btn-danger {
-<<<<<<< HEAD
-	color: #fff
+  color: #fff;
 }
 
 .btn-success {
@@ -6764,21 +6725,18 @@ a.btn-danger {
 	border: 1px solid #169F85
 }
 
-=======
-  color: #fff;
-}
+
 .btn-success {
   background: #26b99a;
   border: 1px solid #169f85;
 }
->>>>>>> 40568c6d45cc3dc53b4bf41dfa4ce5e84f1f22a0
+
 .btn-success:hover,
 .btn-success:focus,
 .btn-success:active,
 .btn-success.active,
 .open .dropdown-toggle.btn-success {
-<<<<<<< HEAD
-	background: #169F85
+  background: #169f85;
 }
 
 .btn-dark {
@@ -6787,24 +6745,20 @@ a.btn-danger {
 	border-color: #364B5F
 }
 
-=======
-  background: #169f85;
-}
+
 .btn-dark {
   color: #e9edef;
   background-color: #4b5f71;
   border-color: #364b5f;
 }
->>>>>>> 40568c6d45cc3dc53b4bf41dfa4ce5e84f1f22a0
 .btn-dark:hover,
 .btn-dark:focus,
 .btn-dark:active,
 .btn-dark.active,
 .open .dropdown-toggle.btn-dark {
-<<<<<<< HEAD
-	color: #FFFFFF;
-	background-color: #394D5F;
-	border-color: #394D5F
+  color: #ffffff;
+  background-color: #394d5f;
+  border-color: #394d5f;
 }
 
 .btn-round {
@@ -8718,19 +8672,6 @@ ul.project_files li a i {
 .view-first:hover p {
   -webkit-transition-delay: 0.1s;
   transition-delay: 0.1s;
-} /*!
->>>>>>> 40568c6d45cc3dc53b4bf41dfa4ce5e84f1f22a0
- * bootstrap-vertical-tabs - v1.2.1
- * https://dbtek.github.io/bootstrap-vertical-tabs
- * 2014-11-07
- * Copyright (c) 2014 İsmail Demirbilek
- * License: MIT
- */
-.tabs-left,
-.tabs-right {
-<<<<<<< HEAD
-	border-bottom: none;
-	padding-top: 2px
 }
 
 .tabs-left {
@@ -10125,7 +10066,8 @@ ul.notifications {
 #slash {
 	display: none;
 }
-=======
+.tabs-left,
+.tabs-right {
   border-bottom: none;
   padding-top: 2px;
 }
@@ -11334,6 +11276,5 @@ ul.notifications {
 }
 
 #slash {
-  display: none;
+	display: none;
 }
->>>>>>> 40568c6d45cc3dc53b4bf41dfa4ce5e84f1f22a0
