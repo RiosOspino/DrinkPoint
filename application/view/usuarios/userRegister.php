@@ -2,7 +2,7 @@
 						<div class="col-md-12 col-sm-12 ">
 							<div class="x_panel">
 								<div class="x_title">
-									<h2>Form Design <small>different form elements</small></h2>
+									<h2>Formulario de resgistro <small>different form elements</small></h2>
 									<ul class="nav navbar-right panel_toolbox">
 										<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
 										</li>
@@ -22,13 +22,13 @@
 								</div>
 								<div class="x_content">
 									<br />
-									<form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+									<form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" method="POST">
 
-									<div class="form-group row">
-											<label class="col-form-label col-md-3 col-sm-3 label-align">Document Type</label>
+										<div class="form-group row">
+											<label class="col-form-label col-md-3 col-sm-3 label-align">Tipo de documento</label>
 											<div class="col-md-6 col-sm-6 ">
-												<select class="form-control">
-													<option>Choose option</option>
+												<select class="form-control" name="selDocType" id="selDocType">
+													<option>Elija una opción</option>
 													<?php foreach($documentType as $value):?>
 														<option value="<?php echo $value['idTipoDocumento'];?>"><?php echo $value['doc'];?></option>
 													<?php endforeach;?>
@@ -37,51 +37,69 @@
 										</div>
 
 										<div class="item form-group">
-											<label class="col-form-label col-md-3 col-sm-3 label-align" for="Document">Document <span class="required">*</span>
+											<label class="col-form-label col-md-3 col-sm-3 label-align" for="Document">N° Documento <span class="required">*</span>
 											</label>
 											<div class="col-md-6 col-sm-6 ">
-												<input type="text" id="txtDocument" required="required" class="form-control " name=txtNames>
+												<input type="number" id="txtDocument" required="required" class="form-control " name=txtDocument>
 											</div>
 										</div>
 																		
 										<div class="item form-group">
-											<label class="col-form-label col-md-3 col-sm-3 label-align" for="first-name">First Name <span class="required">*</span>
+											<label class="col-form-label col-md-3 col-sm-3 label-align" for="Names">Nombres <span class="required">*</span>
 											</label>
 											<div class="col-md-6 col-sm-6 ">
-												<input type="text" id="txtNames" required="required" class="form-control ">
+												<input type="text" id="txtNames" required="required" class="form-control " name=txtNames>
 											</div>
 										</div>
+
 										<div class="item form-group">
-											<label class="col-form-label col-md-3 col-sm-3 label-align" for="last-name">Last Name <span class="required">*</span>
+											<label class="col-form-label col-md-3 col-sm-3 label-align" for="Lastname">Apellidos <span class="required">*</span>
 											</label>
 											<div class="col-md-6 col-sm-6 ">
-												<input type="text" id="last-name" name="last-name" required="required" class="form-control">
+												<input type="text" id="txtLastname" name="txtLastname" required="required" class="form-control">
 											</div>
 										</div>
+
 										<div class="item form-group">
-											<label for="middle-name" class="col-form-label col-md-3 col-sm-3 label-align">Middle Name / Initial</label>
+											<label for="Email" class="col-form-label col-md-3 col-sm-3 label-align">Correo <span class="required">*</span></label>
 											<div class="col-md-6 col-sm-6 ">
-												<input id="middle-name" class="form-control" type="text" name="middle-name">
+												<input id="txtEmail" class="form-control" type="email" name="txtEmail" required="required" >
 											</div>
 										</div>
+
 										<div class="item form-group">
-											<label class="col-form-label col-md-3 col-sm-3 label-align">Gender</label>
+											<label for="Phone" class="col-form-label col-md-3 col-sm-3 label-align">Teléfono <span class="required">*</span></label>
 											<div class="col-md-6 col-sm-6 ">
-												<div id="gender" class="btn-group" data-toggle="buttons">
+												<input id="txtPhone" class="form-control" type="number" name="txtPhone" required="required">
+											</div>
+										</div>
+
+										<div class="item form-group">
+											<label for="Address" class="col-form-label col-md-3 col-sm-3 label-align">Dirección <span class="required">*</span></label>
+											<div class="col-md-6 col-sm-6 ">
+												<input id="txtAddress" class="form-control" type="text" name="txtAddress" required="required">
+											</div>
+										</div>
+
+										<div class="item form-group">
+											<label class="col-form-label col-md-3 col-sm-3 label-align">Genero <span class="required">*</span></label>
+											<div class="col-md-6 col-sm-6 ">
+												<div id="selGender" class="btn-group" data-toggle="buttons">
 													<label class="btn btn-secondary" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
-														<input type="radio" name="gender" value="male" class="join-btn"> &nbsp; Male &nbsp;
+														<input type="radio" name="selGender" value="male" class="join-btn"> &nbsp; Masculino&nbsp;
 													</label>
 													<label class="btn btn-primary" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
-														<input type="radio" name="gender" value="female" class="join-btn"> Female
+														<input type="radio" name="selGender" value="female" class="join-btn"> Femenina
 													</label>
 												</div>
 											</div>
 										</div>
+
 										<div class="item form-group">
-											<label class="col-form-label col-md-3 col-sm-3 label-align">Date Of Birth <span class="required">*</span>
+											<label class="col-form-label col-md-3 col-sm-3 label-align">Fecha de nacimiento <span class="required">*</span>
 											</label>
 											<div class="col-md-6 col-sm-6 ">
-												<input id="birthday" class="date-picker form-control" placeholder="dd-mm-yyyy" type="text" required="required" type="text" onfocus="this.type='date'" onmouseover="this.type='date'" onclick="this.type='date'" onblur="this.type='text'" onmouseout="timeFunctionLong(this)">
+												<input id="txtBirthdate" name="txtBirthdate" class="date-picker form-control" placeholder="dd-mm-yyyy" type="text" required="required" type="text" onfocus="this.type='date'" onmouseover="this.type='date'" onclick="this.type='date'" onblur="this.type='text'" onmouseout="timeFunctionLong(this)">
 												<script>
 													function timeFunctionLong(input) {
 														setTimeout(function() {
@@ -91,14 +109,42 @@
 												</script>
 											</div>
 										</div>
+
+										<div class="item form-group">
+											<label for="Username" class="col-form-label col-md-3 col-sm-3 label-align">Usuario <span class="required">*</span></label>
+											<div class="col-md-6 col-sm-6 ">
+												<input id="txtUser" class="form-control" type="text" name="txtUser" required="required">
+											</div>
+										</div>
+
+										<div class="item form-group">
+											<label for="Password" class="col-form-label col-md-3 col-sm-3 label-align">Contraseña <span class="required">*</span></label>
+											<div class="col-md-6 col-sm-6 ">
+												<input id="txtPassword" class="form-control" type="password" name="txtPassword" required="required">
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label class="col-form-label col-md-3 col-sm-3 label-align">Rol</label>
+											<div class="col-md-6 col-sm-6 ">
+												<select class="form-control" name="selRol" id="selRol">
+													<option>Elija una opción</option>
+													<?php foreach($roles as $value):?>
+														<option value="<?php echo $value['idRol'];?>"><?php echo $value['Descripcion'];?></option>
+													<?php endforeach;?>
+												</select>
+											</div>
+										</div>
+
 										<div class="ln_solid"></div>
 										<div class="item form-group">
 											<div class="col-md-6 col-sm-6 offset-md-3">
 												<button class="btn btn-primary" type="button">Cancel</button>
 												<button class="btn btn-primary" type="reset">Reset</button>
-												<button type="submit" class="btn btn-success">Submit</button>
+												<button type="submit" class="btn btn-success" name="btnRegister" >Enviar</button>
 											</div>
 										</div>
+										
 
 									</form>
 								</div>

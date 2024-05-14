@@ -61,5 +61,18 @@ class mdlUsuario extends mdlPersona{
         $resul = $stm->execute();
         return $resul;
     }
+
+    //Metodo para obtenr los datos de usuarios
+    public function getUsers(){
+        //Consulta
+        $sql = "SELECT P.*, U.idUsuario, U.Usuario, U.Estado, R.Descripcion AS rol, TD.Descripcion AS tipoDoc FROM personas AS P INNER JOIN usuarios AS U ON P.idPersona = U.idPersona INNER JOIN roles AS R ON R.idRol = U.idRol INNER JOIN AS TD ON P.IdTipoDocumento = TD.IdTipoDocumento";
+
+        //Vamos a preparar la consulta y ejecutarla
+        $stm = $this->db->prepare($sql);
+        $stm->execute();
+        //Vamos a crear la variable para retornar los datos
+        $user = $stm->fetchAll(PDO::FETCH_ASSOC);
+        return $user;
+    }
 }
 ?>

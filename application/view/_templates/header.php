@@ -63,9 +63,8 @@
                 <ul class="nav side-menu">
                   <li><a><i class="fa fa-users"></i>Management User <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="<?php echo URL; ?>usuarioController/userRegister">Register User</a></li>
-                      <li><a href="#"></a></li>
-                      <li><a href="#">Dashboard3</a></li>
+                      <li><a href="<?php echo URL; ?>usuarioController/userRegister">Resgistrar Usuarios</a></li>
+                      <li><a href="<?php echo URL; ?>usuarioController/getUsers">Ver Usuarios</a></li>
                     </ul>
                   </li>
                   <li><a><i class="fa fa-edit"></i> Forms <span class="fa fa-chevron-down"></span></a>

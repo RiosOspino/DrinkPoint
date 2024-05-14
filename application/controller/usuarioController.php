@@ -77,15 +77,15 @@
                 $this->modeloU->__SET('apellidos', $_POST['txtLastname']);
                 $this->modeloU->__SET('fechaNacimiento', $_POST['txtBirthdate']);
                 $this->modeloU->__SET('telefono', $_POST['txtPhone']);
-                $this->modeloU->__SET('direccion', $_POST['txtAdress']);
+                $this->modeloU->__SET('direccion', $_POST['txtAddress']);
                 $this->modeloU->__SET('email', $_POST['txtEmail']);
-                $this->modeloU->__SET('genero', $_POST['txtGenere']);
+                $this->modeloU->__SET('genero', $_POST['selGender']);
 
                 //Vamos a crear una variable que llamara al metodo del modelo para poder registrar los datos
                 $person = $this->modeloU->registerPerson();
 
                 //Vamos a validar que registre a partir de la ultima persona registrada 
-                if($person == ture){
+                if($person == true){
                     $ultimoId = $this->modeloU->lastIdPerson();
 
                     //foreach que se encarga de tomar los datos explicitos 
@@ -103,6 +103,7 @@
                 //Vamos a crear una variable que llamara al metodo del modelo para poder registrar los datos
                 $user = $this->modeloU->userRegister();
 
+                header("Location: " .URL."usuarioController/getUsers");
             }
 
             //Vamos a crear variables para hacer los llamados a los metodos a los diversos modelos
@@ -111,6 +112,13 @@
 
             require APP . 'view/_templates/header.php';
             require APP . 'view/usuarios/userRegister.php';
+            require APP . 'view/_templates/footer.php';
+        }
+
+        //Metodos para ver los usuarios registrados y modificados
+        public function getUsers(){
+            require APP . 'view/_templates/header.php';
+            require APP . 'view/usuarios/getUsers.php';
             require APP . 'view/_templates/footer.php';
         }
     }
