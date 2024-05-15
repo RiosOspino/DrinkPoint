@@ -55,3 +55,8 @@
     background-color: #495057;
     border-color: #495057;
 }
+
+.img-circle.profile_img {
+    width: 70%;
+    background: black;
+}

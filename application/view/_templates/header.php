@@ -48,8 +48,8 @@
                 <img src="<?php echo URL;?>gen/production/images/img.jpg" alt="..." class="img-circle profile_img">
               </div>
               <div class="profile_info">
-                <span>Welcome,</span>
-                <h2>John Doe</h2>
+                <span>Bienvenido</span>
+                <h2>Mrs VML</h2>
               </div>
             </div>
             <!-- /menu profile quick info -->
@@ -61,7 +61,7 @@
               <div class="menu_section">
                 <h3>General</h3>
                 <ul class="nav side-menu">
-                  <li><a><i class="fa fa-users"></i>Management User <span class="fa fa-chevron-down"></span></a>
+                  <li><a><i class="fa fa-users"></i>Manager Usuario <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="<?php echo URL; ?>usuarioController/userRegister">Resgistrar Usuarios</a></li>
                       <li><a href="<?php echo URL; ?>usuarioController/getUsers">Ver Usuarios</a></li>
@@ -161,16 +161,16 @@
 
             <!-- /menu footer buttons -->
             <div class="sidebar-footer hidden-small">
-              <a data-toggle="tooltip" data-placement="top" title="Settings">
+              <a data-toggle="tooltip" data-placement="top" title="Ajustes">
                 <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
               </a>
-              <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+              <a data-toggle="tooltip" data-placement="top" title="Pantalla Completa">
                 <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
               </a>
-              <a data-toggle="tooltip" data-placement="top" title="Lock">
+              <a data-toggle="tooltip" data-placement="top" title="Cerrar">
                 <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
               </a>
-              <a data-toggle="tooltip" data-placement="top" title="Logout" href="<?php echo URL;?>usuarioController/logOut">
+              <a data-toggle="tooltip" data-placement="top" title="Cerrar Sesion" href="<?php echo URL;?>usuarioController/logOut">
                 <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
               </a>
             </div>
@@ -188,16 +188,16 @@
               <ul class=" navbar-right">
                 <li class="nav-item dropdown open" style="padding-left: 15px;">
                   <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
-                    <img src="<?php echo URL;?>gen/production/images/img.jpg" alt="">John Doe
+                    <img src="<?php echo URL;?>gen/production/images/img.jpg" alt="">Mrs VML
                   </a>
                   <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item"  href="javascript:;"> Profile</a>
+                    <a class="dropdown-item"  href="javascript:;"> Perfiles</a>
                       <a class="dropdown-item"  href="javascript:;">
                         <span class="badge bg-red pull-right">50%</span>
-                        <span>Settings</span>
+                        <span>Ajustes</span>
                       </a>
-                  <a class="dropdown-item"  href="javascript:;">Help</a>
-                    <a class="dropdown-item"  href="<?php echo URL;?>usuarioController/logOut"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+                  <a class="dropdown-item"  href="javascript:;">Ayuda</a>
+                    <a class="dropdown-item"  href="<?php echo URL;?>usuarioController/logOut"><i class="fa fa-sign-out pull-right"></i> Cerrar Sesion </a>
                   </div>
                 </li>
 
