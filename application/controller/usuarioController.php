@@ -117,6 +117,10 @@
 
         //Metodos para ver los usuarios registrados y modificados
         public function getUsers(){
+            //Variables para llamar los metodos de los modelos
+            $users = $this->modeloU->getUsers();
+            $roles = $this->modeloR->getRoles();
+            $documentType = $this->modeloU->getTypeDocument();
             require APP . 'view/_templates/header.php';
             require APP . 'view/usuarios/getUsers.php';
             require APP . 'view/_templates/footer.php';
