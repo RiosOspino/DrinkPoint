@@ -65,7 +65,7 @@ class mdlUsuario extends mdlPersona{
     //Metodo para obtenr los datos de usuarios
     public function getUsers(){
         //Consulta
-        $sql = "SELECT P.*, U.idUsuario, U.Usuario, U.Estado, R.Descripcion AS rol, TD.Descripcion AS tipoDoc FROM personas AS P INNER JOIN usuarios AS U ON P.idPersona = U.idPersona INNER JOIN roles AS R ON R.idRol = U.idRol INNER JOIN AS TD ON P.IdTipoDocumento = TD.IdTipoDocumento";
+        $sql = "SELECT P.*, U.idUsuario, U.Usuario, U.Estado, R.Descripcion AS rol, TD.Descripcion AS tipoDoc FROM personas AS P INNER JOIN usuarios AS U ON P.idPersona = U.idPersona INNER JOIN roles AS R ON R.idRol = U.idRol INNER JOIN tiposdocumentos AS TD ON P.idTipoDocumento = TD.idTipoDocumento";
 
         //Vamos a preparar la consulta y ejecutarla
         $stm = $this->db->prepare($sql);

@@ -125,7 +125,7 @@
 										</div>
 
 										<div class="form-group row">
-											<label class="col-form-label col-md-3 col-sm-3 label-align">Rol</label>
+											<label class="col-form-label col-md-3 col-sm-3 label-align">Rol <span class="required">*</span></label>
 											<div class="col-md-6 col-sm-6 ">
 												<select class="form-control" name="selRol" id="selRol">
 													<option>Elija una opción</option>
