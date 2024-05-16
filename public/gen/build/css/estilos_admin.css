@@ -61,7 +61,6 @@
     background: black;
 }
 
-<<<<<<< HEAD
 .nav.side-menu > li.active {
     border-right: 0px solid #1abb9c;
 }
@@ -85,5 +84,9 @@
 .form-control {
     border-color: black;
     background: #2A3038;
+    color: white;
+}
+
+tr {
     color: white;
 }
