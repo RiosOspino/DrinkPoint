@@ -74,5 +74,18 @@ class mdlUsuario extends mdlPersona{
         $user = $stm->fetchAll(PDO::FETCH_ASSOC);
         return $user;
     }
+
+    //Metodo para filtrar tomar reclamar el id de los usuarios 
+    public function userId($id){
+        //Consulta
+        $sql = "SELECT P.*, U.*, R.idRol, R.Descripcion AS rol, TD.Descripcion AS tipoDOc FROM personas AS P INNER JOIN usuarios AS U ON P.idPersona = U.idPersona INNER JOIN roles AS R ON R.idRol = U.idRol INNER JOIN tiposDocumentos AS TD ON P.idTipoDocumento = TD.idTipoDocumento WHERE U.idUsuario = ?";
+
+        //Preparacion y ejecucion de la consulta
+        $query = $this->db->prepare($sql);
+        $query->binParam(1, $id);
+        $query->execute();
+        return $query->fetchAll(PDO::FETCH_ASSOC);
+
+    }
 }
 ?>

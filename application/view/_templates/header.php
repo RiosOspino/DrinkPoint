@@ -29,6 +29,7 @@
     <!-- Custom Theme Style -->
     <link href="<?php echo URL;?>gen/build/css/custom.min.css" rel="stylesheet">
     <link href="<?php echo URL;?>gen/build/css/estilos_admin.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo URL;?>css/sweetalert2.min.css">
   </head>
 
   <body class="nav-md">

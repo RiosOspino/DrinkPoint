@@ -103,6 +103,29 @@
                 //Vamos a crear una variable que llamara al metodo del modelo para poder registrar los datos
                 $user = $this->modeloU->userRegister();
 
+                //sweetalert
+                if($person == true && $user == true){
+                    $_SESSION['alert'] = "Swal.fire({
+                        position:'',
+                        icon: 'success',
+                        title: 'Done',
+                        showConfirmButton: false,
+                        timer:1500})";
+
+                        header("Location: " . URL."usuarioController/getUsers");
+                        exit();
+                }else{
+                    $_SESSION['alert'] = "Swal.fire({
+                        position:'',
+                        icon: 'error',
+                        title: 'Error',
+                        showConfirmButton: false,
+                        timer:1500})";
+
+                        header("Location:" . URL."usuarioController/userRegister");
+                        exit();  
+                }
+
                 header("Location: " .URL."usuarioController/getUsers");
             }
 

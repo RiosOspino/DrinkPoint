@@ -1,4 +1,7 @@
 <?php
+session_start();
+date_default_timezone_set("America/Bogota");
+setLocale(LC_ALL, "es_Co");
 
 /**
  * Configuration

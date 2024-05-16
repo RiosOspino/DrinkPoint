@@ -14,6 +14,18 @@
 
     <!-- jQuery -->
     <script src="<?php echo URL;?>gen/vendors/jquery/dist/jquery.min.js"></script>
+    <script src="<?php echo URL;?>js/sweetalert2.min.js"></script>
+    <!-- //Cuando el documento este listo llamar una alaerta -->
+    <script>
+      $(document).ready(function(){
+        <?php
+        if(isset($_SESSION['alert']) != false && $_SESSION['alert'] !=null){
+          echo $_SESSION['alert'];
+          $_SESSION['alert'] = null;
+        }
+        ?>
+      })
+    </script>
     <!-- Bootstrap -->
     <script src="<?php echo URL;?>gen/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <!-- FastClick -->
@@ -52,6 +64,7 @@
 
     <!-- Custom Theme Scripts -->
     <script src="<?php echo URL;?>gen/build/js/custom.min.js"></script>
+    <script src="<?php echo URL;?>js/editUser.js">
 	
   </body>
 </html>
