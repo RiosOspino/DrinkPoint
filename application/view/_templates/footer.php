@@ -64,7 +64,7 @@
 
     <!-- Custom Theme Scripts -->
     <script src="<?php echo URL;?>gen/build/js/custom.min.js"></script>
-    <script src="<?php echo URL;?>js/editUser.js">
+    <script src="<?php echo URL;?>js/editUser.js"></script>
 	
   </body>
 </html>

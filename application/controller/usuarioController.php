@@ -148,6 +148,27 @@
             require APP . 'view/usuarios/getUsers.php';
             require APP . 'view/_templates/footer.php';
         }
+
+        //Metodo para traer el ID 
+        public function userId(){
+            //Vamos a crear una variable para controlar el dato
+            $dataUser = $this->modeloU->userId($_POST['id']);
+            echo json_encode($dataUser);
+        }
+
+        //Metodo para cambiar el estado
+        public function changeStatus(){
+            //Vamos a crear una variable para controlar el dato
+            $dataUser = $this->modeloU->changeStatus($_POST['id']);
+            echo 1;
+        }
+
+        //Metodo para eliminar el usuario
+        public function deleteUser(){
+            //Vamos a crear una variable para controlar el dato
+            $dataUser = $this->modeloU->deleteUser($_POST['id']);
+            echo 1;
+        }
     }
     
 ?>

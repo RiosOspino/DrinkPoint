@@ -82,10 +82,30 @@ class mdlUsuario extends mdlPersona{
 
         //Preparacion y ejecucion de la consulta
         $query = $this->db->prepare($sql);
-        $query->binParam(1, $id);
+        $query->bindParam(1, $id);
         $query->execute();
         return $query->fetchAll(PDO::FETCH_ASSOC);
-
     }
+
+    //Metodo para cambiar estados
+    public function changeStatus($id){
+        //Consulta
+        $sql = "UPDATE usuarios SET Estado =(CASE WHEN Estado = 1 THEN 0 ELSE 1 END) WHERE idUsuario = ?";
+
+        $query = $this->db->prepare($sql);
+        $query -> bindParam(1, $id);
+        return $query->execute();
+    }
+
+    //Metodo para eliminar el usuario
+    public function deleteUser($id){
+        //Consulta
+        $sql = "DELETE U, P FROM usuarios AS U INNER JOIN personas AS P WHERE P.idPersona = U.idPersona AND U.idUsuario = ?";
+
+        $query = $this->db->prepare($sql);
+        $query -> bindParam(1, $id);
+        return $query->execute();
+    }
+
 }
 ?>

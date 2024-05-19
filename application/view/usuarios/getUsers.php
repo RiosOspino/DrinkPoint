@@ -27,7 +27,7 @@
                             <table id="datatable" class="table table-striped table-bordered" style="width:100%">
                                 <thead>
                                     <tr>
-                                        <th>Tipo Documento</th>
+                                        <th>Tipo</th>
                                         <th>Documento</th>
                                         <th>Nombres</th>
                                         <th>Apellidos</th>
@@ -59,7 +59,14 @@
                                             <label class="badge bagde-pill badge-danger">Inactivo</label> 
                                             <?php endif;?>
                                         </td>
-                                        <td>$320,800</td>
+
+                                        <td>
+                                            <button type="button" class="btn btn-primary btn-xs" onclick="dataUser('<?php echo $value['idUsuario'];?>')"><i class="fa fa-edit"></i></button>
+
+                                            <button type="button" class="btn btn-warning btn-xs" onclick="changeStatus('<?php echo $value['idUsuario'];?>')"><i class="fa fa-refresh"></i></button>
+
+                                            <button type="button" class="btn btn-danger btn-xs" onclick="deleteUser('<?php echo $value['idUsuario'];?>')"><i class="fa fa-trash"></i></button>
+                                        </td>
                                     </tr>
                                     <?php endforeach;?>
                                 </tbody>

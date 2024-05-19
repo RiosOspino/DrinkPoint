@@ -1,3 +1,8 @@
+body{
+    font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
+    font-size: 13px;
+}
+
 .x_panel {
     background: #191c24;
     border: black;
@@ -100,4 +105,30 @@ label.btn.btn-primary {
 
 button.btn.btn-primary:hover {
     background-color:  #e52b34;
+}
+.nav-md .container.body .right_col {
+    padding: 10px 20px 0;
+    margin-left: 230px;
+    margin-right: 0;
+}
+body .container.body .right_col {
+    background: #000;
+}
+.nav_menu {
+    margin-bottom: -17px;
+}
+button.btn {
+    padding: 3px;
+    width: 30px;
+    height: 30px;
+    margin: 0px 3px 0px 3px;
+}
+button.btn i.fa::before {
+    font-size: 15px;
+}
+.table thead th {
+    font-size: 14px;
+}
+.table td, .table th {
+    padding: 5px;
 }
