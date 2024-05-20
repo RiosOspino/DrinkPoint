@@ -52,20 +52,27 @@
                                         <td><?php echo $value['rol'];?></td>
                                         <td>
 
-                                        <!-- //Para que quede el boton de estado o inactivo como un boton -->
+                                            <!-- //Para que quede el boton de estado o inactivo como un boton -->
                                             <?php if($value['Estado'] == 1):?>
                                             <label class="badge bagde-pill badge-success">Activo</label>
                                             <?php else: ?>
-                                            <label class="badge bagde-pill badge-danger">Inactivo</label> 
+                                            <label class="badge bagde-pill badge-danger">Inactivo</label>
                                             <?php endif;?>
                                         </td>
 
                                         <td>
-                                            <button type="button" class="btn btn-primary btn-xs" onclick="dataUser('<?php echo $value['idUsuario'];?>')"><i class="fa fa-edit"></i></button>
+                                            <button type="button" class="btn btn-primary btn-xs" data-toggle="modal"
+                                                data-target="#modal-edit" title="Edit"
+                                                onclick="dataUser('<?php echo $value['idUsuario'];?>')"><i
+                                                    class="fa fa-edit"></i></button>
 
-                                            <button type="button" class="btn btn-warning btn-xs" onclick="changeStatus('<?php echo $value['idUsuario'];?>')"><i class="fa fa-refresh"></i></button>
+                                            <button type="button" class="btn btn-warning btn-xs"
+                                                onclick="changeStatus('<?php echo $value['idUsuario'];?>')"><i
+                                                    class="fa fa-refresh"></i></button>
 
-                                            <button type="button" class="btn btn-danger btn-xs" onclick="deleteUser('<?php echo $value['idUsuario'];?>')"><i class="fa fa-trash"></i></button>
+                                            <button type="button" class="btn btn-danger btn-xs"
+                                                onclick="deleteUser('<?php echo $value['idUsuario'];?>')"><i
+                                                    class="fa fa-trash"></i></button>
                                         </td>
                                     </tr>
                                     <?php endforeach;?>
@@ -75,6 +82,32 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade bs-example-modal-lg" id="modal-edit" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h4>Text in a modal</h4>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue
+                    laoreet rutrum faucibus dolor auctor.</p>
+                <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl
+                    consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+
         </div>
     </div>
 </div>

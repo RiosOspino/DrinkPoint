@@ -132,3 +132,15 @@ button.btn i.fa::before {
 .table td, .table th {
     padding: 5px;
 }
+
+h4#myModalLabel {
+    color: black;
+}
+
+.modal-body {
+    color: black;
+}
+
+.modal-footer {
+    color: black;
+}
