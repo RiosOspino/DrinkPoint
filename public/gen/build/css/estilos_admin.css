@@ -133,14 +133,10 @@ button.btn i.fa::before {
     padding: 5px;
 }
 
-h4#myModalLabel {
-    color: black;
+.modal-content {
+    background: #191c24;
 }
 
-.modal-body {
-    color: black;
-}
-
-.modal-footer {
-    color: black;
+#modal-edit select#selDocType {
+    background-color: #2A3038;
 }

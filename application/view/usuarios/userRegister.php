@@ -48,7 +48,7 @@
 											<label class="col-form-label col-md-3 col-sm-3 label-align" for="Names">Nombres <span class="required">*</span>
 											</label>
 											<div class="col-md-6 col-sm-6 ">
-												<input type="text" id="txtNames" required="required" class="form-control " name=txtNames>
+												<input type="text" id="txtNames" required="required" class="form-control " name="txtNames">
 											</div>
 										</div>
 

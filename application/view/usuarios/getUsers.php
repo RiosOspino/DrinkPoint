@@ -92,20 +92,102 @@
         <div class="modal-content">
 
             <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                <h4 class="modal-title" id="myModalLabel">Editar Usuario</h4>
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
                 </button>
             </div>
             <div class="modal-body">
-                <h4>Text in a modal</h4>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue
-                    laoreet rutrum faucibus dolor auctor.</p>
-                <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl
-                    consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <form method="post">
+                    <input type="hidden" name="txtIdUser" id="txtIdUser">
+
+                    <div class="form-group row">
+                        <label class="col-form-label col-md-3 col-sm-3 label-align">Tipo de documento</label>
+                        <div class="col-md-6 col-sm-6 ">
+                            <select class="form-control" name="selDocType" id="selDocType" disabled>
+                                <option>Elija una opción</option>
+                                <?php foreach($documentType as $value):?>
+                                <option value="<?php echo $value['idTipoDocumento'];?>"><?php echo $value['doc'];?>
+                                </option>
+                                <?php endforeach;?>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="item form-group">
+                        <label class="col-form-label col-md-3 col-sm-3 label-align" for="Document">N° Documento <span
+                                class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 ">
+                            <input type="number" id="txtDocument" required="required" class="form-control" name="txtDocument">
+                        </div>
+                    </div>
+
+                    <div class="item form-group">
+                        <label class="col-form-label col-md-3 col-sm-3 label-align" for="Names">Nombres <span
+                                class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 ">
+                            <input type="text" id="txtNames" required="required" class="form-control " name=txtNames>
+                        </div>
+                    </div>
+
+                    <div class="item form-group">
+                        <label class="col-form-label col-md-3 col-sm-3 label-align" for="Lastname">Apellidos <span
+                                class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 ">
+                            <input type="text" id="txtLastname" name="txtLastname" required="required"
+                                class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="item form-group">
+                        <label for="Email" class="col-form-label col-md-3 col-sm-3 label-align">Correo <span
+                                class="required">*</span></label>
+                        <div class="col-md-6 col-sm-6 ">
+                            <input id="txtEmail" class="form-control" type="email" name="txtEmail" required="required">
+                        </div>
+                    </div>
+
+                    <div class="item form-group">
+                        <label for="Phone" class="col-form-label col-md-3 col-sm-3 label-align">Teléfono <span
+                                class="required">*</span></label>
+                        <div class="col-md-6 col-sm-6 ">
+                            <input id="txtPhone" class="form-control" type="number" name="txtPhone" required="required">
+                        </div>
+                    </div>
+
+                    <div class="item form-group">
+                        <label for="Address" class="col-form-label col-md-3 col-sm-3 label-align">Dirección <span
+                                class="required">*</span></label>
+                        <div class="col-md-6 col-sm-6 ">
+                            <input id="txtAddress" class="form-control" type="text" name="txtAddress"
+                                required="required">
+                        </div>
+                    </div>
+
+                    <div class="item form-group">
+                        <label for="Username" class="col-form-label col-md-3 col-sm-3 label-align">Usuario <span
+                                class="required">*</span></label>
+                        <div class="col-md-6 col-sm-6 ">
+                            <input id="txtUser" class="form-control" type="text" name="txtUser" required="required">
+                        </div>
+                    </div>
+
+                    <div class="item form-group">
+                        <label for="Password" class="col-form-label col-md-3 col-sm-3 label-align">Contraseña <span
+                                class="required">*</span></label>
+                        <div class="col-md-6 col-sm-6 ">
+                            <input id="txtPassword" class="form-control" type="password" name="txtPassword"
+                                required="required">
+                        </div>
+                    </div>
+                
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="submit" class="btn btn-primary " name="btnUpdate">Guardar</button>
+                    </div>
+                </form>
             </div>
 
         </div>

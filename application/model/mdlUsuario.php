@@ -78,7 +78,7 @@ class mdlUsuario extends mdlPersona{
     //Metodo para filtrar, tomar,edita, eliminar y reclamar el ID de los usuarios 
     public function userId($id){
         //Consulta
-        $sql = "SELECT P.*, U.*, R.idRol, R.Descripcion AS rol, TD.Descripcion AS tipoDOc FROM personas AS P INNER JOIN usuarios AS U ON P.idPersona = U.idPersona INNER JOIN roles AS R ON R.idRol = U.idRol INNER JOIN tiposDocumentos AS TD ON P.idTipoDocumento = TD.idTipoDocumento WHERE U.idUsuario = ?";
+        $sql = "SELECT P.*, U.*, R.idRol, R.Descripcion AS rol, TD.Descripcion AS tipoDOc FROM personas AS P INNER JOIN usuarios AS U ON P.idPersona = U.idPersona INNER JOIN roles AS R ON R.idRol = U.idRol INNER JOIN tiposdocumentos AS TD ON P.idTipoDocumento = TD.idTipoDocumento WHERE U.idUsuario = ?";
 
         //Preparacion y ejecucion de la consulta
         $query = $this->db->prepare($sql);
@@ -112,5 +112,27 @@ class mdlUsuario extends mdlPersona{
         return $query->execute();
     }
 
+    //Metodo para actualizar
+    public function updateUser(){
+        //Consulta
+        $sql = "UPDATE personas AS P INNER JOIN usuarios AS U ON P.idPersona = U.idPersona  SET P.idTipoDocumento = ?, P.Documento = ?, P.Nombres = ?, P.Apellidos =?, P.Telefono = ?, P.Direccion = ?, P.Email = ?, U.Usuario = ?, U.Clave = ? WHERE U.idUsuario =  ?";
+
+        //Preparar y enviar la consulta
+        $stm = $this->db->prepare($sql);
+        $stm->bindParam(1, $this->idTipoDocumento);
+        $stm->bindParam(2, $this->documento);
+        $stm->bindParam(3, $this->nombres);
+        $stm->bindParam(4, $this->apellidos);
+        $stm->bindParam(5, $this->telefono);
+        $stm->bindParam(6, $this->direccion);
+        $stm->bindParam(7, $this->email);
+        $stm->bindParam(8, $this->usuario);
+        $stm->bindParam(9, $this->clave);
+        $stm->bindParam(10, $this->idUsuario);
+
+        //Respuesta
+        $result = $stm->execute();
+        return $result;
+    }
 }
 ?>

@@ -145,27 +145,46 @@
         //Metodos para ver los usuarios registrados y modificados
         public function getUsers(){
 
-            // //Vamos a tener el condicional para cuando sea el momento de editar los usuarios
-            // if(isset($_POST['btnUpdate'])){
-            //     //Comunicacion con el modelo y el formulario
-            //     $this->modeloU->__SET('idTipoDocumento', $_POST['selDocType']);
-            //     $this->modeloU->__SET('documento', $_POST['txtDocument']);
-            //     $this->modeloU->__SET('nombres', $_POST['txtNames']);
-            //     $this->modeloU->__SET('apellidos', $_POST['txtLastname']);
-            //     $this->modeloU->__SET('fechaNacimiento', $_POST['txtBirthdate']);
-            //     $this->modeloU->__SET('telefono', $_POST['txtPhone']);
-            //     $this->modeloU->__SET('direccion', $_POST['txtAddress']);
-            //     $this->modeloU->__SET('email', $_POST['txtEmail']);
-            //     $this->modeloU->__SET('genero', $_POST['selGender']);
-            //     $this->modeloU->__SET('usuario', $_POST['txtUser']);
-            //     $this->modeloU->__SET('clave', $_POST['txtPassword']);
+            //Vamos a tener el condicional para cuando sea el momento de editar los usuarios
+            if(isset($_POST['btnUpdate'])){
+                //Comunicacion con el modelo y el formulario
+                $this->modeloU->__SET('idTipoDocumento', $_POST['selDocType']);
+                $this->modeloU->__SET('idUsuario', $_POST['txtIdUser']);
+                $this->modeloU->__SET('documento', $_POST['txtDocument']);
+                $this->modeloU->__SET('nombres', $_POST['txtNames']);
+                $this->modeloU->__SET('apellidos', $_POST['txtLastname']);
+                $this->modeloU->__SET('telefono', $_POST['txtPhone']);
+                $this->modeloU->__SET('direccion', $_POST['txtAddress']);
+                $this->modeloU->__SET('email', $_POST['txtEmail']);
+                $this->modeloU->__SET('usuario', $_POST['txtUser']);
+                $this->modeloU->__SET('clave', $_POST['txtPassword']);
 
-            //     //Variable para el actualizar
-            //     $update = $this->modeloU->updateUser();
+                //Variable para el actualizar
+                $update = $this->modeloU->updateUser();
 
-            //     //Sweetalert
+                // //Sweetalert
+                // if($update == true){
+                //     $_SESSION['alert'] = "Swal.fire({
+                //         position:'',
+                //         icon: 'success',
+                //         title: 'Modificado',
+                //         showConfirmButton: false,
+                //         timer:2000})";
 
-            // }
+                //         header("Location: " . URL."usuarioController/getUsers");
+                //         exit();
+                // }else{
+                //     $_SESSION['alert'] = "Swal.fire({
+                //         position:'',
+                //         icon: 'error',
+                //         title: 'Error',
+                //         showConfirmButton: false,
+                //         timer:2000})";
+
+                //         header("Location:" . URL."usuarioController/getUsers");
+                //         exit();  
+                // }
+            }
 
             //Variables para llamar los metodos de los modelos
             $users = $this->modeloU->getUsers();
@@ -199,5 +218,4 @@
             echo 1;
         }
     }
-    
 ?>
