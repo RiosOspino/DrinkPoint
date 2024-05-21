@@ -63,9 +63,9 @@
               <div class="menu_section">
                 <h3>General</h3>
                 <ul class="nav side-menu">
-                  <li><a><i class="fa fa-users"></i>Manager Usuario <span class="fa fa-chevron-down"></span></a>
+                  <li><a><i class="fa fa-users"></i>GESTIONAR USUARIOS <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="<?php echo URL; ?>usuarioController/userRegister">Resgistrar Usuarios</a></li>
+                      <li><a href="<?php echo URL; ?>usuarioController/userRegister">Registrar Usuarios</a></li>
                       <li><a href="<?php echo URL; ?>usuarioController/getUsers">Ver Usuarios</a></li>
                     </ul>
                   </li>
@@ -172,7 +172,7 @@
               <a data-toggle="tooltip" data-placement="top" title="Cerrar">
                 <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
               </a>
-              <a data-toggle="tooltip" data-placement="top" title="Cerrar Sesion" href="<?php echo URL;?>usuarioController/logOut">
+              <a data-toggle="tooltip" data-placement="top" title="Cerrar Sesión" href="<?php echo URL;?>usuarioController/logOut">
                 <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
               </a>
             </div>

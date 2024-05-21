@@ -1,39 +1,42 @@
 <?php
     //crear la clase para heredar del controlador
     class usuarioController extends Controller{
-        //atributos normalmente suelen ser en este caso una variable para llamar los modelos
-
+        //atributo que va a ser el encargado de llamar el módelo necesario
         private $modeloU;
         private $modeloR;
 
-        //vamos a crear el constructor
+        //vamos a crear el constructor que llamará del modelo a la base de datos
         public function __construct(){
-            //instanciar los modelos necesarios
+            //Instanciar los modelos necesarios
             $this->modeloU = $this->loadModel("mdlUsuario");
             $this->modeloR = $this->loadModel("mdlRoles");
         }
 
         //vamos a crear un método para iniciar sesión 
         public function login(){
-            //controlar los errores
+            //Capturar cualquier tipo de error
             $error = false;
-            //vamos a validar la comunicación con el modelo usuario y el formulario
+
+            //vamos a validar los datos que vengan del formulario
             if(isset($_POST['btnLogin'])){
                 $this->modeloU->__SET('usuario',$_POST['txtUser']);
                 $this->modeloU->__SET('clave',$_POST['txtPassword']);
 
-                //lo anterior pasa a un arreglo vacío
+                //lo anterior pasa a un arreglo vacío (Lo guardamos en un arreglo vacio)
                 $_POST=[];
 
-                //con variable vamos a llamar el método del modelo que nos permite validar los datos
+                //con una variable vamos a llamar el método del modelo que nos permite validar los datos
                 $validate = $this->modeloU->validateUser();
 
                 //vamos a revisar esa validación
                 if($validate == true){
                     $_SESSION['SESSION_START'] = true;
+
+                    //La variable $error sigue en false porque aun no ha capturado ningun error
                     $error = false;
 
-                    //vamos a configurar  superglobales para los atributos de la sesión
+                    //Vamos a configurar  superglobales para los atributos de la sesión
+                    //Comunicamos formulario y modelo
                     $_SESSION['Nombres'] = $validate['Nombres'];
                     $_SESSION['idUsuario'] = $validate['idUsuario'];
                     $_SESSION['Apellidos'] = $validate['Apellidos'];
@@ -50,6 +53,7 @@
             require APP . 'view/usuarios/login.php';
         }
 
+        //Metodo para cargar el admin
         public function main(){
             require APP . 'view/_templates/header.php';
             require APP . 'view/usuarios/main.php';
@@ -70,8 +74,8 @@
         public function userRegister(){
             //Con un condicional para el formulario y modelo
             if(isset($_POST['btnRegister'])){
-                 //Comunicacion modelo y formulario
-                $this->modeloU->__SET('idTipoDocumento',$_POST['selDocType']);
+                 //Comunicacion con el modelo y el formulario
+                $this->modeloU->__SET('idTipoDocumento', $_POST['selDocType']);
                 $this->modeloU->__SET('documento', $_POST['txtDocument']);
                 $this->modeloU->__SET('nombres', $_POST['txtNames']);
                 $this->modeloU->__SET('apellidos', $_POST['txtLastname']);
@@ -108,9 +112,9 @@
                     $_SESSION['alert'] = "Swal.fire({
                         position:'',
                         icon: 'success',
-                        title: 'Done',
+                        title: 'Registrado',
                         showConfirmButton: false,
-                        timer:1500})";
+                        timer:2000})";
 
                         header("Location: " . URL."usuarioController/getUsers");
                         exit();
@@ -120,7 +124,7 @@
                         icon: 'error',
                         title: 'Error',
                         showConfirmButton: false,
-                        timer:1500})";
+                        timer:2000})";
 
                         header("Location:" . URL."usuarioController/userRegister");
                         exit();  
@@ -129,7 +133,7 @@
                 header("Location: " .URL."usuarioController/getUsers");
             }
 
-            //Vamos a crear variables para hacer los llamados a los metodos a los diversos modelos
+            //Vamos a crear variables para hacer los llamados a los metodos a los diversos modelos (Traer los demas metodos necesarios)
             $documentType = $this->modeloU->getTypeDocument();
             $roles = $this ->modeloR->getRoles();
 
@@ -140,10 +144,35 @@
 
         //Metodos para ver los usuarios registrados y modificados
         public function getUsers(){
+
+            // //Vamos a tener el condicional para cuando sea el momento de editar los usuarios
+            // if(isset($_POST['btnUpdate'])){
+            //     //Comunicacion con el modelo y el formulario
+            //     $this->modeloU->__SET('idTipoDocumento', $_POST['selDocType']);
+            //     $this->modeloU->__SET('documento', $_POST['txtDocument']);
+            //     $this->modeloU->__SET('nombres', $_POST['txtNames']);
+            //     $this->modeloU->__SET('apellidos', $_POST['txtLastname']);
+            //     $this->modeloU->__SET('fechaNacimiento', $_POST['txtBirthdate']);
+            //     $this->modeloU->__SET('telefono', $_POST['txtPhone']);
+            //     $this->modeloU->__SET('direccion', $_POST['txtAddress']);
+            //     $this->modeloU->__SET('email', $_POST['txtEmail']);
+            //     $this->modeloU->__SET('genero', $_POST['selGender']);
+            //     $this->modeloU->__SET('usuario', $_POST['txtUser']);
+            //     $this->modeloU->__SET('clave', $_POST['txtPassword']);
+
+            //     //Variable para el actualizar
+            //     $update = $this->modeloU->updateUser();
+
+            //     //Sweetalert
+
+            // }
+
             //Variables para llamar los metodos de los modelos
             $users = $this->modeloU->getUsers();
             $roles = $this->modeloR->getRoles();
             $documentType = $this->modeloU->getTypeDocument();
+
+            //Para que funcione el metodo requiere los archivos visuales 
             require APP . 'view/_templates/header.php';
             require APP . 'view/usuarios/getUsers.php';
             require APP . 'view/_templates/footer.php';

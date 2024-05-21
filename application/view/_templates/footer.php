@@ -14,15 +14,17 @@
 
     <!-- jQuery -->
     <script src="<?php echo URL;?>gen/vendors/jquery/dist/jquery.min.js"></script>
+
     <script src="<?php echo URL;?>js/sweetalert2.min.js"></script>
-    <!-- //Cuando el documento este listo llamar una alaerta -->
+    
+    <!-- //Cuando el documento este listo llamar una alerta -->
     <script>
       $(document).ready(function(){
         <?php
-        if(isset($_SESSION['alert']) != false && $_SESSION['alert'] !=null){
-          echo $_SESSION['alert'];
-          $_SESSION['alert'] = null;
-        }
+          if(isset($_SESSION['alert']) != false && $_SESSION['alert'] !=null){
+            echo $_SESSION['alert'];
+            $_SESSION['alert'] = null;
+          }
         ?>
       })
     </script>

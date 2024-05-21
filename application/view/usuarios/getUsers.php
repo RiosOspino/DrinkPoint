@@ -62,15 +62,15 @@
 
                                         <td>
                                             <button type="button" class="btn btn-primary btn-xs" data-toggle="modal"
-                                                data-target="#modal-edit" title="Edit"
+                                                data-target="#modal-edit" title="Editar"
                                                 onclick="dataUser('<?php echo $value['idUsuario'];?>')"><i
                                                     class="fa fa-edit"></i></button>
 
-                                            <button type="button" class="btn btn-warning btn-xs"
+                                            <button type="button" class="btn btn-warning btn-xs" title="Actualizar"
                                                 onclick="changeStatus('<?php echo $value['idUsuario'];?>')"><i
                                                     class="fa fa-refresh"></i></button>
 
-                                            <button type="button" class="btn btn-danger btn-xs"
+                                            <button type="button" class="btn btn-danger btn-xs" title="Eliminar"
                                                 onclick="deleteUser('<?php echo $value['idUsuario'];?>')"><i
                                                     class="fa fa-trash"></i></button>
                                         </td>
