@@ -103,7 +103,7 @@
                     <div class="form-group row">
                         <label class="col-form-label col-md-3 col-sm-3 label-align">Tipo de documento</label>
                         <div class="col-md-6 col-sm-6 ">
-                            <select class="form-control" name="selDocType" id="selDocType" disabled>
+                            <select class="form-control" name="selDocType" id="selDocType">
                                 <option>Elija una opción</option>
                                 <?php foreach($documentType as $value):?>
                                 <option value="<?php echo $value['idTipoDocumento'];?>"><?php echo $value['doc'];?>

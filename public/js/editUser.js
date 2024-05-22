@@ -8,16 +8,16 @@ function dataUser(id){
         data:{'id':id}
     }).done(function(answer){
         $.each(answer, function(index, value){
-            $('#txtIdUser').val(value.idUsuario)
-            $('#selDocType').val(value.idTipoDocumento)
-            $('#txtDocument').val(value.Documento)
-            $('#txtNames').val(value.Nombres)
-            $('#txtLastname').val(value.Apellidos)
-            $('#txtEmail').val(value.Email)
-            $('#txtPhone').val(value.Telefono)
-            $('#txtAddress').val(value.Direccion)
-            $('#txtUser').val(value.Usuario)
-            $('#txtPassword').val(value.Clave)
+            $('#txtIdUser').val(value.idUsuario);
+            $('#selDocType').val(value.idTipoDocumento);
+            $('#txtDocument').val(value.Documento);
+            $('#txtNames').val(value.Nombres);
+            $('#txtLastname').val(value.Apellidos);
+            $('#txtEmail').val(value.Email);
+            $('#txtPhone').val(value.Telefono);
+            $('#txtAddress').val(value.Direccion);
+            $('#txtUser').val(value.Usuario);
+            $('#txtPassword').val(value.Clave);
 
         })
     }).fail(function(error){
