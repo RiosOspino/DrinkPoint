@@ -1,6 +1,6 @@
 //Metodo para TRAER el ID
 function dataUser(id){
-    alert(id);
+    // alert(id);
     $.ajax({
         url: url + "usuarioController/userId",
         type: 'post',

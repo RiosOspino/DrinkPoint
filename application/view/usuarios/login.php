@@ -14,6 +14,10 @@
 
     <link rel="icon" href="<?php echo URL;?>gen/production/images/favicon.png" type="image/ico" />
 
+    <!-- Sweetalert -->
+    <link rel="stylesheet" href="<?php echo URL;?>css/sweetalert2.min.css">
+    <script>const url="<?php echo URL;?>";</script>
+
 </head>
 <body>
 
@@ -22,9 +26,13 @@
         <section id="singnin" class="sign-in">
             <div class="container">
                 <div class="signin-content">
+                    <?php if(isset($_POST['customerRegisted'])){ ?>
+                        <div><h3 style="position: absolute; top: 70px; margin: 0 auto; text-align: center; width: 67%;">Usuario registrado exitosamente</h3></div>                    
+                    <?php } ?>                    
+
                     <div class="signin-image">                        
-                    <figure><img src="<?php echo URL; ?>login/images/sesion.webp" alt="sing up image"></figure>
-                    <a href="#signup" class="signup-image-link">Crea una cuenta nueva</a>
+                        <figure><img src="<?php echo URL; ?>login/images/sesion.webp" alt="sing up image"></figure>
+                        <a href="#signup" class="signup-image-link">Crea una cuenta nueva</a>
                     </div>
 
                     <div class="signin-form">
@@ -67,28 +75,55 @@
                     <div class="signup-form">
                         <h2 class="form-title">Regístrate Gratis</h2>
                         <form method="POST" class="register-form" id="register-form">
+                        
                             <div class="form-group">
-                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="text" name="name" id="name" placeholder="Escribe tu usuario"/>
+                                <label for="Register_DocType"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <select class="form-control" name="Register_DocType" id="Register_DocType" required="required" >
+                                    <option>Seleccionar tipo de documento</option>
+                                    <?php foreach($documentTypes as $tipoDocumento):?>
+                                        <option value="<?php echo $tipoDocumento['idTipoDocumento'];?>"><?php echo $tipoDocumento['doc'];?></option>
+                                    <?php endforeach;?>
+                                </select>
+                            </div> 
+                            
+                            <div class="form-group">
+                                <label for="Register_DocNum"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="number" name="Register_DocNum" id="Register_DocNum" placeholder="Ingresar número de documento" required="required" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="Register_Name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="Register_Name" id="Register_Name" placeholder="Ingresa tu nombre" required="required"/>
+                            </div>
+                            
+                            
+
+
+                            <div class="form-group">
+                                <label for="Register_UserName"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="Register_UserName" id="Register_UserName" placeholder="Escribe tu nombre de usuario" required="required"/>
                             </div>
                             <div class="form-group">
+                                <label for="Register_Password"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="Register_Password" id="Register_Password" placeholder="Escriba una contraseña" required="required"/>
+                            </div>
+
+                            <!-- <div class="form-group">
                                 <label for="email"><i class="zmdi zmdi-email"></i></label>
                                 <input type="email" name="email" id="email" placeholder="Escribe tu Email"/>
-                            </div>
-                            <div class="form-group">
-                                <label for="pass"><i class="zmdi zmdi-lock"></i></label>
-                                <input type="password" name="pass" id="pass" placeholder="Contraseña"/>
-                            </div>
-                            <div class="form-group">
+                            </div> -->
+                            <!-- <div class="form-group">
                                 <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
                                 <input type="password" name="re_pass" id="re_pass" placeholder="Escribe de nuevo tu contraseña"/>
-                            </div>
+                            </div> -->
+                            
                             <div class="form-group">
                                 <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
                                 <label for="agree-term" class="label-agree-term"><span><span></span></span>Estoy de acuerdo con todas las declaraciones en <a href="#" class="term-service">Términos de servicio</a></label>
                             </div>
+
                             <div class="form-group form-button">
-                                <input type="submit" name="signup" id="signup" class="form-submit" value="Regístrate"/>
+                                <input type="submit" name="btnSignup" id="signup" class="form-submit" value="Regístrate"/>
                             </div>
                         </form>
                     </div>
@@ -101,8 +136,10 @@
         </section>
     </div>
 
-    <!-- JS -->
+    <!-- JS -->    
     <script src="<?php echo URL; ?>login/vendor/jquery/jquery.min.js"></script>
     <script src="<?php echo URL; ?>login/js/main.js"></script>
+
+    <script src="<?php echo URL; ?>js/sweetalert2.min.js"></script>
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>

@@ -17,7 +17,7 @@
             //Capturar cualquier tipo de error
             $error = false;
 
-            //vamos a validar los datos que vengan del formulario
+            //vamos a validar los datos que vengan del formulario de Login
             if(isset($_POST['btnLogin'])){
                 $this->modeloU->__SET('usuario',$_POST['txtUser']);
                 $this->modeloU->__SET('clave',$_POST['txtPassword']);
@@ -50,6 +50,71 @@
                     $error = true;
                 }
             }
+            
+            // Customer register from Login form
+            if(isset($_POST['btnSignup'])){
+                // Obtener datos desde el formulario de Registrar cliente
+                $this->modeloU->__SET('idTipoDocumento', $_POST['Register_DocType']);
+                $this->modeloU->__SET('documento', $_POST['Register_DocNum']);
+                $this->modeloU->__SET('nombres', $_POST['Register_Name']);
+
+                //  $this->modeloU->__SET('apellidos', $_POST['txtLastname']);
+                //  $this->modeloU->__SET('fechaNacimiento', $_POST['txtBirthdate']);
+                //  $this->modeloU->__SET('telefono', $_POST['txtPhone']);
+                //  $this->modeloU->__SET('direccion', $_POST['txtAddress']);
+                //  $this->modeloU->__SET('email', $_POST['txtEmail']);
+                //  $this->modeloU->__SET('genero', $_POST['selGender']);
+ 
+                // Registrar datos del cliente en Personas
+                $person = $this->modeloU->registerPerson();
+ 
+                // Validar si se creó correctamente la persona                  
+                if($person == true) {
+                    // Obtener el ID de la persona recién creada
+                    $ultimoId = $this->modeloU->lastIdPerson();
+ 
+                    //foreach que se encarga de tomar los datos explicitos 
+                    foreach($ultimoId as $value){
+                        $ultimoIdValue = $value['lastIdPerson'];
+                    }
+                }
+ 
+                // Obtener y asignar datos del cliente
+                $this->modeloU->__SET('idPersona', $ultimoIdValue);
+                $this->modeloU->__SET('usuario', $_POST['Register_UserName']);
+                $this->modeloU->__SET('clave', $_POST['Register_Password']);
+                $this->modeloU->__SET('idRol', 3);
+ 
+                // Guardar datos del cliente en Usuario
+                $user = $this->modeloU->userRegister();
+ 
+                 // Validar si se registro exitosamente el cliente
+                 if($person == true && $user == true) {
+                    // echo ("<script>
+                    //     Swal.fire({position:'',icon: 'success',title: 'Registrado',showConfirmButton: false,timer:2000});</script>");
+                    echo ("<script>alert('Usuario registrado exitosamente.')</script>");
+
+                        header("Location: " . URL."usuarioController/login/?customerRegisted=true");
+                        // exit();
+                 } else {
+                    // echo "Swal.fire({
+                    //      position:'',
+                    //      icon: 'error',
+                    //      title: 'Error',
+                    //      showConfirmButton: false,
+                    //      timer:2000})";
+ 
+                    // header("Location:" . URL."usuarioController/login");
+                    // exit();  
+                 }
+ 
+                //  header("Location: " .URL."usuarioController/getUsers");
+            }
+
+            // Obtener tipos de documentos
+            $documentTypes = $this->modeloU->getTypeDocument();
+
+            // Load view
             require APP . 'view/usuarios/login.php';
         }
 
@@ -74,7 +139,7 @@
         public function userRegister(){
             //Con un condicional para el formulario y modelo
             if(isset($_POST['btnRegister'])){
-                 //Comunicacion con el modelo y el formulario
+                //Comunicacion con el modelo y el formulario
                 $this->modeloU->__SET('idTipoDocumento', $_POST['selDocType']);
                 $this->modeloU->__SET('documento', $_POST['txtDocument']);
                 $this->modeloU->__SET('nombres', $_POST['txtNames']);
@@ -98,11 +163,11 @@
                     }
                 }
 
-            //Aqui vamos a enviar los datos para el registro de el usuario
-            $this->modeloU->__SET('idPersona', $ultimoIdValue);
-            $this->modeloU->__SET('usuario', $_POST['txtUser']);
-            $this->modeloU->__SET('clave', $_POST['txtPassword']);
-            $this->modeloU->__SET('idRol', $_POST['selRol']);
+                //Aqui vamos a enviar los datos para el registro de el usuario
+                $this->modeloU->__SET('idPersona', $ultimoIdValue);
+                $this->modeloU->__SET('usuario', $_POST['txtUser']);
+                $this->modeloU->__SET('clave', $_POST['txtPassword']);
+                $this->modeloU->__SET('idRol', $_POST['selRol']);
 
                 //Vamos a crear una variable que llamara al metodo del modelo para poder registrar los datos
                 $user = $this->modeloU->userRegister();
