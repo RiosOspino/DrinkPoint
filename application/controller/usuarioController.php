@@ -162,28 +162,28 @@
                 //Variable para el actualizar
                 $update = $this->modeloU->updateUser();
 
-                // //Sweetalert
-                // if($update == true){
-                //     $_SESSION['alert'] = "Swal.fire({
-                //         position:'',
-                //         icon: 'success',
-                //         title: 'Modificado',
-                //         showConfirmButton: false,
-                //         timer:2000})";
+                //Sweetalert
+                if($update == true){
+                    $_SESSION['alert'] = "Swal.fire({
+                        position:'',
+                        icon: 'success',
+                        title: 'Modificado',
+                        showConfirmButton: false,
+                        timer:2000})";
 
-                //         header("Location: " . URL."usuarioController/getUsers");
-                //         exit();
-                // }else{
-                //     $_SESSION['alert'] = "Swal.fire({
-                //         position:'',
-                //         icon: 'error',
-                //         title: 'Error',
-                //         showConfirmButton: false,
-                //         timer:2000})";
+                        header("Location: " . URL."usuarioController/getUsers");
+                        exit();
+                }else{
+                    $_SESSION['alert'] = "Swal.fire({
+                        position:'',
+                        icon: 'error',
+                        title: 'Error',
+                        showConfirmButton: false,
+                        timer:2000})";
 
-                //         header("Location:" . URL."usuarioController/getUsers");
-                //         exit();  
-                // }
+                        header("Location:" . URL."usuarioController/getUsers");
+                        exit();  
+                }
             }
 
             //Variables para llamar los metodos de los modelos
