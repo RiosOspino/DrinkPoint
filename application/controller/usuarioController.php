@@ -19,6 +19,7 @@
 
             //vamos a validar los datos que vengan del formulario de Login
             if(isset($_POST['btnLogin'])){
+        
                 $this->modeloU->__SET('usuario',$_POST['txtUser']);
                 $this->modeloU->__SET('clave',$_POST['txtPassword']);
 
@@ -57,13 +58,12 @@
                 $this->modeloU->__SET('idTipoDocumento', $_POST['Register_DocType']);
                 $this->modeloU->__SET('documento', $_POST['Register_DocNum']);
                 $this->modeloU->__SET('nombres', $_POST['Register_Name']);
-
-                //  $this->modeloU->__SET('apellidos', $_POST['txtLastname']);
-                //  $this->modeloU->__SET('fechaNacimiento', $_POST['txtBirthdate']);
-                //  $this->modeloU->__SET('telefono', $_POST['txtPhone']);
-                //  $this->modeloU->__SET('direccion', $_POST['txtAddress']);
-                //  $this->modeloU->__SET('email', $_POST['txtEmail']);
-                //  $this->modeloU->__SET('genero', $_POST['selGender']);
+                $this->modeloU->__SET('apellidos', $_POST['Register_Lastname']);
+                $this->modeloU->__SET('email', $_POST['Register_Email']);
+                $this->modeloU->__SET('telefono', $_POST['Register_Phone']);
+                $this->modeloU->__SET('direccion', $_POST['Register_Address']);
+                $this->modeloU->__SET('genero', $_POST['Register_Gender']);
+                $this->modeloU->__SET('fechaNacimiento', $_POST['Register_Birthdate']);
  
                 // Registrar datos del cliente en Personas
                 $person = $this->modeloU->registerPerson();

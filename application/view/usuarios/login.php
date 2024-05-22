@@ -95,9 +95,46 @@
                                 <label for="Register_Name"><i class="zmdi zmdi-account material-icons-name"></i></label>
                                 <input type="text" name="Register_Name" id="Register_Name" placeholder="Ingresa tu nombre" required="required"/>
                             </div>
-                            
-                            
+                
+                            <div class="form-group">
+                                <label for="Register_Lastname"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="Register_Lastname" id="Register_Lastname" placeholder="Ingresar tu apellido" required="required" />
+                            </div>
 
+                            <div class="form-group">
+                                <label for="Register_Email"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="email" name="Register_Email" id="Register_Email" placeholder="Ingresar tu correo electronico" required="required" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="Register_Phone"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="number" name="Register_Phone" id="Register_Phone" placeholder="Ingresar tu numero" required="required" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="Register_Address"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="Register_Address" id="Register_Address" placeholder="Ingresar tu dirrecion" required="required" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="Register_Gender"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <select class="form-control" name="Register_Gender" id="Register_Gender" required="required" >
+                                    <option value="female">Mujer</option>
+                                    <option value="male">Hombre</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="Register_Birthdate"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input id="Register_Birthdate" name="Register_Birthdate" class="date-picker form-control" placeholder="dd-mm-yyyy" type="text" required="required" type="text" onfocus="this.type='date'" onmouseover="this.type='date'" onclick="this.type='date'" onblur="this.type='text'" onmouseout="timeFunctionLong(this)">
+							<script>
+								function timeFunctionLong(input) {
+									setTimeout(function() {
+										input.type = 'text';
+									}, 60000);
+								}
+							</script>
+                            </div>
 
                             <div class="form-group">
                                 <label for="Register_UserName"><i class="zmdi zmdi-account material-icons-name"></i></label>
@@ -107,6 +144,8 @@
                                 <label for="Register_Password"><i class="zmdi zmdi-lock"></i></label>
                                 <input type="password" name="Register_Password" id="Register_Password" placeholder="Escriba una contraseña" required="required"/>
                             </div>
+
+                    
 
                             <!-- <div class="form-group">
                                 <label for="email"><i class="zmdi zmdi-email"></i></label>
