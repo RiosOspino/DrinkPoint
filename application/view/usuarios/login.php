@@ -18,12 +18,11 @@
 <body>
 
     <div class="main">
-
-            <!-- Sing in  Form -->
-            <section id="singnin" class="sign-in">
+        <!-- Sing in  Form -->
+        <section id="singnin" class="sign-in">
             <div class="container">
                 <div class="signin-content">
-                    <div class="signin-image">
+                    <div class="signin-image">                        
                     <figure><img src="<?php echo URL; ?>login/images/sesion.webp" alt="sing up image"></figure>
                     <a href="#signup" class="signup-image-link">Crea una cuenta nueva</a>
                     </div>
@@ -59,11 +58,10 @@
                 </div>
             </div>
         </section>
-
-    </div>
-
+        <!--/ Sing in  Form -->
+    
         <!-- Sign up form -->
-        <section id="signup" class="signup">
+        <section id="singnup" style="display: none;">
             <div class="container">
                 <div class="signup-content">
                     <div class="signup-form">
@@ -101,11 +99,10 @@
                 </div>
             </div>
         </section>
-
-
+    </div>
 
     <!-- JS -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="<?php echo URL; ?>login/vendor/jquery/jquery.min.js"></script>
+    <script src="<?php echo URL; ?>login/js/main.js"></script>
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>
