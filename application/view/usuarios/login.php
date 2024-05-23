@@ -73,11 +73,11 @@
             <div class="container">
                 <div class="signup-content">
                     <div class="signup-form">
-                        <h2 class="form-title">Regístrate Gratis</h2>
+                        <h2 class="form-title">Regístrate</h2>
                         <form method="POST" class="register-form" id="register-form">
                         
                             <div class="form-group">
-                                <label for="Register_DocType"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <label for="Register_DocType"><i class="zmdi zmdi-account-box-mail"></i></label>
                                 <select class="form-control" name="Register_DocType" id="Register_DocType" required="required" >
                                     <option>Seleccionar tipo de documento</option>
                                     <?php foreach($documentTypes as $tipoDocumento):?>
@@ -87,7 +87,7 @@
                             </div> 
                             
                             <div class="form-group">
-                                <label for="Register_DocNum"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <label for="Register_DocNum"><i class="zmdi zmdi-account-box-mail"></i></label>
                                 <input type="number" name="Register_DocNum" id="Register_DocNum" placeholder="Ingresar número de documento" required="required" />
                             </div>
 
@@ -102,30 +102,31 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="Register_Email"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <label for="Register_Email"><i class="zmdi zmdi-email"></i></label>
                                 <input type="email" name="Register_Email" id="Register_Email" placeholder="Ingresar tu correo electronico" required="required" />
                             </div>
 
                             <div class="form-group">
-                                <label for="Register_Phone"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <label for="Register_Phone"><i class="zmdi zmdi-phone"></i></label>
                                 <input type="number" name="Register_Phone" id="Register_Phone" placeholder="Ingresar tu numero" required="required" />
                             </div>
 
                             <div class="form-group">
-                                <label for="Register_Address"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <label for="Register_Address"><i class="zmdi zmdi-pin"></i></label>
                                 <input type="text" name="Register_Address" id="Register_Address" placeholder="Ingresar tu dirrecion" required="required" />
                             </div>
 
                             <div class="form-group">
-                                <label for="Register_Gender"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <label for="Register_Gender"><i class="zmdi zmdi-male-female"></i></label>
                                 <select class="form-control" name="Register_Gender" id="Register_Gender" required="required" >
+                                    <option value="">Selecionar genero</option>
                                     <option value="female">Mujer</option>
                                     <option value="male">Hombre</option>
                                 </select>
                             </div>
 
                             <div class="form-group">
-                                <label for="Register_Birthdate"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <label for="Register_Birthdate"><i class="zmdi zmdi-calendar"></i></label>
                                 <input id="Register_Birthdate" name="Register_Birthdate" class="date-picker form-control" placeholder="dd-mm-yyyy" type="text" required="required" type="text" onfocus="this.type='date'" onmouseover="this.type='date'" onclick="this.type='date'" onblur="this.type='text'" onmouseout="timeFunctionLong(this)">
 							<script>
 								function timeFunctionLong(input) {
@@ -137,33 +138,24 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="Register_UserName"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <label for="Register_UserName"><i class="zmdi zmdi-account-circle"></i></label>
                                 <input type="text" name="Register_UserName" id="Register_UserName" placeholder="Escribe tu nombre de usuario" required="required"/>
                             </div>
+
                             <div class="form-group">
                                 <label for="Register_Password"><i class="zmdi zmdi-lock"></i></label>
                                 <input type="password" name="Register_Password" id="Register_Password" placeholder="Escriba una contraseña" required="required"/>
                             </div>
-
-                    
-
-                            <!-- <div class="form-group">
-                                <label for="email"><i class="zmdi zmdi-email"></i></label>
-                                <input type="email" name="email" id="email" placeholder="Escribe tu Email"/>
-                            </div> -->
-                            <!-- <div class="form-group">
-                                <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
-                                <input type="password" name="re_pass" id="re_pass" placeholder="Escribe de nuevo tu contraseña"/>
-                            </div> -->
                             
-                            <div class="form-group">
+                            <!-- <div class="form-group">
                                 <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
                                 <label for="agree-term" class="label-agree-term"><span><span></span></span>Estoy de acuerdo con todas las declaraciones en <a href="#" class="term-service">Términos de servicio</a></label>
-                            </div>
+                            </div> -->
 
                             <div class="form-group form-button">
                                 <input type="submit" name="btnSignup" id="signup" class="form-submit" value="Regístrate"/>
                             </div>
+
                         </form>
                     </div>
                     <div class="signup-image">
