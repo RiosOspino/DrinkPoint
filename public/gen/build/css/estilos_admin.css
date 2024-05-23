@@ -140,3 +140,30 @@ button.btn i.fa::before {
 #modal-edit select#selDocType {
     background-color: #2A3038;
 }
+
+.clearfix {
+    background: #2A3038;
+}
+
+.dashboard_graph {
+    background: #191c24;
+}
+
+div#reportrange {
+    background: black;
+    color: white;
+    background: black;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    
+}
+
+ul.to_do {
+    background: black;
+}
+
+.col-md-3.col-sm-3.bg-white {
+    background: black;
+}
+
