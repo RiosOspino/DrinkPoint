@@ -50,7 +50,7 @@
                     <h3>Actividad de red</h3>
                   </div>
                   <div class="col-md-6">
-                    <div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
+                    <div id="reportrange" class="pull-right" style="background: #2A3038; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
                       <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
                       <span>Diciembre 30, 2014 - Enero 28, 2015</span> <b class="caret"></b>
                     </div>
@@ -70,7 +70,7 @@
                     <div>
                       <p>Facebook</p>
                       <div class="">
-                        <div class="progress progress_sm" style="width: 76%;">
+                        <div class="progress progress_sm" style="width: 76%; background: 2A3038;" >
                           <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="80"></div>
                         </div>
                       </div>
