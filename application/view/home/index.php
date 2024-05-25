@@ -78,12 +78,14 @@
                     Sino, mostrar iniciar sesión
                     -->
                     <?php 
-                        
-                    
+                        if ( isset( $_SESSION['SESSION_START'] ) ) {
+                            # Mostrar Cerrar sesión
+                            echo "<li class='nav-item'><a href='" . URL . "usuarioController/logOut' class='nav-link'>Cerrar Sesión</a></li>";
+                        } else {
+                            # Mostrar Iniciar sesión
+                            echo "<li class='nav-item'><a href='" . URL . "usuarioController/login' class='nav-link'>Iniciar Sesión</a></li>";
+                        }                    
                     ?>
-
-                    <li class="nav-item"><a href="<?php echo URL; ?>usuarioController/login" class="nav-link">Login</a></li>
-                    
                 </ul>
             </div>
         </div>
