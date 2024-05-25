@@ -73,6 +73,15 @@
                     <li class="nav-item"><a href="<?php echo URL; ?>#products" class="nav-link">Productos</a></li>
                     <li class="nav-item"><a href="<?php echo URL; ?>#testimonial" class="nav-link">Testimonios</a></li>
                     <li class="nav-item"><a href="<?php echo URL; ?>#contact" class="nav-link">Contacto</a></li>
+                    
+                    <!-- SI esta logiueado, mostrar cerrar sesión
+                    Sino, mostrar iniciar sesión
+                    -->
+                    <?php 
+                        
+                    
+                    ?>
+
                     <li class="nav-item"><a href="<?php echo URL; ?>usuarioController/login" class="nav-link">Login</a></li>
                     
                 </ul>

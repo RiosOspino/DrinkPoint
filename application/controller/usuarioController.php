@@ -31,6 +31,7 @@
 
                 //vamos a revisar esa validación
                 if($validate == true){
+                    // Guardar datos usuario en la sesión
                     $_SESSION['SESSION_START'] = true;
 
                     //La variable $error sigue en false porque aun no ha capturado ningun error
@@ -45,14 +46,30 @@
                     $_SESSION['Usuario'] = $validate['Usuario'];
                     $_SESSION['Descripcion'] = $validate['Descripcion'];
 
-                    //después de la validación que me dirija a un admin
-                    header("Location:" . URL . "usuarioController/main");
+                    // SI es admin, ingrese al dashboard
+                    if ($validate['idRol'] === 1) {
+                        //después de la validación lo dirije al main
+                        header("Location:" . URL . "usuarioController/main");
+                    }
+
+                    // SI es asistente, ingrese a gestionar tienda                    
+                    if ($validate['idRol'] === 2) {
+                        //después de la validación lo dirije a los productos
+                        header("Location:" . URL . "usuarioController/userRegister");
+                    }
+                    
+                    // SI es cliente, redireccionar al home para que pueda comprar
+                    if ($validate['idRol'] === 3) {
+                        //después de la validación que me dirija a un admin
+                        header("Location:" . URL);
+                    }
+
                 }else{
                     $error = true;
                 }
             }
             
-            // Customer register from Login form
+            //vamos a validar los datos que vengan del formulario de registrar cliente
             if(isset($_POST['btnSignup'])){
                 // Obtener datos desde el formulario de Registrar cliente
                 $this->modeloU->__SET('idTipoDocumento', $_POST['Register_DocType']);
@@ -131,7 +148,8 @@
             if (isset($_SESSION['SESSION_START'])){
                 session_destroy();
             }
-            header("Location:".URL."home/index");
+
+            header("Location:" . URL);
             exit();
         }
 

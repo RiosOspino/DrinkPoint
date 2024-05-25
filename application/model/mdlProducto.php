@@ -100,12 +100,7 @@ class mdlUsuario extends mdlPersona{
     //Metodo para eliminar el usuario
     public function deleteUser($id){
         //Consulta
-        $sql = "DELETE U, P FROM usuarios AS U INNER JOIN personas AS P WHERE P.idPersona = U.idPersona AND U.idUsuario = ?; 
-        ALTER TABLE usuarios AUTO_INCREMENT = 1; 
-        ALTER TABLE usuarios AUTO_INCREMENT = 1"; 
-
-
-        // $refrehId = "ALTER TABLE usuarios AUTO_INCREMENT = 1";
+        $sql = "DELETE U, P FROM usuarios AS U INNER JOIN personas AS P WHERE P.idPersona = U.idPersona AND U.idUsuario = ?";
 
         $query = $this->db->prepare($sql);
         $query -> bindParam(1, $id);

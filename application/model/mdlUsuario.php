@@ -24,7 +24,8 @@ class mdlUsuario extends mdlPersona{
     //método para validar el usuario
     public function validateUser(){
         //crear la variable de consulta
-        $sql = "SELECT P.Documento, P.Nombres, P.Apellidos, U.idUsuario, U.Usuario, R.Descripcion FROM personas AS P 
+        $sql = "SELECT P.Documento, P.Nombres, P.Apellidos, U.idUsuario, U.Usuario, R.Descripcion, R.idRol
+        FROM personas AS P 
         INNER JOIN tiposdocumentos AS TD ON P.idTipoDocumento = TD.idTipoDocumento
         INNER JOIN usuarios AS U ON P.idPersona = U.idPersona
         INNER JOIN roles AS R ON U.idRol = R.idRol WHERE U.Usuario = ? AND U.Clave = ? AND U.Estado = 1";
@@ -100,12 +101,7 @@ class mdlUsuario extends mdlPersona{
     //Metodo para eliminar el usuario
     public function deleteUser($id){
         //Consulta
-        $sql = "DELETE U, P FROM usuarios AS U INNER JOIN personas AS P WHERE P.idPersona = U.idPersona AND U.idUsuario = ?; 
-        ALTER TABLE usuarios AUTO_INCREMENT = 1; 
-        ALTER TABLE usuarios AUTO_INCREMENT = 1"; 
-
-
-        // $refrehId = "ALTER TABLE usuarios AUTO_INCREMENT = 1";
+        $sql = "DELETE U, P FROM usuarios AS U INNER JOIN personas AS P WHERE P.idPersona = U.idPersona AND U.idUsuario = ?"; 
 
         $query = $this->db->prepare($sql);
         $query -> bindParam(1, $id);
