@@ -159,7 +159,7 @@
                         </form>
                     </div>
                     <div class="signup-image">
-                    <figure><img src=" <?php echo URL; ?>login/images/JAMEL_16e44d6b-1475-45b4-a474-aff7163fa283.webp" alt="sing up image"></figure>
+                    <figure><img style="margin-top: 0px;" src=" <?php echo URL; ?>login/images/img-login22.jpg" alt="sing up image"></figure>
                     <a href="#singnin" class="signup-image-link">Ya soy miembro</a>
                     </div>
                 </div>
