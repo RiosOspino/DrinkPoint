@@ -26,10 +26,6 @@
         <section id="singnin" class="sign-in">
             <div class="container">
                 <div class="signin-content">
-                    <?php if(isset($_POST['customerRegisted'])){ ?>
-                        <div><h3 style="position: absolute; top: 70px; margin: 0 auto; text-align: center; width: 67%;">Usuario registrado exitosamente</h3></div>                    
-                    <?php } ?>                    
-
                     <div class="signin-image">                        
                         <figure><img src="<?php echo URL; ?>login/images/sesion.webp" alt="sing up image"></figure>
                         <a href="#signup" class="signup-image-link">Crea una cuenta nueva</a>
@@ -170,6 +166,17 @@
     <!-- JS -->    
     <script src="<?php echo URL; ?>login/vendor/jquery/jquery.min.js"></script>
     <script src="<?php echo URL; ?>login/js/main.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            <?php
+            if(isset($_SESSION['alert']) != false && $_SESSION['alert'] !=null){
+                echo $_SESSION['alert'];
+                $_SESSION['alert'] = null;
+            }
+            ?>
+        });
+    </script>   
 
     <script src="<?php echo URL; ?>js/sweetalert2.min.js"></script>
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->

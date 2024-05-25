@@ -107,22 +107,25 @@
  
                  // Validar si se registro exitosamente el cliente
                  if($person == true && $user == true) {
-                    // echo ("<script>
-                    //     Swal.fire({position:'',icon: 'success',title: 'Registrado',showConfirmButton: false,timer:2000});</script>");
-                    echo ("<script>alert('Usuario registrado exitosamente.')</script>");
+                    $_SESSION['alert'] = "Swal.fire({
+                        position:'',
+                        icon: 'success',
+                        title: 'Registrado',
+                        showConfirmButton: false,
+                        timer:3000})";
 
-                        header("Location: " . URL."usuarioController/login/?customerRegisted=true");
-                        // exit();
+                        header("Location: " . URL."usuarioController/login");
+                        exit();
                  } else {
-                    // echo "Swal.fire({
-                    //      position:'',
-                    //      icon: 'error',
-                    //      title: 'Error',
-                    //      showConfirmButton: false,
-                    //      timer:2000})";
- 
-                    // header("Location:" . URL."usuarioController/login");
-                    // exit();  
+                    $_SESSION['alert'] = "Swal.fire({
+                        position:'',
+                        icon: 'error',
+                        title: 'Error',
+                        showConfirmButton: false,
+                        timer:3000})";
+
+                        header("Location:" . URL."usuarioController/login");
+                        exit();  
                  }
  
                 //  header("Location: " .URL."usuarioController/getUsers");
@@ -197,7 +200,7 @@
                         icon: 'success',
                         title: 'Registrado',
                         showConfirmButton: false,
-                        timer:2000})";
+                        timer:3000})";
 
                         header("Location: " . URL."usuarioController/getUsers");
                         exit();
@@ -207,7 +210,7 @@
                         icon: 'error',
                         title: 'Error',
                         showConfirmButton: false,
-                        timer:2000})";
+                        timer:3000})";
 
                         header("Location:" . URL."usuarioController/userRegister");
                         exit();  
@@ -252,7 +255,7 @@
                         icon: 'success',
                         title: 'Modificado',
                         showConfirmButton: false,
-                        timer:2000})";
+                        timer:3000})";
 
                         header("Location: " . URL."usuarioController/getUsers");
                         exit();
@@ -262,7 +265,7 @@
                         icon: 'error',
                         title: 'Error',
                         showConfirmButton: false,
-                        timer:2000})";
+                        timer:3000})";
 
                         header("Location:" . URL."usuarioController/getUsers");
                         exit();  
