@@ -64,15 +64,30 @@
             <!-- sidebar menu -->
             <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
               <div class="menu_section">
-                <h3>General</h3>
+                <!-- <h3>General</h3> -->
                 <ul class="nav side-menu">
-                  <li><a><i class="fa fa-users"></i>GESTIONAR USUARIOS <span class="fa fa-chevron-down"></span></a>
+                  <li><a><i class="fa fa-users"></i>USUARIOS <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="<?php echo URL; ?>usuarioController/userRegister">Registrar Usuarios</a></li>
                       <li><a href="<?php echo URL; ?>usuarioController/getUsers">Ver Usuarios</a></li>
                     </ul>
                   </li>
-                  <li><a><i class="fa fa-edit"></i> Forms <span class="fa fa-chevron-down"></span></a>
+
+                  <li><a><i class="fa fa-users"></i>PRODUTOS <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="<?php echo URL; ?>usuarioController/userRegister">Registrar Productos</a></li>
+                      <li><a href="<?php echo URL; ?>usuarioController/getUsers">Ver Productos</a></li>
+                    </ul>
+                  </li>
+
+                  <li><a><i class="fa fa-users"></i>CATEGORÍAS <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="<?php echo URL; ?>usuarioController/userRegister">Registrar Categorías</a></li>
+                      <li><a href="<?php echo URL; ?>usuarioController/getUsers">Ver Categorías</a></li>
+                    </ul>
+                  </li>
+
+                  <!-- <li><a><i class="fa fa-edit"></i> Forms <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="form.html">General Form</a></li>
                       <li><a href="form_advanced.html">Advanced Components</a></li>
@@ -115,10 +130,10 @@
                       <li><a href="fixed_sidebar.html">Fixed Sidebar</a></li>
                       <li><a href="fixed_footer.html">Fixed Footer</a></li>
                     </ul>
-                  </li>
+                  </li> -->
                 </ul>
               </div>
-              <div class="menu_section">
+              <!-- <div class="menu_section">
                 <h3>Live On</h3>
                 <ul class="nav side-menu">
                   <li><a><i class="fa fa-bug"></i> Additional Pages <span class="fa fa-chevron-down"></span></a>
@@ -157,9 +172,8 @@
                         </li>
                     </ul>
                   </li>                  
-                  <!-- <li><a href="javascript:void(0)"><i class="fa fa-laptop"></i> Landing Page <span class="label label-success pull-right">Coming Soon</span></a></li> -->
                 </ul>
-              </div>
+              </div> -->
 
             </div>
             <!-- /sidebar menu -->
