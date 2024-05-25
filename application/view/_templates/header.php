@@ -42,7 +42,7 @@
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="index.html" class="site_title"><i class="fa fa-glass"></i> <span> Administrador </span></a>
+              <a class="site_title"><i class="fa fa-glass"></i> <span> DrinkPoint </span></a>
             </div>
 
             <div class="clearfix"></div>
@@ -53,8 +53,8 @@
                 <img src="<?php echo URL;?>gen/production/images/img.jpg" alt="..." class="img-circle profile_img">
               </div>
               <div class="profile_info">
-                <span>Bienvenido</span>
-                <h2>Mrs VML</h2>
+                <span>Hola,</span>
+                <h2><?php echo $_SESSION['Nombres'] . ' ' . $_SESSION['Apellidos'] ; ?></h2>
               </div>
             </div>
             <!-- /menu profile quick info -->
@@ -207,7 +207,7 @@
               <ul class=" navbar-right">
                 <li class="nav-item dropdown open" style="padding-left: 15px;">
                   <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
-                    <img src="<?php echo URL;?>gen/production/images/img.jpg" alt="">Mrs VML
+                    <img src="<?php echo URL;?>gen/production/images/img.jpg" alt=""><?php echo $_SESSION['Nombres'] . ' ' . $_SESSION['Apellidos'] ; ?>
                   </a>
                   <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item"  href="javascript:;"> Perfiles</a>
