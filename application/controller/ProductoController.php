@@ -3,7 +3,7 @@
     class productoController extends Controller{
         //atributo que va a ser el encargado de llamar el módelo necesario
         private $modeloP;
-        private $modeloC;
+        // private $modeloC;
 
         //vamos a crear el constructor que llamará del modelo a la base de datos
         public function __construct(){
@@ -83,18 +83,18 @@
         }
 
         //Metodos para ver los usuarios registrados y modificados
-        public function getUsers(){
+        public function getProducts(){
 
             //Vamos a tener el condicional para cuando sea el momento de editar los usuarios
             if(isset($_POST['btnUpdate'])){
                 //Comunicacion con el modelo y el formulario
-                $this->modelop->__SET('idProducto', $_POST['selDocType']);
-                $this->modelop->__SET('Nombre', $_POST['txtNames']);
-                $this->modelop->__SET('Descripcion', $_POST['txtDocument']);
-                $this->modelop->__SET('Precio', $_POST['txtNumber']);
-                $this->modelop->__SET('urlImage', $_POST['txtImagen']);
-                $this->modelop->__SET('idUsuario', $_POST['txtUser']);
-                $this->modelop->__SET('idCategoria', $_POST['txtCategoria']);
+                // $this->modeloP->__SET('idProducto', $_POST['selCategory']);
+                $this->modeloP->__SET('Nombre', $_POST['txtName']);
+                $this->modeloP->__SET('Descripcion', $_POST['txtDescription']);
+                $this->modeloP->__SET('Precio', $_POST['txtPrice']);
+                $this->modeloP->__SET('urlImage', $_POST['txtImage']);
+                // $this->modelop->__SET('idUsuario', $_POST['txtUser']);
+                $this->modeloP->__SET('idCategoria', $_POST['txtCategory']);
 
                 //Variable para el actualizar
                 $update = $this->modeloP->updateUser();
@@ -126,7 +126,7 @@
             //Variables para llamar los metodos de los modelos
             $productos = $this->modeloP->getProductos();
             $categorias = $this->modeloC->getCategorias();
-            $documentType = $this->modeloP->getTypeDocument();
+            // $documentType = $this->modeloP->getTypeDocument();
 
             //Para que funcione el metodo requiere los archivos visuales 
             require APP . 'view/_templates/header.php';

@@ -23,71 +23,61 @@
 			<div class="x_content">
 				<br />
 				<form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" method="POST">
-
-					<div class="item form-group">
-						<label class="col-form-label col-md-3 col-sm-3 label-align" for="Document">Producto <span class="required">*</span>
-						</label>
-						<div class="col-md-6 col-sm-6 ">
-							<input type="number" id="selDocType" required="required" class="form-control " name=selDocType>
-						</div>
-					</div>
 													
 					<div class="item form-group">
-						<label class="col-form-label col-md-3 col-sm-3 label-align" for="Names">Nombres <span class="required">*</span>
+						<label class="col-form-label col-md-3 col-sm-3 label-align" for="Name">Nombre <span class="required">*</span>
 						</label>
 						<div class="col-md-6 col-sm-6 ">
-							<input type="text" id="txtNames" required="required" class="form-control " name="txtNames">
+							<input type="text" id="txtNames" required="required" class="form-control " name="txtName">
 						</div>
 					</div>
 
 					<div class="item form-group">
-						<label class="col-form-label col-md-3 col-sm-3 label-align" for="Lastname">Descripcion <span class="required">*</span>
+						<label class="col-form-label col-md-3 col-sm-3 label-align" for="Drescrition">Descripcion <span class="required">*</span>
 						</label>
 						<div class="col-md-6 col-sm-6 ">
-							<input type="text" id="txtDocument" name="txtDocument" required="required" class="form-control">
+							<input type="text" id="txtDescription" name="txtDescription" required="required" class="form-control">
 						</div>
 					</div>
 
 					<div class="item form-group">
-						<label for="Precio" class="col-form-label col-md-3 col-sm-3 label-align">Precio <span class="required">*</span></label>
+						<label for="Price" class="col-form-label col-md-3 col-sm-3 label-align">Precio <span class="required">*</span></label>
 						<div class="col-md-6 col-sm-6 ">
-							<input id="txtNumber" class="form-control" type="number" name="txtNumber" required="required" >
+							<input id="txtPrice" class="form-control" type="number" name="txtPrice" required="required" >
 						</div>
 					</div>
 
 					<div class="item form-group">
-						<label for="imagen" class="col-form-label col-md-3 col-sm-3 label-align">Image <span class="required">*</span></label>
+						<label for="Image" class="col-form-label col-md-3 col-sm-3 label-align">Imagen <span class="required">*</span></label>
 						<div class="col-md-6 col-sm-6 ">
-							<input id="txtImagen" class="form-control" type="imagen" name="txtImagen" required="required">
+							<input id="txtImage" class="form-control" type="text" name="txtImage" required="required">
 						</div>
 					</div>
 
-					<div class="item form-group">
-						<label for="Address" class="col-form-label col-md-3 col-sm-3 label-align">Dirección <span class="required">*</span></label>
+					<div class="form-group row">
+						<label class="col-form-label col-md-3 col-sm-3 label-align">Categoría </label>
 						<div class="col-md-6 col-sm-6 ">
-							<input id="txtAddress" class="form-control" type="text" name="txtAddress" required="required">
+							<select class="form-control" name="selCategory" id="selCategory">
+								<option>Elija una opción</option>
+								<?php foreach($documentType as $value):?>
+									<option value="<?php echo $value['idTipoDocumento'];?>"><?php echo $value['doc'];?></option>
+								<?php endforeach;?>
+							</select>
 						</div>
 					</div>
 
-					<div class="item form-group">
-						<label for="Username" class="col-form-label col-md-3 col-sm-3 label-align">Usuario <span class="required">*</span></label>
+					<!-- <div class="item form-group">
+						<label for="Category" class="col-form-label col-md-3 col-sm-3 label-align">Categoría <span class="required">*</span></label>
 						<div class="col-md-6 col-sm-6 ">
-							<input id="txtUser" class="form-control" type="text" name="txtUser" required="required">
+							<input id="txtCategory" class="form-control" type="text" name="txtCategory" required="required">
 						</div>
-					</div>
-
-					<div class="item form-group">
-						<label for="categoria" class="col-form-label col-md-3 col-sm-3 label-align">Categoria <span class="required">*</span></label>
-						<div class="col-md-6 col-sm-6 ">
-							<input id="txtCategoria" class="form-control" type="categoria" name="txtCategoria" required="required">
-						</div>
-					</div>
+					</div> -->
 
 					<div class="ln_solid"></div>
 					<div class="item form-group">
 						<div class="col-md-6 col-sm-6 offset-md-3">
-							<button class="btn btn-primary" type="button">Cancel</button>
-							<button class="btn btn-primary" type="reset">Reset</button>
+							<button class="btn btn-primary" type="button">Cancelar</button>
+							<button class="btn btn-primary" type="reset">Resetear</button>
 							<button type="submit" class="btn btn-success" name="btnRegister" >Enviar</button>
 						</div>
 					</div>
