@@ -141,7 +141,7 @@
         //Metodo para cargar el admin
         public function main(){
             require APP . 'view/_templates/header.php';
-            require APP . 'view/usuarios/main.php';
+            require APP . 'view/main.php';
             require APP . 'view/_templates/footer.php';
         }
 
