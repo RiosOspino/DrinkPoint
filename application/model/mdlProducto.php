@@ -1,15 +1,17 @@
 <?php
-//heredar del modelo principal para nuestro caso mdlPersona
-require_once("mdlPersona.php");
+//Vamos a crear la clase de este modelo, por lo general, se le da como nombre el mismo del archivo  (mdlProducto)
+require_once("mdlProducto.php");
 
 //heredamos clase
-class mdlUsuario extends mdlPersona{
+class mdlProducto {
     //crear los atributos
+    private $idProducto;
+    private $Nombre;
+    private $Descripcion;
+    private $Precio;
+    private $urlImage;
     private $idUsuario;
-    private $usuario;
-    private $clave;
-    private $idRol;
-    private $estado;
+    private $idCategoria;
 
     //crear el método para fijar los datos
     public function __SET($atributo,$valor){
