@@ -31,17 +31,28 @@
                                         <th>Descripción</th>
                                         <th>Precio</th>
                                         <th>Categoría</th>
-                                        <th>Usuario  </th>
+                                        <th>Imagen</th>
+                                        <th>Usuario</th>
+                                        <th>Acciones</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <?php foreach($users as $value):?>
+                                    <?php foreach($productos as $value):?>
                                     <tr>
                                         <td><?php echo $value['Nombre'];?></td>
                                         <td><?php echo $value['Descripcion'];?></td>
                                         <td><?php echo $value['Precio'];?></td>
                                         <td><?php echo $value['Categoria'];?></td>
+                                        <td><?php
+                                            if ($value['Imagen'] != null) {
+                                                echo "<img src='data:image/jpeg;base64, " . base64_encode($value['Imagen']) . "'/>";
+                                            }else {
+                                                echo "<img src='" . URL . "img/Image-not-found.png'/>";                                                
+                                            }
+                                            
+                                        ?></td>                                        
                                         <td><?php echo $value['Usuario'];?></td>
+                                        
 
                                         <!-- <td> -->
                                             <!-- //Para que quede el boton de estado o inactivo como un boton -->

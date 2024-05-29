@@ -93,17 +93,21 @@ class mdlProducto {
         return $result;
     }
 
-    //Metodo para obtener los datos de usuarios
-    public function getUsers(){
+    //Metodo para obtener los datos de los productos
+    public function getProduct(){
         //Consulta
-        $sql = "SELECT P.*, U.idUsuario, U.Usuario, U.Estado, R.Descripcion AS rol, TD.Descripcion AS tipoDoc FROM personas AS P INNER JOIN usuarios AS U ON P.idPersona = U.idPersona INNER JOIN roles AS R ON R.idRol = U.idRol INNER JOIN tiposdocumentos AS TD ON P.idTipoDocumento = TD.idTipoDocumento";
+        $sql = "SELECT P.*, C.Nombre AS Categoria, Person.Nombres AS Usuario FROM productos AS P
+        INNER JOIN categorias AS C ON C.idCategoria = P.idCategoria
+        INNER JOIN usuarios AS U ON P.idUsuario = U.idUsuario
+        INNER JOIN personas AS Person ON Person.idPersona = U.idPersona";
+
 
         //Vamos a preparar la consulta y ejecutarla
         $stm = $this->db->prepare($sql);
         $stm->execute();
         //Vamos a crear la variable para retornar los datos
-        $user = $stm->fetchAll(PDO::FETCH_ASSOC);
-        return $user;
+        $product = $stm->fetchAll(PDO::FETCH_ASSOC);
+        return $product;
     }
 
     //Metodo para filtrar, tomar,edita, eliminar y reclamar el ID de los usuarios 

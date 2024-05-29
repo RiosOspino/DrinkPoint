@@ -129,6 +129,9 @@ button.btn i.fa::before {
 .table thead th {
     font-size: 14px;
 }
+table.table tbody td img{
+    width: 200px;
+}
 .table td, .table th {
     padding: 5px;
 }
@@ -167,3 +170,14 @@ ul.to_do {
     background: black;
 }
 
+button.btn.btn-primary {
+    width: 80px;
+}
+
+button.btn.btn-success {
+    width: 60px;
+}
+
+button.btn.btn-primary.btn-xs {
+    width: 30px;
+}

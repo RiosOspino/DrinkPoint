@@ -65,25 +65,23 @@
             require APP . 'view/_templates/footer.php';
         }
 
-        //Metodos para ver los usuarios registrados y modificados
-        public function getProducts(){
+        //Metodos para ver los productos registrados y modificados
+        public function getProduct(){
 
-            //Vamos a tener el condicional para cuando sea el momento de editar los usuarios
+            //Vamos a tener el condicional para cuando sea el momento de editar los productos
             if(isset($_POST['btnUpdate'])){
                 //Comunicacion con el modelo y el formulario
                 // $this->modeloP->__SET('idProducto', $_POST['selCategory']);
                 $this->modeloP->__SET('Nombre', $_POST['txtName']);
                 $this->modeloP->__SET('Descripcion', $_POST['txtDescription']);
                 $this->modeloP->__SET('Precio', $_POST['txtPrice']);
-                // $this->modeloP->__SET('urlImage', $_POST['txtImage']);
                 if($_FILES['txtImage']['tmp_name'] !=null){
                     $this->modeloP->__SET("Imagen",
                     file_get_contents($_FILES['txtImage']["tmp_name"]));}
-                // $this->modelop->__SET('idUsuario', $_POST['txtUser']);
                 $this->modeloP->__SET('idCategoria', $_POST['txtCategory']);
 
                 //Variable para el actualizar
-                $update = $this->modeloP->updateUser();
+                $update = $this->modeloP->updateProduct();
 
                 //Sweetalert
                 if($update == true){
@@ -110,13 +108,13 @@
             }
 
             //Variables para llamar los metodos de los modelos
-            $productos = $this->modeloP->getProductos();
-            $categorias = $this->modeloC->getCategorias();
+            $productos = $this->modeloP->getProduct();
+            // $categorias = $this->modeloC->getCategorias();
             // $documentType = $this->modeloP->getTypeDocument();
 
             //Para que funcione el metodo requiere los archivos visuales 
             require APP . 'view/_templates/header.php';
-            require APP . 'view/usuarios/getUsers.php';
+            require APP . 'view/productos/getProduct.php';
             require APP . 'view/_templates/footer.php';
         }
 
