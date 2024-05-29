@@ -8,7 +8,7 @@ class mdlProducto {
     private $Nombre;
     private $Descripcion;
     private $Precio;
-    private $urlImage;
+    private $Imagen;
     private $idUsuario;
     private $idCategoria;
 
@@ -35,14 +35,14 @@ class mdlProducto {
     //crear el método para registrar las personas
     public function registerProduct(){
         //vamos a crear una variable que guardará la consulta
-        $sql = "INSERT INTO productos(Nombre, Descripcion, Precio, urlImage, idUsuario, idCategoria) VALUES (?,?,?,?,?,?)";
+        $sql = "INSERT INTO productos(Nombre, Descripcion, Precio, Imagen, idUsuario, idCategoria) VALUES (?,?,?,?,?,?)";
 
         //vamos a crear una variable para mantener lista siempre la consulta y poder enviarla o ejecutarla cada que sea llamada
         $stm = $this->db->prepare($sql);
         $stm->bindParam(1, $this->Nombre);
         $stm->bindParam(2, $this->Descripcion);
         $stm->bindParam(3, $this->Precio);
-        $stm->bindParam(4, $this->urlImage);
+        $stm->bindParam(4, $this->Imagen);
         $stm->bindParam(5, $this->idUsuario);
         $stm->bindParam(6, $this->idCategoria);
         //respuesta

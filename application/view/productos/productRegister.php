@@ -53,21 +53,20 @@
                         </div>
                     </div>
 
-                    <!-- <div class="item form-group">
+                    <div class="item form-group">
                         <label for="Image" class="col-form-label col-md-3 col-sm-3 label-align">Imagen <span
-                                class="required">*</span></label>
+                                class="required">*</span>
+                        </label>
                         <div class="col-md-6 col-sm-6 ">
-                            <input id="txtImage" class="form-control" type="file" name="txtImage" required="required">
+                            <div class="btn-group">
+                                <!-- <a class="btn" title="Insert picture (or just drag & drop)" id="pictureBtn"><i
+                                        class="fa fa-picture-o"></i></a> -->
+                                <input type="file" name="txtImage" data-role="magic-overlay" data-target="#pictureBtn"
+                                    data-edit="insertImage" required="required"/>
+                            </div>
                         </div>
-                    </div> -->
-
-                    <div class="btn-group">
-                        <a class="btn" title="Insert picture (or just drag & drop)" id="pictureBtn"><i
-                                class="fa fa-picture-o"></i></a>
-                        <input type="file" name="txtImage" data-role="magic-overlay" data-target="#pictureBtn"
-                            data-edit="insertImage" />
                     </div>
-
+                    
                     <div class="form-group row">
                         <label class="col-form-label col-md-3 col-sm-3 label-align">Categoría </label>
                         <div class="col-md-6 col-sm-6 ">
