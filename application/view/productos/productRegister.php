@@ -28,7 +28,7 @@
 						<label class="col-form-label col-md-3 col-sm-3 label-align" for="Name">Nombre <span class="required">*</span>
 						</label>
 						<div class="col-md-6 col-sm-6 ">
-							<input type="text" id="txtNames" required="required" class="form-control " name="txtName">
+							<input type="text" id="txtName" required="required" class="form-control " name="txtName">
 						</div>
 					</div>
 
@@ -58,8 +58,8 @@
 						<label class="col-form-label col-md-3 col-sm-3 label-align">Categoría </label>
 						<div class="col-md-6 col-sm-6 ">
 							<select class="form-control" name="selCategory" id="selCategory">
-								<option>Elija una opción</option>
-								<?php foreach($documentType as $value):?>
+								<option value="1">Elija una opción</option>
+								<?php foreach($categorias as $value):?>
 									<option value="<?php echo $value['idTipoDocumento'];?>"><?php echo $value['doc'];?></option>
 								<?php endforeach;?>
 							</select>

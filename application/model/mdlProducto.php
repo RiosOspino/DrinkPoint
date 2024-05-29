@@ -5,7 +5,6 @@ require_once("mdlProducto.php");
 //heredamos clase
 class mdlProducto {
     //crear los atributos
-    private $idProducto;
     private $Nombre;
     private $Descripcion;
     private $Precio;
@@ -14,7 +13,7 @@ class mdlProducto {
     private $idCategoria;
 
     //crear el método para fijar los datos
-    public function __SET($atributo,$valor){
+    public function __SET($atributo, $valor){
         $this->$atributo = $valor;
     }
 
@@ -22,6 +21,36 @@ class mdlProducto {
     public function __GET($atributo){
         return $this->$atributo;
     }
+
+    //crear la conexión a la db
+    public function __construct($db){
+        //intentar conectar
+        try{
+            $this->db = $db;
+        }catch(PDOException $e){
+            exit("Error al conectar a la base de datos");
+        }
+    }
+
+    //crear el método para registrar las personas
+    public function registerProduct(){
+        //vamos a crear una variable que guardará la consulta
+        $sql = "INSERT INTO productos(Nombre, Descripcion, Precio, urlImage, idUsuario, idCategoria) VALUES (?,?,?,?,?,?)";
+
+        //vamos a crear una variable para mantener lista siempre la consulta y poder enviarla o ejecutarla cada que sea llamada
+        $stm = $this->db->prepare($sql);
+        $stm->bindParam(1, $this->Nombre);
+        $stm->bindParam(2, $this->Descripcion);
+        $stm->bindParam(3, $this->Precio);
+        $stm->bindParam(4, $this->urlImage);
+        $stm->bindParam(5, $this->idUsuario);
+        $stm->bindParam(6, $this->idCategoria);
+        //respuesta
+        $resultado = $stm->execute();
+        return $resultado;
+    }
+
+
 
     //método para validar el usuario
     public function validateUser(){

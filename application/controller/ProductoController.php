@@ -17,60 +17,40 @@
             //Con un condicional para el formulario y modelo
             if(isset($_POST['btnRegister'])){
                 //Comunicacion con el modelo y el formulario
-                // $this->modelop->__SET('idProducto', $_POST['selDocType']);
-                // $this->modelop->__SET('Nombre', $_POST['txtNames']);
-                // $this->modelop->__SET('Descripcion', $_POST['txtDocument']);
-                // $this->modelop->__SET('Precio', $_POST['txtNumber']);
-                // $this->modelop->__SET('urlImage', $_POST['txtImagen']);
-                // $this->modelop->__SET('idUsuario', $_POST['txtUser']);
-                // $this->modelop->__SET('idCategoria', $_POST['txtCategoria']);
+                $this->modeloP->__SET('Nombre', $_POST['txtName']);
+                $this->modeloP->__SET('Descripcion', $_POST['txtDescription']);
+                $this->modeloP->__SET('Precio', $_POST['txtPrice']);
+                $this->modeloP->__SET('urlImage', $_POST['txtImage']);
+                $this->modeloP->__SET('idUsuario', $_SESSION['idUsuario']);
+                $this->modeloP->__SET('idCategoria', $_POST['selCategory']);
 
-                // //Vamos a crear una variable que llamara al metodo del modelo para poder registrar los datos
-                // $person = $this->modeloP->registerPerson();
+                //Vamos a crear una variable que llamara al metodo del modelo para poder registrar los datos
+                $product = $this->modeloP->registerProduct();
 
-                // //Vamos a validar que registre a partir de la ultima persona registrada 
-                // if($person == true){
-                //     $ultimoId = $this->modeloP->lastIdPerson();
+                //sweetalert
+                if($product == true){
+                    $_SESSION['alert'] = "Swal.fire({
+                        position:'',
+                        icon: 'success',
+                        title: 'Agregado',
+                        showConfirmButton: false,
+                        timer:2000})";
 
-                //     //foreach que se encarga de tomar los datos explicitos 
-                //     foreach($ultimoId as $value){
-                //         $ultimoIdValue = $value['lastIdPerson'];
-                //     }
-                // }
+                        header("Location: " . URL."productoController/getProduct");
+                        exit();
+                }else{
+                    $_SESSION['alert'] = "Swal.fire({
+                        position:'',
+                        icon: 'error',
+                        title: 'Error',
+                        showConfirmButton: false,
+                        timer:2000})";
 
-                // //Aqui vamos a enviar los datos para el registro de el usuario
-                // $this->modeloP->__SET('idPersona', $ultimoIdValue);
-                // $this->modeloP->__SET('usuario', $_POST['txtUser']);
-                // $this->modeloP->__SET('clave', $_POST['txtPassword']);
-                // $this->modeloP->__SET('idRol', $_POST['selRol']);
+                        header("Location:" . URL."productoController/productRegister");
+                        exit();  
+                }
 
-                // //Vamos a crear una variable que llamara al metodo del modelo para poder registrar los datos
-                // $user = $this->modeloP->userRegister();
-
-                // //sweetalert
-                // if($person == true && $user == true){
-                //     $_SESSION['alert'] = "Swal.fire({
-                //         position:'',
-                //         icon: 'success',
-                //         title: 'Agregado',
-                //         showConfirmButton: false,
-                //         timer:2000})";
-
-                //         header("Location: " . URL."productoController/getProduc");
-                //         exit();
-                // }else{
-                //     $_SESSION['alert'] = "Swal.fire({
-                //         position:'',
-                //         icon: 'error',
-                //         title: 'Error',
-                //         showConfirmButton: false,
-                //         timer:2000})";
-
-                //         header("Location:" . URL."productoController/productRegister");
-                //         exit();  
-                // }
-
-                // header("Location: " .URL."productoController/getUsers");
+                header("Location: " .URL."productoController/getProduct");
             }
 
             //Vamos a crear variables para hacer los llamados a los metodos a los diversos modelos (Traer los demas metodos necesarios)
