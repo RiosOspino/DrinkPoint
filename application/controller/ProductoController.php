@@ -72,7 +72,10 @@
                 $this->modeloP->__SET('Nombre', $_POST['txtName']);
                 $this->modeloP->__SET('Descripcion', $_POST['txtDescription']);
                 $this->modeloP->__SET('Precio', $_POST['txtPrice']);
-                $this->modeloP->__SET('urlImage', $_POST['txtImage']);
+                // $this->modeloP->__SET('urlImage', $_POST['txtImage']);
+                if($_FILES['txtImage']['tmp_name'] !=null){
+                    $this->modeloP->__SET("Imagen",
+                    file_get_contents($_FILES['txtImage']["tmp_name"]));}
                 // $this->modelop->__SET('idUsuario', $_POST['txtUser']);
                 $this->modeloP->__SET('idCategoria', $_POST['txtCategory']);
 
