@@ -27,38 +27,30 @@
                             <table id="datatable" class="table table-striped table-bordered" style="width:100%">
                                 <thead>
                                     <tr>
-                                        <th>Tipo</th>
-                                        <th>Documento</th>
-                                        <th>Nombres</th>
-                                        <th>Apellidos</th>
-                                        <th>Correo Electronico</th>
-                                        <th>Usuario</th>
-                                        <th>Telefono</th>
-                                        <th>Rol</th>
-                                        <th>Estado</th>
-                                        <th>Acciones</th>
+                                        <th>Nombre</th>
+                                        <th>Descripción</th>
+                                        <th>Precio</th>
+                                        <th>Categoría</th>
+                                        <th>Usuario  </th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <?php foreach($users as $value):?>
                                     <tr>
-                                        <td><?php echo $value['tipoDoc'];?></td>
-                                        <td><?php echo $value['Documento'];?></td>
-                                        <td><?php echo $value['Nombres'];?></td>
-                                        <td><?php echo $value['Apellidos'];?></td>
-                                        <td><?php echo $value['Email'];?></td>
+                                        <td><?php echo $value['Nombre'];?></td>
+                                        <td><?php echo $value['Descripcion'];?></td>
+                                        <td><?php echo $value['Precio'];?></td>
+                                        <td><?php echo $value['Categoria'];?></td>
                                         <td><?php echo $value['Usuario'];?></td>
-                                        <td><?php echo $value['Telefono'];?></td>
-                                        <td><?php echo $value['rol'];?></td>
-                                        <td>
 
+                                        <!-- <td> -->
                                             <!-- //Para que quede el boton de estado o inactivo como un boton -->
-                                            <?php if($value['Estado'] == 1):?>
+                                            <!-- <?php if($value['Estado'] == 1):?>
                                             <label class="badge bagde-pill badge-success">Activo</label>
                                             <?php else: ?>
                                             <label class="badge bagde-pill badge-danger">Inactivo</label>
-                                            <?php endif;?>
-                                        </td>
+                                            <?php endif;?> -->
+                                        <!-- </td> -->
 
                                         <td>
                                             <button type="button" class="btn btn-primary btn-xs" data-toggle="modal"
@@ -98,58 +90,58 @@
             </div>
             <div class="modal-body">
                 <form method="post">
-                    <input type="hidden" name="txtIdUser" id="txtIdUser">
+                    <input type="hidden" name="txtIdProduct" id="txtIdProduct">
+
+                    <div class="item form-group">
+                        <label class="col-form-label col-md-3 col-sm-3 label-align" for="Document">Nombre <span
+                                class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 ">
+                            <input type="text" id="txtName" required="required" class="form-control" name="txtName">
+                        </div>
+                    </div>
+
+                    <div class="item form-group">
+                        <label class="col-form-label col-md-3 col-sm-3 label-align" for="Names">Descripcion <span
+                                class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 ">
+                            <input type="text" id="txtDescription" required="required" class="form-control " name=txtDescription>
+                        </div>
+                    </div>
+
+                    <div class="item form-group">
+                        <label class="col-form-label col-md-3 col-sm-3 label-align" for="Lastname">Precio <span
+                                class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 ">
+                            <input type="number" id="txtPrice" name="txtPrice" required="required"
+                                class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="item form-group">
+                        <label for="Email" class="col-form-label col-md-3 col-sm-3 label-align">Imagen <span
+                                class="required">*</span></label>
+                        <div class="col-md-6 col-sm-6 ">
+                            <input id="txtImage" class="form-control" type="text" name="txtImage" required="required">
+                        </div>
+                    </div>
 
                     <div class="form-group row">
-                        <label class="col-form-label col-md-3 col-sm-3 label-align">Tipo de documento</label>
+                        <label class="col-form-label col-md-3 col-sm-3 label-align">Categoría</label>
                         <div class="col-md-6 col-sm-6 ">
-                            <select class="form-control" name="selDocType" id="selDocType">
+                            <select class="form-control" name="selCategory" id="selCategory">
                                 <option>Elija una opción</option>
                                 <?php foreach($documentType as $value):?>
-                                <option value="<?php echo $value['idTipoDocumento'];?>"><?php echo $value['doc'];?>
+                                <option value="<?php echo $value['idCategoria'];?>"><?php echo $value['doc'];?>
                                 </option>
                                 <?php endforeach;?>
                             </select>
                         </div>
                     </div>
 
-                    <div class="item form-group">
-                        <label class="col-form-label col-md-3 col-sm-3 label-align" for="Document">N° Documento <span
-                                class="required">*</span>
-                        </label>
-                        <div class="col-md-6 col-sm-6 ">
-                            <input type="number" id="txtDocument" required="required" class="form-control" name="txtDocument">
-                        </div>
-                    </div>
-
-                    <div class="item form-group">
-                        <label class="col-form-label col-md-3 col-sm-3 label-align" for="Names">Nombres <span
-                                class="required">*</span>
-                        </label>
-                        <div class="col-md-6 col-sm-6 ">
-                            <input type="text" id="txtNames" required="required" class="form-control " name=txtNames>
-                        </div>
-                    </div>
-
-                    <div class="item form-group">
-                        <label class="col-form-label col-md-3 col-sm-3 label-align" for="Lastname">Apellidos <span
-                                class="required">*</span>
-                        </label>
-                        <div class="col-md-6 col-sm-6 ">
-                            <input type="text" id="txtLastname" name="txtLastname" required="required"
-                                class="form-control">
-                        </div>
-                    </div>
-
-                    <div class="item form-group">
-                        <label for="Email" class="col-form-label col-md-3 col-sm-3 label-align">Correo <span
-                                class="required">*</span></label>
-                        <div class="col-md-6 col-sm-6 ">
-                            <input id="txtEmail" class="form-control" type="email" name="txtEmail" required="required">
-                        </div>
-                    </div>
-
-                    <div class="item form-group">
+                    <!-- <div class="item form-group">
                         <label for="Phone" class="col-form-label col-md-3 col-sm-3 label-align">Teléfono <span
                                 class="required">*</span></label>
                         <div class="col-md-6 col-sm-6 ">
@@ -181,7 +173,7 @@
                             <input id="txtPassword" class="form-control" type="password" name="txtPassword"
                                 required="required">
                         </div>
-                    </div>
+                    </div> -->
                 
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
