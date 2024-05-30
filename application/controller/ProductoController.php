@@ -71,14 +71,15 @@
             //Vamos a tener el condicional para cuando sea el momento de editar los productos
             if(isset($_POST['btnUpdate'])){
                 //Comunicacion con el modelo y el formulario
-                // $this->modeloP->__SET('idProducto', $_POST['selCategory']);
+                $this->modeloP->__SET('idProducto', $_POST['txtIdProducto']);
                 $this->modeloP->__SET('Nombre', $_POST['txtName']);
                 $this->modeloP->__SET('Descripcion', $_POST['txtDescription']);
                 $this->modeloP->__SET('Precio', $_POST['txtPrice']);
                 if($_FILES['txtImage']['tmp_name'] !=null){
                     $this->modeloP->__SET("Imagen",
                     file_get_contents($_FILES['txtImage']["tmp_name"]));}
-                $this->modeloP->__SET('idCategoria', $_POST['txtCategory']);
+                // $this->modeloP->__SET('idCategoria', $_POST['selCategory']);
+                $this->modeloP->__SET('idCategoria', 1);
 
                 //Variable para el actualizar
                 $update = $this->modeloP->updateProduct();
@@ -122,7 +123,7 @@
         public function getProductByID(){
             //Vamos a crear una variable para controlar el dato
             $dataProduct = $this->modeloP->getProductByID($_POST['id']);
-            $dataProduct['Imagen'] = base64_encode($dataProduct['Imagen']);
+            $dataProduct['Imagen'] = $dataProduct['Imagen'] ? base64_encode($dataProduct['Imagen']) : "";
 
             echo json_encode($dataProduct);
         }

@@ -158,7 +158,6 @@ class mdlProducto {
 
         $sql = "UPDATE productos AS P SET P.Nombre = ?, P.Descripcion = ?, P.Precio = ?, P.Imagen =?, P.idCategoria = ? WHERE P.idProducto = ?";
 
-
         //Preparar y enviar la consulta
         $stm = $this->db->prepare($sql);
         $stm->bindParam(1, $this->Nombre);

@@ -61,8 +61,7 @@
                             <div class="btn-group">
                                 <!-- <a class="btn" title="Insert picture (or just drag & drop)" id="pictureBtn"><i
                                         class="fa fa-picture-o"></i></a> -->
-                                <input type="file" name="txtImage" data-role="magic-overlay" data-target="#pictureBtn"
-                                    data-edit="insertImage" required="required"/>
+                                <input type="file" name="txtImage" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" required="required"/>
                             </div>
                         </div>
                     </div>

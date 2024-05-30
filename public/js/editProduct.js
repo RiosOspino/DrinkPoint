@@ -5,7 +5,8 @@ function dataProduct(id){
         type: 'post',
         dataType: 'json',
         data:{'id':id}
-    }).done(function(resp){        
+    }).done(function(resp){ 
+        $('#txtIdProducto').val(resp.idProducto);       
         $('#txtName').val(resp.Nombre);
         $('#txtDescription').val(resp.Descripcion);
         $('#txtPrice').val(resp.Precio);

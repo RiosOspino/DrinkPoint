@@ -100,7 +100,7 @@
             </div>
             <div class="modal-body">
                 <form method="post">
-                    <input type="hidden" name="txtIdProduct" id="txtIdProduct">
+                    <input type="hidden" name="txtIdProducto" id="txtIdProducto">
 
                     <div class="item form-group">
                         <label class="col-form-label col-md-3 col-sm-3 label-align" for="Document">Nombre <span
@@ -139,7 +139,7 @@
                                 <!-- <a class="btn" title="Insert picture (or just drag & drop)" id="pictureBtn"><i
                                         class="fa fa-picture-o"></i></a> -->
                                 <input type="file" name="txtImage" data-role="magic-overlay" data-target="#pictureBtn"
-                                    data-edit="insertImage" required="required"/>
+                                    data-edit="insertImage" />
                             </div>
                         </div>
                     </div>
