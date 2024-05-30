@@ -33,6 +33,7 @@
                                         <th>Categoría</th>
                                         <th>Imagen</th>
                                         <th>Usuario</th>
+                                        <th>Estado</th>
                                         <th>Acciones</th>
                                     </tr>
                                 </thead>
@@ -52,16 +53,17 @@
                                             
                                         ?></td>                                        
                                         <td><?php echo $value['Usuario'];?></td>
+                                        <td><?php echo $value['Estado'];?></td>
                                         
 
-                                        <!-- <td> -->
-                                            <!-- //Para que quede el boton de estado o inactivo como un boton -->
-                                            <!-- <?php if($value['Estado'] == 1):?>
+                                        <td>
+                                            <!-- //Para que quede el boton de estado o inactivo como un boton  -->
+                                            <?php if($value['Estado'] == 1):?>
                                             <label class="badge bagde-pill badge-success">Activo</label>
                                             <?php else: ?>
                                             <label class="badge bagde-pill badge-danger">Inactivo</label>
-                                            <?php endif;?> -->
-                                        <!-- </td> -->
+                                            <?php endif;?>
+                                        </td>
 
                                         <td>
                                             <button type="button" class="btn btn-primary btn-xs" data-toggle="modal"

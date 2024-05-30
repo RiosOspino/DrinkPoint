@@ -11,6 +11,7 @@ class mdlProducto {
     private $Imagen;
     private $idUsuario;
     private $idCategoria;
+    private $estado;
 
     //crear el método para fijar los datos
     public function __SET($atributo, $valor){
@@ -45,15 +46,14 @@ class mdlProducto {
         $stm->bindParam(4, $this->Imagen);
         $stm->bindParam(5, $this->idUsuario);
         $stm->bindParam(6, $this->idCategoria);
+        $stm->bindParam(7, $this->Estado);
         //respuesta
         $resultado = $stm->execute();
         return $resultado;
     }
 
-
-
     //método para validar el usuario
-    public function validateUser(){
+    public function validateProduct(){
         //crear la variable de consulta
         $sql = "SELECT P.Documento, P.Nombres, P.Apellidos, U.idUsuario, U.Usuario, R.Descripcion FROM personas AS P 
         INNER JOIN tiposdocumentos AS TD ON P.idTipoDocumento = TD.idTipoDocumento
@@ -72,7 +72,7 @@ class mdlProducto {
     }
 
     //Metodo para  registrar los usuarios
-    public function userRegister(){
+    public function productRegister(){
         //Vamos a crear la consulta
         $sql = "INSERT INTO usuarios(idPersona, Usuario, Clave, idRol, Estado) VALUES (?,?,?,?,?)";
         
@@ -111,7 +111,7 @@ class mdlProducto {
     }
 
     //Metodo para filtrar, tomar,edita, eliminar y reclamar el ID de los usuarios 
-    public function userId($id){
+    public function ProductId($id){
         //Consulta
         $sql = "SELECT P.*, U.*, R.idRol, R.Descripcion AS rol, TD.Descripcion AS tipoDOc FROM personas AS P INNER JOIN usuarios AS U ON P.idPersona = U.idPersona INNER JOIN roles AS R ON R.idRol = U.idRol INNER JOIN tiposdocumentos AS TD ON P.idTipoDocumento = TD.idTipoDocumento WHERE U.idUsuario = ?";
 
@@ -125,7 +125,7 @@ class mdlProducto {
     //Metodo para cambiar estados
     public function changeStatus($id){
         //Consulta
-        $sql = "UPDATE usuarios SET Estado =(CASE WHEN Estado = 1 THEN 0 ELSE 1 END) WHERE idUsuario = ?";
+        $sql = "UPDATE productos SET Estado =(CASE WHEN Estado = 1 THEN 0 ELSE 1 END) WHERE idProducto = ?";
 
         $query = $this->db->prepare($sql);
         $query -> bindParam(1, $id);
@@ -133,7 +133,7 @@ class mdlProducto {
     }
 
     //Metodo para eliminar el usuario
-    public function deleteUser($id){
+    public function deleteProduct($id){
         //Consulta
         $sql = "DELETE U, P FROM usuarios AS U INNER JOIN personas AS P WHERE P.idPersona = U.idPersona AND U.idUsuario = ?";
 
@@ -143,22 +143,19 @@ class mdlProducto {
     }
 
     //Metodo para actualizar
-    public function updateUser(){
+    public function updateProduct(){
         //Consulta
         $sql = "UPDATE personas AS P INNER JOIN usuarios AS U ON P.idPersona = U.idPersona  SET P.idTipoDocumento = ?, P.Documento = ?, P.Nombres = ?, P.Apellidos =?, P.Telefono = ?, P.Direccion = ?, P.Email = ?, U.Usuario = ?, U.Clave = ? WHERE U.idUsuario =  ?";
 
         //Preparar y enviar la consulta
         $stm = $this->db->prepare($sql);
-        $stm->bindParam(1, $this->idTipoDocumento);
-        $stm->bindParam(2, $this->documento);
-        $stm->bindParam(3, $this->nombres);
-        $stm->bindParam(4, $this->apellidos);
-        $stm->bindParam(5, $this->telefono);
-        $stm->bindParam(6, $this->direccion);
-        $stm->bindParam(7, $this->email);
-        $stm->bindParam(8, $this->usuario);
-        $stm->bindParam(9, $this->clave);
-        $stm->bindParam(10, $this->idUsuario);
+        $stm->bindParam(1, $this->Nombre);
+        $stm->bindParam(2, $this->Descripcion);
+        $stm->bindParam(3, $this->Precio);
+        $stm->bindParam(4, $this->Imagen);
+        $stm->bindParam(5, $this->idUsuario);
+        $stm->bindParam(6, $this->idCategoria);
+        $stm->bindParam(7, $this->Estado);
 
         //Respuesta
         $result = $stm->execute();
