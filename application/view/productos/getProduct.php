@@ -88,13 +88,13 @@
     </div>
 </div>
 
-
+<!-- Modal -->
 <div class="modal fade bs-example-modal-lg" id="modal-edit" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
 
             <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel">Editar Usuario</h4>
+                <h4 class="modal-title" id="myModalLabel">Editar Producto</h4>
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
                 </button>
             </div>
@@ -131,10 +131,16 @@
                     </div>
 
                     <div class="item form-group">
-                        <label for="Email" class="col-form-label col-md-3 col-sm-3 label-align">Imagen <span
-                                class="required">*</span></label>
+                    <label for="Image" class="col-form-label col-md-3 col-sm-3 label-align">Imagen <span
+                                class="required">*</span>
+                        </label>
                         <div class="col-md-6 col-sm-6 ">
-                            <input id="txtImage" class="form-control" type="text" name="txtImage" required="required">
+                            <div class="btn-group">
+                                <!-- <a class="btn" title="Insert picture (or just drag & drop)" id="pictureBtn"><i
+                                        class="fa fa-picture-o"></i></a> -->
+                                <input type="file" name="txtImage" data-role="magic-overlay" data-target="#pictureBtn"
+                                    data-edit="insertImage" required="required"/>
+                            </div>
                         </div>
                     </div>
 

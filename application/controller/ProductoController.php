@@ -119,9 +119,11 @@
         }
 
         //Metodo para traer el ID 
-        public function productId(){
+        public function getProductByID(){
             //Vamos a crear una variable para controlar el dato
-            $dataProduct = $this->modeloP->productId($_POST['id']);
+            $dataProduct = $this->modeloP->getProductByID($_POST['id']);
+            $dataProduct['Imagen'] = base64_encode($dataProduct['Imagen']);
+
             echo json_encode($dataProduct);
         }
 

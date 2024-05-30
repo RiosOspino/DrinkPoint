@@ -114,20 +114,21 @@ class mdlProducto {
     }
 
     //Metodo para filtrar, tomar,edita, eliminar y reclamar el ID de los usuarios 
-    public function ProductId($id){
+    public function getProductByID($id){
         //Consulta
         // $sql = "SELECT P.*, U.*, R.idRol, R.Descripcion AS rol, TD.Descripcion AS tipoDoc FROM personas AS P 
         // INNER JOIN usuarios AS U ON P.idPersona = U.idPersona 
         // INNER JOIN roles AS R ON R.idRol = U.idRol 
         // INNER JOIN tiposdocumentos AS TD ON P.idTipoDocumento = TD.idTipoDocumento WHERE U.idUsuario = ?";
 
-        $sql = "SELECT PD.*, C.* FROM productos AS PD INNER JOIN categorias AS C ON PD.idCategoria = C.idCategoria";
+        $sql = "SELECT idProducto, Nombre, Descripcion, Precio, Imagen FROM productos WHERE idProducto = ?";
 
         //Preparacion y ejecucion de la consulta
         $query = $this->db->prepare($sql);
         $query->bindParam(1, $id);
         $query->execute();
-        return $query->fetchAll(PDO::FETCH_ASSOC);
+
+        return $query->fetch(PDO::FETCH_ASSOC);
     }
 
     //Metodo para cambiar estados
@@ -164,9 +165,8 @@ class mdlProducto {
         $stm->bindParam(2, $this->Descripcion);
         $stm->bindParam(3, $this->Precio);
         $stm->bindParam(4, $this->Imagen);
-        $stm->bindParam(5, $this->idUsuario);
-        $stm->bindParam(6, $this->idCategoria);
-        $stm->bindParam(7, $this->Estado);
+        $stm->bindParam(5, $this->idCategoria);
+        $stm->bindParam(6, $this->idProducto);
 
         //Respuesta
         $result = $stm->execute();
