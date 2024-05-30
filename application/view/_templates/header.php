@@ -82,8 +82,8 @@
 
                   <li><a><i class="fa fa-list"></i>CATEGORÍAS <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="<?php echo URL; ?>usuarioController/userRegister">Registrar Categorías</a></li>
-                      <li><a href="<?php echo URL; ?>usuarioController/getUsers">Ver Categorías</a></li>
+                      <li><a href="<?php echo URL; ?>CategoriaController/categoryRegister">Registrar Categorías</a></li>
+                      <li><a href="<?php echo URL; ?>CategoriaController/getCategory">Ver Categorías</a></li>
                     </ul>
                   </li>
 
