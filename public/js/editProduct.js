@@ -30,16 +30,16 @@ Swal.fire({
     confirmButtonColor: '#fffff',
     cancelButtonColor: '#e52b34',
     confirmButtonText: 'Si',
-}).then((result)=>{
-    if(result.isConfirmed){
+}).then((res)=>{
+    if(res.isConfirmed){
         Swal.fire({
             position: '',
             icon: 'success',
             title: 'Estado cambiado',
             confirmButtonText:'Ok',
             timer: 2000
-        }).then((result)=>{
-            if(result.isConfirmed){
+        }).then((res)=>{
+            if(res.isConfirmed){
                 $.ajax({
                     type:"post",
                     url: url + "ProductoController/changeStatus",
@@ -67,39 +67,32 @@ Swal.fire({
 function deleteProduct(id){
     // alert(id);
     Swal.fire({
-        title: '¿Quieres eliminar el usuario?',
+        title: '¿Quieres eliminar el producto?',
         icon: 'Advertencia',
         showCancelButton: true,
         confirmButtonColor: '#fffff',
         cancelButtonColor: '#e52b34',
         confirmButtonText: 'Si',
-    }).then((result)=>{
-        if(result.isConfirmed){
-            Swal.fire({
-                position: '',
-                icon: 'success',
-                title: 'Usuario Eliminado',
-                confirmButtonText:'Ok',
-                timer: 2000
-            }).then((result)=>{
-                if(result.isConfirmed){
-                    $.ajax({
-                        type:"post",
-                        url: url + "ProductoController/deleteProduct",
-                        data: {'id':id,}
-                    }).done(function(answer){
-                        if(answer == 1){
-                            window.location = url + "ProductoController/getProduct";
-                            window.reload();
-                        }else{
-                            Swal.fire('Error al eliminar','','Error');
-                        }
-                    }).fail(function(error){
-                        console.log(error);
-                    })
+    }).then((res)=>{
+        if(res.isConfirmed){
+            $.ajax({
+                type:"post",
+                url: url + "ProductoController/deleteProduct",
+                data: {'id':id,}
+            }).done(function(answer){
+                if(answer == 1){
+                    Swal.fire('Producto eliminado','','success');
+
+                    setTimeout(() => {
+                        window.location = url + "ProductoController/getProduct";
+                        window.reload();
+                    }, 3000);
+                }else{
+                    Swal.fire('Error al eliminar','','Error');
                 }
-            
+            }).fail(function(error){
+                console.log(error);
             })
-        }
+        }   
     })
 }

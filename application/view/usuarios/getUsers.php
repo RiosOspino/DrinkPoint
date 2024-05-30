@@ -51,7 +51,6 @@
                                         <td><?php echo $value['Telefono'];?></td>
                                         <td><?php echo $value['rol'];?></td>
                                         <td>
-
                                             <!-- //Para que quede el boton de estado o inactivo como un boton -->
                                             <?php if($value['Estado'] == 1):?>
                                             <label class="badge bagde-pill badge-success">Activo</label>
