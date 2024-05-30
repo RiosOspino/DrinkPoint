@@ -92,7 +92,7 @@
                         showConfirmButton: false,
                         timer:2000})";
 
-                        header("Location: " . URL."productoController/getProduc");
+                        header("Location: " . URL."ProductoController/getProduct");
                         exit();
                 }else{
                     $_SESSION['alert'] = "Swal.fire({
@@ -102,7 +102,7 @@
                         showConfirmButton: false,
                         timer:2000})";
 
-                        header("Location:" . URL."productoController/getProduc");
+                        header("Location:" . URL."ProductoController/getProduct");
                         exit();  
                 }
             }
@@ -119,23 +119,23 @@
         }
 
         //Metodo para traer el ID 
-        public function userId(){
+        public function productId(){
             //Vamos a crear una variable para controlar el dato
-            $dataUser = $this->modeloP->userId($_POST['id']);
-            echo json_encode($dataUser);
+            $dataProduct = $this->modeloP->productId($_POST['id']);
+            echo json_encode($dataProduct);
         }
 
         //Metodo para cambiar el estado
         public function changeStatus(){
             //Vamos a crear una variable para controlar el dato
-            $dataUser = $this->modeloP->changeStatus($_POST['id']);
+            $dataProduct = $this->modeloP->changeStatus($_POST['id']);
             echo 1;
         }
 
         //Metodo para eliminar el usuario
-        public function deleteUser(){
+        public function deleteProduct(){
             //Vamos a crear una variable para controlar el dato
-            $dataUser = $this->modeloP->deleteUser($_POST['id']);
+            $dataProduct = $this->modeloP->deleteProduct($_POST['id']);
             echo 1;
         }
     }
