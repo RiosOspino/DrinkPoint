@@ -1,9 +1,8 @@
 <?php
 //Vamos a crear la clase de este modelo, por lo general, se le da como nombre el mismo del archivo  (mdlProducto)
-require_once("mdlCategoria.php");
 
 //heredamos clase
-class mdlProducto {
+class mdlCategoria {
     //crear los atributos
     private $idCategoria;
     private $Nombre;
@@ -101,7 +100,7 @@ class mdlProducto {
         $stm->execute();
         //Vamos a crear la variable para retornar los datos
         $category = $stm->fetchAll(PDO::FETCH_ASSOC);
-        return $pcategory;
+        return $category;
     }
 
     //Metodo para filtrar, tomar,edita, eliminar y reclamar el ID de los usuarios 

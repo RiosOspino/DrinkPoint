@@ -55,7 +55,7 @@
             // $categorias = $this ->modeloC->getCategorias();
 
             require APP . 'view/_templates/header.php';
-            require APP . 'view/categoria/categoryRegister.php';
+            require APP . 'view/categorias/categoryRegister.php';
             require APP . 'view/_templates/footer.php';
         }
 
@@ -103,7 +103,7 @@
 
             //Para que funcione el metodo requiere los archivos visuales 
             require APP . 'view/_templates/header.php';
-            require APP . 'view/categoria/getCategory.php';
+            require APP . 'view/categorias/getCategory.php';
             require APP . 'view/_templates/footer.php';
         }
 

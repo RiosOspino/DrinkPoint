@@ -34,10 +34,18 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <?php foreach($categorias as $value):?>
+                                <?php foreach($categoria as $value):?>
                                     <tr>
                                         <td><?php echo $value['Nombre'];?></td>
                                         <td><?php echo $value['Categoria'];?></td>
+                                        <td><?php
+                                            if ($value['Imagen'] != null) {
+                                                echo "<img src='data:image/jpeg;base64, " . base64_encode($value['Imagen']) . "'/>";
+                                            }else {
+                                                echo "<img src='" . URL . "img/Image-not-found.png'/>";                                                
+                                            }                                            
+                                        ?></td>                                        
+                                        <td><?php echo $value['Usuario'];?></td>
                 
 
                                         <td>
