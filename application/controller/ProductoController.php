@@ -3,13 +3,13 @@
     class productoController extends Controller{
         //atributo que va a ser el encargado de llamar el módelo necesario
         private $modeloP;
-        // private $modeloC;
+        private $modeloC;
 
         //vamos a crear el constructor que llamará del modelo a la base de datos
         public function __construct(){
             //Instanciar los modelos necesarios
             $this->modeloP = $this->loadModel("mdlProducto");
-            // $this->modeloC = $this->loadModel("mdlCategoria");
+            $this->modeloC = $this->loadModel("mdlCategoria");
         }
 
         //Metodo para llamar al formulario de registro de usuario

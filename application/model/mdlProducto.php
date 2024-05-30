@@ -116,7 +116,10 @@ class mdlProducto {
     //Metodo para filtrar, tomar,edita, eliminar y reclamar el ID de los usuarios 
     public function ProductId($id){
         //Consulta
-        $sql = "SELECT P.*, U.*, R.idRol, R.Descripcion AS rol, TD.Descripcion AS tipoDOc FROM personas AS P INNER JOIN usuarios AS U ON P.idPersona = U.idPersona INNER JOIN roles AS R ON R.idRol = U.idRol INNER JOIN tiposdocumentos AS TD ON P.idTipoDocumento = TD.idTipoDocumento WHERE U.idUsuario = ?";
+        $sql = "SELECT P.*, U.*, R.idRol, R.Descripcion AS rol, TD.Descripcion AS tipoDoc FROM personas AS P 
+        INNER JOIN usuarios AS U ON P.idPersona = U.idPersona 
+        INNER JOIN roles AS R ON R.idRol = U.idRol 
+        INNER JOIN tiposdocumentos AS TD ON P.idTipoDocumento = TD.idTipoDocumento WHERE U.idUsuario = ?";
 
         //Preparacion y ejecucion de la consulta
         $query = $this->db->prepare($sql);
@@ -149,6 +152,9 @@ class mdlProducto {
     public function updateProduct(){
         //Consulta
         $sql = "UPDATE personas AS P INNER JOIN usuarios AS U ON P.idPersona = U.idPersona  SET P.idTipoDocumento = ?, P.Documento = ?, P.Nombres = ?, P.Apellidos =?, P.Telefono = ?, P.Direccion = ?, P.Email = ?, U.Usuario = ?, U.Clave = ? WHERE U.idUsuario =  ?";
+
+        $sql = "UPDATE productos AS P SET P.Nombre = ?, P.Descripcion = ?, P.Precio = ?, P.Imagen =?, P.idCategoria = ? WHERE P.idProducto = ?";
+
 
         //Preparar y enviar la consulta
         $stm = $this->db->prepare($sql);
