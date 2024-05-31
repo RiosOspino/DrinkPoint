@@ -3,13 +3,13 @@
     class productoController extends Controller{
         //atributo que va a ser el encargado de llamar el módelo necesario
         private $modeloP;
-        // private $modeloC;
+        private $modeloC;
 
         //vamos a crear el constructor que llamará del modelo a la base de datos
         public function __construct(){
             //Instanciar los modelos necesarios
             $this->modeloP = $this->loadModel("mdlProducto");
-            // $this->modeloC = $this->loadModel("mdlCategoria");
+            $this->modeloC = $this->loadModel("mdlCategoria");
         }
 
         //Metodo para llamar al formulario de registro de usuario
@@ -57,8 +57,7 @@
             }
 
             //Vamos a crear variables para hacer los llamados a los metodos a los diversos modelos (Traer los demas metodos necesarios)
-            // $documentType = $this->modeloP->getTypeDocument();
-            // $categorias = $this ->modeloC->getCategorias();
+            $categorias = $this ->modeloC->getCategory();
 
             require APP . 'view/_templates/header.php';
             require APP . 'view/productos/productRegister.php';
@@ -78,8 +77,7 @@
                 if($_FILES['txtImage']['tmp_name'] !=null){
                     $this->modeloP->__SET("Imagen",
                     file_get_contents($_FILES['txtImage']["tmp_name"]));}
-                // $this->modeloP->__SET('idCategoria', $_POST['selCategory']);
-                $this->modeloP->__SET('idCategoria', 1);
+                $this->modeloP->__SET('idCategoria', $_POST['selCategory']);
 
                 //Variable para el actualizar
                 $update = $this->modeloP->updateProduct();
@@ -110,8 +108,7 @@
 
             //Variables para llamar los metodos de los modelos
             $productos = $this->modeloP->getProduct();
-            // $categorias = $this->modeloC->getCategorias();
-            // $documentType = $this->modeloP->getTypeDocument();
+            $categorias = $this ->modeloC->getCategory();
 
             //Para que funcione el metodo requiere los archivos visuales 
             require APP . 'view/_templates/header.php';

@@ -91,7 +91,6 @@ class mdlCategoria {
         //Consulta
         $sql = "SELECT * FROM categorias";
 
-
         //Vamos a preparar la consulta y ejecutarla
         $stm = $this->db->prepare($sql);
         $stm->execute();

@@ -70,10 +70,9 @@
                         <label class="col-form-label col-md-3 col-sm-3 label-align">Categoría </label>
                         <div class="col-md-6 col-sm-6 ">
                             <select class="form-control" name="selCategory" id="selCategory">
-                                <option value="1">Elija una opción</option>
+                                <option value="">Elija una opción</option>
                                 <?php foreach($categorias as $value):?>
-                                <option value="<?php echo $value['idTipoDocumento'];?>"><?php echo $value['doc'];?>
-                                </option>
+                                <option value="<?php echo $value['idCategoria'];?>"><?php echo $value['Nombre'];?></option>
                                 <?php endforeach;?>
                             </select>
                         </div>

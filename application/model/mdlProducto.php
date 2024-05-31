@@ -121,7 +121,7 @@ class mdlProducto {
         // INNER JOIN roles AS R ON R.idRol = U.idRol 
         // INNER JOIN tiposdocumentos AS TD ON P.idTipoDocumento = TD.idTipoDocumento WHERE U.idUsuario = ?";
 
-        $sql = "SELECT idProducto, Nombre, Descripcion, Precio, Imagen FROM productos WHERE idProducto = ?";
+        $sql = "SELECT idProducto, Nombre, Descripcion, Precio, Imagen, idCategoria FROM productos WHERE idProducto = ?";
 
         //Preparacion y ejecucion de la consulta
         $query = $this->db->prepare($sql);

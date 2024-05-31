@@ -11,7 +11,7 @@ function dataProduct(id){
         $('#txtDescription').val(resp.Descripcion);
         $('#txtPrice').val(resp.Precio);
         $('#txtImage').val(resp.Imagen);
-        $('#txtCategory').val(resp.idCategoria);
+        $('#selCategory').val(resp.idCategoria);
     }).fail(function(error){
         console.log(error)
     })

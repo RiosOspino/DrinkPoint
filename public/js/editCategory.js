@@ -14,7 +14,6 @@ function dataCategory(id){
     })
 }
 
-
 //Metodo para CAMBIAR el ESTADO
 function changeStatus(id){
     // alert(id);
@@ -26,31 +25,25 @@ Swal.fire({
     cancelButtonColor: '#e52b34',
     confirmButtonText: 'Si',
 }).then((res)=>{
+
     if(res.isConfirmed){
-        Swal.fire({
-            position: '',
-            icon: 'success',
-            title: 'Estado cambiado',
-            confirmButtonText:'Ok',
-            timer: 2000
-        }).then((res)=>{
-            if(res.isConfirmed){
-                $.ajax({
-                    type:"post",
-                    url: url + "CategoriaController/changeStatus",
-                    data: {'id':id,}
-                }).done(function(answer){
-                    if(answer == 1){
-                        window.location = url + "CategoriaController/getCategory";
-                        window.reload();
-                    }else{
-                        Swal.fire('Error al cambiar el estado','','Error');
-                    }
-                }).fail(function(error){
-                    console.log(error);
-                })
+        $.ajax({
+            type:"post",
+            url: url + "CategoriaController/changeStatus",
+            data: {'id':id,}
+        }).done(function(answer){
+            if(answer == 1){
+                Swal.fire('Estado cambiado','','success');
+
+                setTimeout(() => {
+                    window.location = url + "CategoriaController/getCategory";
+                    window.reload();
+                }, 3000);
+            }else{
+                Swal.fire('Error al cambiar el estado','','Error');
             }
-        
+        }).fail(function(error){
+            console.log(error);
         })
     }
 })

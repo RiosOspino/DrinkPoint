@@ -2,7 +2,7 @@
     <div class="col-md-12 col-sm-12 ">
         <div class="x_panel">
             <div class="x_title">
-                <h2>LISTA DE USUARIOS</h2>
+                <h2>LISTA DE PRODUCTOS</h2>
                 <ul class="nav navbar-right panel_toolbox">
                     <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                     </li>
@@ -148,10 +148,9 @@
                         <label class="col-form-label col-md-3 col-sm-3 label-align">Categoría</label>
                         <div class="col-md-6 col-sm-6 ">
                             <select class="form-control" name="selCategory" id="selCategory">
-                                <option>Elija una opción</option>
-                                <?php foreach($documentType as $value):?>
-                                <option value="<?php echo $value['idCategoria'];?>"><?php echo $value['doc'];?>
-                                </option>
+                                <option value="">Elija una opción</option>
+                                <?php foreach($categorias as $value):?>
+                                <option value="<?php echo $value['idCategoria'];?>"><?php echo $value['Nombre'];?></option>
                                 <?php endforeach;?>
                             </select>
                         </div>
