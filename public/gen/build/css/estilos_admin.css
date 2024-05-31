@@ -144,10 +144,6 @@ table.table tbody td img{
     background-color: #2A3038;
 }
 
-.clearfix {
-    background: #2A3038;
-}
-
 .dashboard_graph {
     background: #191c24;
 }
@@ -180,4 +176,8 @@ button.btn.btn-success {
 
 button.btn.btn-primary.btn-xs {
     width: 30px;
+}
+
+button.btn.btn-secondary {
+    width: 70px;
 }
