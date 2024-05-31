@@ -68,6 +68,7 @@
     <script src="<?php echo URL;?>gen/build/js/custom.min.js"></script>
     <script src="<?php echo URL;?>js/editUser.js"></script>
     <script src="<?php echo URL;?>js/editProduct.js"></script>
+    <script src="<?php echo URL;?>js/editCategory.js"></script>
 	
   </body>
 </html>
