@@ -223,65 +223,58 @@
                 <li role="presentation" class="nav-item dropdown open">
                   <a href="javascript:;" class="dropdown-toggle info-number" id="navbarDropdown1" data-toggle="dropdown" aria-expanded="false">
                     <i class="fa fa-envelope-o"></i>
-                    <span class="badge bg-green">6</span>
+                    <span class="badge bg-green"></span>
                   </a>
                   <ul class="dropdown-menu list-unstyled msg_list" role="menu" aria-labelledby="navbarDropdown1">
+
                     <li class="nav-item">
                       <a class="dropdown-item">
-                        <span class="image"><img src="<?php echo URL;?>gen/production/images/img.jpg" alt="Profile Image" /></span>
+                        <span class="image"><img src="<?php echo URL;?>gen/production/images/user.png" alt="Profile Image" /></span>
                         <span>
-                          <span>John Smith</span>
-                          <span class="time">3 mins ago</span>
+                          <span><?php echo $_SESSION['Nombres']; ?></span>
+                          <span class="time">1 min</span>
                         </span>
                         <span class="message">
-                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                          Has iniciado sesión 
                         </span>
                       </a>
                     </li>
+
                     <li class="nav-item">
                       <a class="dropdown-item">
-                        <span class="image"><img src="<?php echo URL;?>gen/production/images/img.jpg" alt="Profile Image" /></span>
+                        <span class="image"><img src="<?php echo URL;?>gen/production/images/user.png" alt="Profile Image" /></span>
                         <span>
-                          <span>John Smith</span>
-                          <span class="time">3 mins ago</span>
+                          <span><?php echo $_SESSION['Nombres']; ?></span>
+                          <span class="time">3 min</span>
                         </span>
                         <span class="message">
-                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        Has iniciado sesión 
                         </span>
                       </a>
                     </li>
+
                     <li class="nav-item">
                       <a class="dropdown-item">
-                        <span class="image"><img src="<?php echo URL;?>gen/production/images/img.jpg" alt="Profile Image" /></span>
+                        <span class="image"><img src="<?php echo URL;?>gen/production/images/user.png" alt="Profile Image" /></span>
                         <span>
-                          <span>John Smith</span>
-                          <span class="time">3 mins ago</span>
+                          <span><?php echo $_SESSION['Nombres']; ?></span>
+                          <span class="time">5 min </span>
                         </span>
                         <span class="message">
-                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        Has iniciado sesión 
                         </span>
                       </a>
                     </li>
-                    <li class="nav-item">
-                      <a class="dropdown-item">
-                        <span class="image"><img src="<?php echo URL;?>gen/production/images/img.jpg" alt="Profile Image" /></span>
-                        <span>
-                          <span>John Smith</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                        <span class="message">
-                          Film festivals used to be do-or-die moments for movie makers. They were where...
-                        </span>
-                      </a>
-                    </li>
+                   
                     <li class="nav-item">
                       <div class="text-center">
                         <a class="dropdown-item">
-                          <strong>See All Alerts</strong>
+                          <strong>Ver todas las alertas</strong>
                           <i class="fa fa-angle-right"></i>
                         </a>
                       </div>
                     </li>
+
                   </ul>
                 </li>
               </ul>
