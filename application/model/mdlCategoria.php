@@ -4,8 +4,8 @@
 //heredamos clase
 class mdlCategoria {
     //crear los atributos
-    private $idCategoria;
     private $Nombre;
+    // private $idCategoria;
 
     //crear el método para fijar los datos
     public function __SET($atributo, $valor){
@@ -30,14 +30,14 @@ class mdlCategoria {
     //crear el método para registrar las categorias
     public function registerCategory(){
         //vamos a crear una variable que guardará la consulta
-        $sql = "INSERT INTO productos(Nombre, idCategoria,) VALUES (?,?)";
+        $sql = "INSERT INTO categorias(Nombre) VALUES (?)";
 
         //Vamos a crear una variable para mandaar el estado activo por defecto
         $Estado = 1;
 
         //vamos a crear una variable para mantener lista siempre la consulta y poder enviarla o ejecutarla cada que sea llamada
         $stm = $this->db->prepare($sql);
-        $stm->bindParam(2, $this->idCategoria);
+        // $stm->bindParam(1, $this->idCategoria);
         $stm->bindParam(1, $this->Nombre);
 
         //respuesta
@@ -67,7 +67,7 @@ class mdlCategoria {
     //Metodo para  registrar los usuarios
     public function categoryRegister(){
         //Vamos a crear la consulta
-        $sql = "INSERT INTO usuarios(idPersona, Usuario, Clave, idRol, Estado) VALUES (?,?,?,?,?)";
+        $sql = "INSERT INTO categorias(Nombre) VALUES (?)";
         
         //Vamos a crear una variable para mandaar el estado activo por defecto
         $estado = 1;
@@ -86,13 +86,10 @@ class mdlCategoria {
         return $result;
     }
 
-    //Metodo para obtener los datos de los productos
+    //Metodo para obtener los datos de los categoria
     public function getCategory(){
         //Consulta
-        $sql = "SELECT P.*, C.Nombre AS Categoria, Person.Nombres AS Usuario FROM productos AS P
-        INNER JOIN categorias AS C ON C.idCategoria = P.idCategoria
-        INNER JOIN usuarios AS U ON P.idUsuario = U.idUsuario
-        INNER JOIN personas AS Person ON Person.idPersona = U.idPersona";
+        $sql = "SELECT * FROM categorias";
 
 
         //Vamos a preparar la consulta y ejecutarla
@@ -104,9 +101,9 @@ class mdlCategoria {
     }
 
     //Metodo para filtrar, tomar,edita, eliminar y reclamar el ID de los usuarios 
-    public function CategoryId($id){
+    public function getCategoryByID($id){
         //Consulta
-        $sql = "SELECT P.*, U.*, R.idRol, R.Descripcion AS rol, TD.Descripcion AS tipoDOc FROM personas AS P INNER JOIN usuarios AS U ON P.idPersona = U.idPersona INNER JOIN roles AS R ON R.idRol = U.idRol INNER JOIN tiposdocumentos AS TD ON P.idTipoDocumento = TD.idTipoDocumento WHERE U.idUsuario = ?";
+        $sql = "SELECT idCategoria, Nombre, FROM categorias WHERE idCategoria = ?";
 
         //Preparacion y ejecucion de la consulta
         $query = $this->db->prepare($sql);
@@ -118,7 +115,7 @@ class mdlCategoria {
     //Metodo para cambiar estados
     public function changeStatus($id){
         //Consulta
-        $sql = "UPDATE productos SET Estado =(CASE WHEN Estado = 1 THEN 0 ELSE 1 END) WHERE idCategory = ?";
+        $sql = "UPDATE categorias SET Estado =(CASE WHEN Estado = 1 THEN 0 ELSE 1 END) WHERE idCategoria = ?";
 
         $query = $this->db->prepare($sql);
         $query -> bindParam(1, $id);
@@ -128,7 +125,7 @@ class mdlCategoria {
     //Metodo para eliminar el usuario
     public function deleteCategory($id){
         //Consulta
-        $sql = "DELETE FROM productos WHERE idCategory = ?";
+        $sql = "DELETE FROM categorias WHERE Nombre = ?";
 
         $query = $this->db->prepare($sql);
         $query -> bindParam(1, $id);
@@ -138,11 +135,11 @@ class mdlCategoria {
     //Metodo para actualizar
     public function updateCategory(){
         //Consulta
-        $sql = "UPDATE personas AS P INNER JOIN usuarios AS U ON P.idPersona = U.idPersona  SET P.idTipoDocumento = ?, P.Documento = ?, P.Nombres = ?, P.Apellidos =?, P.Telefono = ?, P.Direccion = ?, P.Email = ?, U.Usuario = ?, U.Clave = ? WHERE U.idUsuario =  ?";
+        $sql = "UPDATE categorias AS P SET P.Nombre = ?, WHERE P.idCategoria = ?";
 
         //Preparar y enviar la consulta
         $stm = $this->db->prepare($sql);
-        $stm->bindParam(1, $this->idCategoria);
+        // $stm->bindParam(1, $this->idCategoria);
         $stm->bindParam(2, $this->Nombre);
 
         //Respuesta

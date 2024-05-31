@@ -35,18 +35,7 @@
                         </div>
                     </div>
 
-                    <div class="form-group row">
-                        <label class="col-form-label col-md-3 col-sm-3 label-align">Categoría </label>
-                        <div class="col-md-6 col-sm-6 ">
-                            <select class="form-control" name="selCategory" id="selCategory">
-                                <option value="1">Elija una opción</option>
-                                <?php foreach($categorias as $value):?>
-                                <option value="<?php echo $value['idTipoDocumento'];?>"><?php echo $value['doc'];?>
-                                </option>
-                                <?php endforeach;?>
-                            </select>
-                        </div>
-                    </div>
+                
 
                     <!-- <div class="item form-group">
 						<label for="Category" class="col-form-label col-md-3 col-sm-3 label-align">Categoría <span class="required">*</span></label>

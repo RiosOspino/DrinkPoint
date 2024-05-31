@@ -27,27 +27,18 @@
                             <table id="datatable" class="table table-striped table-bordered" style="width:100%">
                                 <thead>
                                     <tr>
+                                        <!-- <th>ID Categoria</th> -->
                                         <th>Nombre</th>
-                                        <th>Categoría</th>
                                         <th>Estado</th>
                                         <th>Acciones</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                <?php foreach($categoria as $value):?>
+                                <?php foreach($Categorias as $value):?>
                                     <tr>
+                                        
                                         <td><?php echo $value['Nombre'];?></td>
-                                        <td><?php echo $value['Categoria'];?></td>
-                                        <td><?php
-                                            if ($value['Imagen'] != null) {
-                                                echo "<img src='data:image/jpeg;base64, " . base64_encode($value['Imagen']) . "'/>";
-                                            }else {
-                                                echo "<img src='" . URL . "img/Image-not-found.png'/>";                                                
-                                            }                                            
-                                        ?></td>                                        
-                                        <td><?php echo $value['Usuario'];?></td>
-                
-
+                                        
                                         <td>
                                             <!-- //Para que quede el boton de estado o inactivo como un boton  -->
                                             <?php if($value['Estado'] == 1):?>
@@ -97,6 +88,16 @@
                 <form method="post">
                     <input type="hidden" name="txtIdCategory" id="txtIdCategory">
 
+
+                    <!-- <div class="item form-group">
+                        <label class="col-form-label col-md-3 col-sm-3 label-align" for="Document">ID Categoria <span
+                                class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 ">
+                            <input type="text" id="txtNumber" required="required" class="form-control" name="txtNumber">
+                        </div>
+                    </div> -->
+
                     <div class="item form-group">
                         <label class="col-form-label col-md-3 col-sm-3 label-align" for="Document">Nombre <span
                                 class="required">*</span>
@@ -108,8 +109,8 @@
 
 
 
-                    <div class="form-group row">
-                        <label class="col-form-label col-md-3 col-sm-3 label-align">Categoría</label>
+                    <!-- <div class="form-group row">
+                        <label class="col-form-label col-md-3 col-sm-3 label-align">Nombre</label>
                         <div class="col-md-6 col-sm-6 ">
                             <select class="form-control" name="selCategory" id="selCategory">
                                 <option>Elija una opción</option>
@@ -119,7 +120,7 @@
                                 <?php endforeach;?>
                             </select>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!-- <div class="item form-group">
                         <label for="Phone" class="col-form-label col-md-3 col-sm-3 label-align">Teléfono <span

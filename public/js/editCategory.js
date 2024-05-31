@@ -1,16 +1,14 @@
 function dataCategory(id){
     // alert(id);
     $.ajax({
-        url: url + "CategoriaController/categoryId",
+        url: url + "CategoriaController/getCategoryByID",
         type: 'post',
         dataType: 'json',
         data:{'id':id}
-    }).done(function(answer){
-        $.each(answer, function(index, value){
-            $('#txtCategory').val(value.idCategoria);
-            $('#txtName').val(value.Nombre);
-
-        })
+    }).done(function(resp){ 
+        $('#txtIdCategoria').val(resp.idCategoria);       
+        $('#txtName').val(resp.Nombre);
+        
     }).fail(function(error){
         console.log(error)
     })
@@ -60,7 +58,7 @@ Swal.fire({
 }
 
 
-//Metodo para ELIMINAR el USUARIO
+//Metodo para ELIMINAR LA CATEGORIA
 function deleteCategory(id){
     // alert(id);
     Swal.fire({
