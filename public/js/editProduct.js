@@ -18,7 +18,7 @@ function dataProduct(id){
 }
 
 //Metodo para CAMBIAR el ESTADO
-function changeStatus(id){
+function product_changeStatus(id){
     // alert(id);
     Swal.fire({
         title: '¿Quieres cambiar el estado?',
@@ -28,6 +28,7 @@ function changeStatus(id){
         cancelButtonColor: '#e52b34',
         confirmButtonText: 'Si',
     }).then((res)=>{
+
         if(res.isConfirmed){
             $.ajax({
                 type:"post",
@@ -35,7 +36,8 @@ function changeStatus(id){
                 data: {'id':id,}
             }).done(function(answer){
                 if(answer == 1){
-                    // Swal.fire('Producto eliminado','','success');
+                    // Swal.fire('Estado cambiado','','success');
+                    
                     Swal.fire({
                         position: '',
                         icon: 'success',

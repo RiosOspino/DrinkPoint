@@ -27,7 +27,7 @@ function dataUser(id){
 
 
 //Metodo para CAMBIAR el ESTADO
-function changeStatus(id){
+function user_changeStatus(id){
     // alert(id);
 Swal.fire({
     title: '¿Quieres cambiar el estado?',
@@ -38,30 +38,29 @@ Swal.fire({
     confirmButtonText: 'Si',
 }).then((result)=>{
     if(result.isConfirmed){
-        Swal.fire({
-            position: '',
-            icon: 'success',
-            title: 'Estado cambiado',
-            confirmButtonText:'Ok',
-            timer: 2000
-        }).then((result)=>{
-            if(result.isConfirmed){
-                $.ajax({
-                    type:"post",
-                    url: url + "usuarioController/changeStatus",
-                    data: {'id':id,}
-                }).done(function(answer){
-                    if(answer == 1){
-                        window.location = url + "usuarioController/getUsers";
-                        window.reload();
-                    }else{
-                        Swal.fire('Error al cambiar el estado','','Error');
-                    }
-                }).fail(function(error){
-                    console.log(error);
-                })
+        $.ajax({
+            type:"post",
+            url: url + "usuarioController/changeStatus",
+            data: {'id':id,}
+        }).done(function(answer){
+            if(answer == 1){
+                Swal.fire({
+                    position: '',
+                    icon: 'success',
+                    title: 'Estado cambiado',
+                    confirmButtonText:'Ok',
+                    timer: 2000
+                });
+
+                setTimeout(() => {
+                    window.location = url + "usuarioController/getUsers";
+                    window.reload();
+                }, 3000);
+            }else{
+                Swal.fire('Error al cambiar el estado','','Error');
             }
-        
+        }).fail(function(error){
+            console.log(error);
         })
     }
 })
