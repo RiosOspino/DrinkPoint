@@ -168,391 +168,43 @@
         </div>
     </section>
 
-    <!-- SECCION DE LOS PRODUCTOS -->
-    <!-- <section id="products" class="ftco-section">
-        <div class="container">
-            <div class="row justify-content-center mb-5 pb-2">
-                <div class="col-md-7 text-center heading-section ftco-animate">
-                    <span class="subheading">Specialties</span>
-                    <h2 class="mb-4">Our Menu</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-4">
-                    <div class="menu-wrap">
-                        <div class="heading-menu text-center ftco-animate">
-                            <h3>Breakfast</h3>
-                        </div>
-                        <div class="menus d-flex ftco-animate">
-                            <div class="menu-img img"
-                                style="background-image: url(<?php echo URL; ?>drinkPoint/images/breakfast-1.jpg);">
-                            </div>
-                            <div class="text">
-                                <div class="d-flex">
-                                    <div class="one-half">
-                                        <h3>Beef Roast Source</h3>
-                                    </div>
-                                    <div class="one-forth">
-                                        <span class="price">$29</span>
-                                    </div>
-                                </div>
-                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                            </div>
-                        </div>
-                        <div class="menus d-flex ftco-animate">
-                            <div class="menu-img img"
-                                style="background-image: url(<?php echo URL; ?>drinkPoint/images/breakfast-2.jpg);">
-                            </div>
-                            <div class="text">
-                                <div class="d-flex">
-                                    <div class="one-half">
-                                        <h3>Beef Roast Source</h3>
-                                    </div>
-                                    <div class="one-forth">
-                                        <span class="price">$29</span>
-                                    </div>
-                                </div>
-                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                            </div>
-                        </div>
-                        <div class="menus border-bottom-0 d-flex ftco-animate">
-                            <div class="menu-img img"
-                                style="background-image: url(<?php echo URL; ?>drinkPoint/images/breakfast-3.jpg);">
-                            </div>
-                            <div class="text">
-                                <div class="d-flex">
-                                    <div class="one-half">
-                                        <h3>Beef Roast Source</h3>
-                                    </div>
-                                    <div class="one-forth">
-                                        <span class="price">$29</span>
-                                    </div>
-                                </div>
-                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                            </div>
-                        </div>
-                        <span class="flat flaticon-bread" style="left: 0;"></span>
-                        <span class="flat flaticon-breakfast" style="right: 0;"></span>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="menu-wrap">
-                        <div class="heading-menu text-center ftco-animate">
-                            <h3>Lunch</h3>
-                        </div>
-                        <div class="menus d-flex ftco-animate">
-                            <div class="menu-img img"
-                                style="background-image: url(<?php echo URL; ?>drinkPoint/images/lunch-1.jpg);"></div>
-                            <div class="text">
-                                <div class="d-flex">
-                                    <div class="one-half">
-                                        <h3>Beef Roast Source</h3>
-                                    </div>
-                                    <div class="one-forth">
-                                        <span class="price">$29</span>
-                                    </div>
-                                </div>
-                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                            </div>
-                        </div>
-                        <div class="menus d-flex ftco-animate">
-                            <div class="menu-img img"
-                                style="background-image: url(<?php echo URL; ?>drinkPoint/images/lunch-2.jpg);"></div>
-                            <div class="text">
-                                <div class="d-flex">
-                                    <div class="one-half">
-                                        <h3>Beef Roast Source</h3>
-                                    </div>
-                                    <div class="one-forth">
-                                        <span class="price">$29</span>
-                                    </div>
-                                </div>
-                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                            </div>
-                        </div>
-                        <div class="menus border-bottom-0 d-flex ftco-animate">
-                            <div class="menu-img img"
-                                style="background-image: url(<?php echo URL; ?>drinkPoint/images/lunch-3.jpg);"></div>
-                            <div class="text">
-                                <div class="d-flex">
-                                    <div class="one-half">
-                                        <h3>Beef Roast Source</h3>
-                                    </div>
-                                    <div class="one-forth">
-                                        <span class="price">$29</span>
-                                    </div>
-                                </div>
-                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                            </div>
-                        </div>
-                        <span class="flat flaticon-pizza" style="left: 0;"></span>
-                        <span class="flat flaticon-chicken" style="right: 0;"></span>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="menu-wrap">
-                        <div class="heading-menu text-center ftco-animate">
-                            <h3>Dinner</h3>
-                        </div>
-                        <div class="menus d-flex ftco-animate">
-                            <div class="menu-img img"
-                                style="background-image: url(<?php echo URL; ?>drinkPoint/images/dinner-1.jpg);"></div>
-                            <div class="text">
-                                <div class="d-flex">
-                                    <div class="one-half">
-                                        <h3>Beef Roast Source</h3>
-                                    </div>
-                                    <div class="one-forth">
-                                        <span class="price">$29</span>
-                                    </div>
-                                </div>
-                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                            </div>
-                        </div>
-                        <div class="menus d-flex ftco-animate">
-                            <div class="menu-img img"
-                                style="background-image: url(<?php echo URL; ?>drinkPoint/images/dinner-2.jpg);"></div>
-                            <div class="text">
-                                <div class="d-flex">
-                                    <div class="one-half">
-                                        <h3>Beef Roast Source</h3>
-                                    </div>
-                                    <div class="one-forth">
-                                        <span class="price">$29</span>
-                                    </div>
-                                </div>
-                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                            </div>
-                        </div>
-                        <div class="menus border-bottom-0 d-flex ftco-animate">
-                            <div class="menu-img img"
-                                style="background-image: url(<?php echo URL; ?>drinkPoint/images/dinner-3.jpg);"></div>
-                            <div class="text">
-                                <div class="d-flex">
-                                    <div class="one-half">
-                                        <h3>Beef Roast Source</h3>
-                                    </div>
-                                    <div class="one-forth">
-                                        <span class="price">$29</span>
-                                    </div>
-                                </div>
-                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                            </div>
-                        </div>
-                        <span class="flat flaticon-omelette" style="left: 0;"></span>
-                        <span class="flat flaticon-burger" style="right: 0;"></span>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="menu-wrap">
-                        <div class="heading-menu text-center ftco-animate">
-                            <h3>Desserts</h3>
-                        </div>
-                        <div class="menus d-flex ftco-animate">
-                            <div class="menu-img img"
-                                style="background-image: url(<?php echo URL; ?>drinkPoint/images/dessert-1.jpg);"></div>
-                            <div class="text">
-                                <div class="d-flex">
-                                    <div class="one-half">
-                                        <h3>Beef Roast Source</h3>
-                                    </div>
-                                    <div class="one-forth">
-                                        <span class="price">$29</span>
-                                    </div>
-                                </div>
-                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                            </div>
-                        </div>
-                        <div class="menus d-flex ftco-animate">
-                            <div class="menu-img img"
-                                style="background-image: url(<?php echo URL; ?>drinkPoint/images/dessert-2.jpg);"></div>
-                            <div class="text">
-                                <div class="d-flex">
-                                    <div class="one-half">
-                                        <h3>Beef Roast Source</h3>
-                                    </div>
-                                    <div class="one-forth">
-                                        <span class="price">$29</span>
-                                    </div>
-                                </div>
-                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                            </div>
-                        </div>
-                        <div class="menus border-bottom-0 d-flex ftco-animate">
-                            <div class="menu-img img"
-                                style="background-image: url(<?php echo URL; ?>drinkPoint/images/dessert-3.jpg);"></div>
-                            <div class="text">
-                                <div class="d-flex">
-                                    <div class="one-half">
-                                        <h3>Beef Roast Source</h3>
-                                    </div>
-                                    <div class="one-forth">
-                                        <span class="price">$29</span>
-                                    </div>
-                                </div>
-                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                            </div>
-                        </div>
-                        <span class="flat flaticon-cupcake" style="left: 0;"></span>
-                        <span class="flat flaticon-ice-cream" style="right: 0;"></span>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="menu-wrap">
-                        <div class="heading-menu text-center ftco-animate">
-                            <h3>Wine Card</h3>
-                        </div>
-                        <div class="menus d-flex ftco-animate">
-                            <div class="menu-img img"
-                                style="background-image: url(<?php echo URL; ?>drinkPoint/images/wine-1.jpg);"></div>
-                            <div class="text">
-                                <div class="d-flex">
-                                    <div class="one-half">
-                                        <h3>Beef Roast Source</h3>
-                                    </div>
-                                    <div class="one-forth">
-                                        <span class="price">$29</span>
-                                    </div>
-                                </div>
-                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                            </div>
-                        </div>
-                        <div class="menus d-flex ftco-animate">
-                            <div class="menu-img img"
-                                style="background-image: url(<?php echo URL; ?>drinkPoint/images/wine-2.jpg);"></div>
-                            <div class="text">
-                                <div class="d-flex">
-                                    <div class="one-half">
-                                        <h3>Beef Roast Source</h3>
-                                    </div>
-                                    <div class="one-forth">
-                                        <span class="price">$29</span>
-                                    </div>
-                                </div>
-                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                            </div>
-                        </div>
-                        <div class="menus border-bottom-0 d-flex ftco-animate">
-                            <div class="menu-img img"
-                                style="background-image: url(<?php echo URL; ?>drinkPoint/images/wine-3.jpg);"></div>
-                            <div class="text">
-                                <div class="d-flex">
-                                    <div class="one-half">
-                                        <h3>Beef Roast Source</h3>
-                                    </div>
-                                    <div class="one-forth">
-                                        <span class="price">$29</span>
-                                    </div>
-                                </div>
-                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                            </div>
-                        </div>
-                        <span class="flat flaticon-wine" style="left: 0;"></span>
-                        <span class="flat flaticon-wine-1" style="right: 0;"></span>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="menu-wrap">
-                        <div class="heading-menu text-center ftco-animate">
-                            <h3>Drinks &amp; Tea</h3>
-                        </div>
-                        <div class="menus d-flex ftco-animate">
-                            <div class="menu-img img"
-                                style="background-image: url(<?php echo URL; ?>drinkPoint/images/drink-1.jpg);"></div>
-                            <div class="text">
-                                <div class="d-flex">
-                                    <div class="one-half">
-                                        <h3>Beef Roast Source</h3>
-                                    </div>
-                                    <div class="one-forth">
-                                        <span class="price">$29</span>
-                                    </div>
-                                </div>
-                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                            </div>
-                        </div>
-                        <div class="menus d-flex ftco-animate">
-                            <div class="menu-img img"
-                                style="background-image: url(<?php echo URL; ?>drinkPoint/images/drink-2.jpg);"></div>
-                            <div class="text">
-                                <div class="d-flex">
-                                    <div class="one-half">
-                                        <h3>Beef Roast Source</h3>
-                                    </div>
-                                    <div class="one-forth">
-                                        <span class="price">$29</span>
-                                    </div>
-                                </div>
-                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                            </div>
-                        </div>
-                        <div class="menus border-bottom-0 d-flex ftco-animate">
-                            <div class="menu-img img"
-                                style="background-image: url(<?php echo URL; ?>drinkPoint/images/drink-3.jpg);"></div>
-                            <div class="text">
-                                <div class="d-flex">
-                                    <div class="one-half">
-                                        <h3>Beef Roast Source</h3>
-                                    </div>
-                                    <div class="one-forth">
-                                        <span class="price">$29</span>
-                                    </div>
-                                </div>
-                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                            </div>
-                        </div>
-                        <span class="flat flaticon-wine" style="left: 0;"></span>
-                        <span class="flat flaticon-wine-1" style="right: 0;"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-     <!-- SECCION PRODUCTOS -->
+    <!-- SECCION PRODUCTOS -->
     <section id="products" class="food_section layout_padding-bottom py-5">
     <div class="container">
 
-      <div class="col-md-12 text-center heading-section mb-5 ftco-animate fadeInUp ftco-animated">
+    <div class="col-md-12 text-center heading-section mb-5 ftco-animate fadeInUp ftco-animated">
             <span class="subheading">Carta</span>
             <h2 class="mb-4">Todos los productos</h2>
         </div>
 
-      <ul class="filters_menu">
+    <ul class="filters_menu">
         <li class="active" data-filter="*">Todos</li>
         <li data-filter=".burger">Vino Tinto</li>
         <li data-filter=".pizza">Vino Blanco</li>
         <li data-filter=".pasta">Vino Rosado</li>
         <li data-filter=".fries">Vino Espumoso</li>
-      </ul>
+    </ul>
 
-      <div class="filters-content">
+    <div class="filters-content">
         <div class="row grid">
-          <div class="col-sm-6 col-lg-4 all pizza">
+        <div class="col-sm-6 col-lg-4 all pizza">
             <div class="box">
-              <div>
+            <div>
                 <div class="img-box">
-                  <img src="<?php echo URL; ?>public/img/p1.png" alt="">
+                <img src="<?php echo URL; ?>public/img/p1.png" alt="">
                 </div>
                 <div class="detail-box">
-                  <h5>
-                  Black Label Malbec
-                  </h5>
-                  <p>
-                  Color tinta oscuro, notas especiadas y picantes con frutas maduras en nariz. Sigue la nariz con cocos, vainilla y especias. Elegante buena longitud.
-                  </p>
-                  <div class="options">
+                <h5>Black Label Malbec</h5>
+                <p>
+                Color tinta oscuro, notas especiadas y picantes con frutas maduras en nariz. Sigue la nariz con cocos, vainilla y especias. Elegante buena longitud.
+                </p>
+                <div class="options">
                     <h6>
-                      $84.000
+                $84.000
                     </h6>
                     <a href="">
                     <svg fill="#000000" height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-	 viewBox="0 0 308 308" xml:space="preserve">
+	viewBox="0 0 308 308" xml:space="preserve">
 <g id="XMLID_468_">
 	<path id="XMLID_469_" d="M227.904,176.981c-0.6-0.288-23.054-11.345-27.044-12.781c-1.629-0.585-3.374-1.156-5.23-1.156
 		c-3.032,0-5.579,1.511-7.563,4.479c-2.243,3.334-9.033,11.271-11.131,13.642c-0.274,0.313-0.648,0.687-0.872,0.687
@@ -567,38 +219,36 @@
 	<path id="XMLID_470_" d="M156.734,0C73.318,0,5.454,67.354,5.454,150.143c0,26.777,7.166,52.988,20.741,75.928L0.212,302.716
 		c-0.484,1.429-0.124,3.009,0.933,4.085C1.908,307.58,2.943,308,4,308c0.405,0,0.813-0.061,1.211-0.188l79.92-25.396
 		c21.87,11.685,46.588,17.853,71.604,17.853C240.143,300.27,308,232.923,308,150.143C308,67.354,240.143,0,156.734,0z
-		 M156.734,268.994c-23.539,0-46.338-6.797-65.936-19.657c-0.659-0.433-1.424-0.655-2.194-0.655c-0.407,0-0.815,0.062-1.212,0.188
+		M156.734,268.994c-23.539,0-46.338-6.797-65.936-19.657c-0.659-0.433-1.424-0.655-2.194-0.655c-0.407,0-0.815,0.062-1.212,0.188
 		l-40.035,12.726l12.924-38.129c0.418-1.234,0.209-2.595-0.561-3.647c-14.924-20.392-22.813-44.485-22.813-69.677
 		c0-65.543,53.754-118.867,119.826-118.867c66.064,0,119.812,53.324,119.812,118.867
 		C276.546,215.678,222.799,268.994,156.734,268.994z"/>
 </g>
 </svg>
                     </a>
-                  </div>
                 </div>
-              </div>
+                </div>
             </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 all burger">
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 all burger">
             <div class="box">
-              <div>
+            <div>
                 <div class="img-box">
                 <img src="<?php echo URL; ?>public/img/p2.png" alt="">
                 </div>
                 <div class="detail-box">
-                  <h5>
-                  Riscal Verdejo
-                  </h5>
-                  <p>
-                  Un vino de color amarillo pajizo brillante. En nariz tiene una intensidad aromática alta con frutas tropicales.En general es un vino fresco y equilibrado.
-                  </p>
-                  <div class="options">
+                <h5>Riscal Verdejo</h5>
+                <p>
+                Un vino de color amarillo pajizo brillante. En nariz tiene una intensidad aromática alta con frutas tropicales.En general es un vino fresco y equilibrado.
+                </p>
+                <div class="options">
                     <h6>
-                      $75.000
+                    $75.000
                     </h6>
                     <a href="">
                     <svg fill="#000000" height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-	 viewBox="0 0 308 308" xml:space="preserve">
+viewBox="0 0 308 308" xml:space="preserve">
 <g id="XMLID_468_">
 	<path id="XMLID_469_" d="M227.904,176.981c-0.6-0.288-23.054-11.345-27.044-12.781c-1.629-0.585-3.374-1.156-5.23-1.156
 		c-3.032,0-5.579,1.511-7.563,4.479c-2.243,3.334-9.033,11.271-11.131,13.642c-0.274,0.313-0.648,0.687-0.872,0.687
@@ -613,38 +263,38 @@
 	<path id="XMLID_470_" d="M156.734,0C73.318,0,5.454,67.354,5.454,150.143c0,26.777,7.166,52.988,20.741,75.928L0.212,302.716
 		c-0.484,1.429-0.124,3.009,0.933,4.085C1.908,307.58,2.943,308,4,308c0.405,0,0.813-0.061,1.211-0.188l79.92-25.396
 		c21.87,11.685,46.588,17.853,71.604,17.853C240.143,300.27,308,232.923,308,150.143C308,67.354,240.143,0,156.734,0z
-		 M156.734,268.994c-23.539,0-46.338-6.797-65.936-19.657c-0.659-0.433-1.424-0.655-2.194-0.655c-0.407,0-0.815,0.062-1.212,0.188
+		M156.734,268.994c-23.539,0-46.338-6.797-65.936-19.657c-0.659-0.433-1.424-0.655-2.194-0.655c-0.407,0-0.815,0.062-1.212,0.188
 		l-40.035,12.726l12.924-38.129c0.418-1.234,0.209-2.595-0.561-3.647c-14.924-20.392-22.813-44.485-22.813-69.677
 		c0-65.543,53.754-118.867,119.826-118.867c66.064,0,119.812,53.324,119.812,118.867
 		C276.546,215.678,222.799,268.994,156.734,268.994z"/>
 </g>
 </svg>
                     </a>
-                  </div>
                 </div>
-              </div>
+                </div>
             </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 all pizza">
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 all pizza">
             <div class="box">
-              <div>
+            <div>
                 <div class="img-box">
                 <img src="<?php echo URL; ?>public/img/p3.png" alt="">
                 </div>
                 <div class="detail-box">
-                  <h5>
-                  Montes Cherub
-                  </h5>
-                  <p>
-                  Un vino rosado elegante.Este vino seductor es fresco y bien equilibrado. Muestra riqueza en textura en todo el paladar que conduce a un final deliciosamente largo.
-                  </p>
-                  <div class="options">
+                <h5>
+                Montes Cherub
+                </h5>
+                <p>
+                Un vino rosado elegante.Este vino seductor es fresco y bien equilibrado. Muestra riqueza en textura en todo el paladar que conduce a un final deliciosamente largo.
+                </p>
+                <div class="options">
                     <h6>
-                      $82.000
+                    $82.000
                     </h6>
                     <a href="">
                     <svg fill="#000000" height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-	 viewBox="0 0 308 308" xml:space="preserve">
+	viewBox="0 0 308 308" xml:space="preserve">
 <g id="XMLID_468_">
 	<path id="XMLID_469_" d="M227.904,176.981c-0.6-0.288-23.054-11.345-27.044-12.781c-1.629-0.585-3.374-1.156-5.23-1.156
 		c-3.032,0-5.579,1.511-7.563,4.479c-2.243,3.334-9.033,11.271-11.131,13.642c-0.274,0.313-0.648,0.687-0.872,0.687
@@ -659,37 +309,37 @@
 	<path id="XMLID_470_" d="M156.734,0C73.318,0,5.454,67.354,5.454,150.143c0,26.777,7.166,52.988,20.741,75.928L0.212,302.716
 		c-0.484,1.429-0.124,3.009,0.933,4.085C1.908,307.58,2.943,308,4,308c0.405,0,0.813-0.061,1.211-0.188l79.92-25.396
 		c21.87,11.685,46.588,17.853,71.604,17.853C240.143,300.27,308,232.923,308,150.143C308,67.354,240.143,0,156.734,0z
-		 M156.734,268.994c-23.539,0-46.338-6.797-65.936-19.657c-0.659-0.433-1.424-0.655-2.194-0.655c-0.407,0-0.815,0.062-1.212,0.188
+		M156.734,268.994c-23.539,0-46.338-6.797-65.936-19.657c-0.659-0.433-1.424-0.655-2.194-0.655c-0.407,0-0.815,0.062-1.212,0.188
 		l-40.035,12.726l12.924-38.129c0.418-1.234,0.209-2.595-0.561-3.647c-14.924-20.392-22.813-44.485-22.813-69.677
 		c0-65.543,53.754-118.867,119.826-118.867c66.064,0,119.812,53.324,119.812,118.867
 		C276.546,215.678,222.799,268.994,156.734,268.994z"/>
 </g>
 </svg>
                     </a>
-                  </div>
                 </div>
-              </div>
+                </div>
             </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 all pasta">
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 all pasta">
             <div class="box">
-              <div>
+            <div>
                 <div class="img-box">
                 <img src="<?php echo URL; ?>public/img/p4.png" alt="">
                 </div>
                 <div class="detail-box">
-                  <h5>
-                  Chandon Rose
-                  </h5>
-                  <p>
-                  Deliciosos frutos rojos y notas cítricas, se entrelazan frescas y notorias pieles de durazno. Un vino muy suave y amigable en boca y un clásico para cualquier ocasión.
-                  <div class="options">
+                <h5>
+                Chandon Rose
+                </h5>
+                <p>
+                Deliciosos frutos rojos y notas cítricas, se entrelazan frescas y notorias pieles de durazno. Un vino muy suave y amigable en boca y un clásico para cualquier ocasión.
+                <div class="options">
                     <h6>
-                      $76.000
+                    $76.000
                     </h6>
                     <a href="">
                     <svg fill="#000000" height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-	 viewBox="0 0 308 308" xml:space="preserve">
+	viewBox="0 0 308 308" xml:space="preserve">
 <g id="XMLID_468_">
 	<path id="XMLID_469_" d="M227.904,176.981c-0.6-0.288-23.054-11.345-27.044-12.781c-1.629-0.585-3.374-1.156-5.23-1.156
 		c-3.032,0-5.579,1.511-7.563,4.479c-2.243,3.334-9.033,11.271-11.131,13.642c-0.274,0.313-0.648,0.687-0.872,0.687
@@ -704,38 +354,38 @@
 	<path id="XMLID_470_" d="M156.734,0C73.318,0,5.454,67.354,5.454,150.143c0,26.777,7.166,52.988,20.741,75.928L0.212,302.716
 		c-0.484,1.429-0.124,3.009,0.933,4.085C1.908,307.58,2.943,308,4,308c0.405,0,0.813-0.061,1.211-0.188l79.92-25.396
 		c21.87,11.685,46.588,17.853,71.604,17.853C240.143,300.27,308,232.923,308,150.143C308,67.354,240.143,0,156.734,0z
-		 M156.734,268.994c-23.539,0-46.338-6.797-65.936-19.657c-0.659-0.433-1.424-0.655-2.194-0.655c-0.407,0-0.815,0.062-1.212,0.188
+		M156.734,268.994c-23.539,0-46.338-6.797-65.936-19.657c-0.659-0.433-1.424-0.655-2.194-0.655c-0.407,0-0.815,0.062-1.212,0.188
 		l-40.035,12.726l12.924-38.129c0.418-1.234,0.209-2.595-0.561-3.647c-14.924-20.392-22.813-44.485-22.813-69.677
 		c0-65.543,53.754-118.867,119.826-118.867c66.064,0,119.812,53.324,119.812,118.867
 		C276.546,215.678,222.799,268.994,156.734,268.994z"/>
 </g>
 </svg>
                     </a>
-                  </div>
                 </div>
-              </div>
+                </div>
             </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 all fries">
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 all fries">
             <div class="box">
-              <div>
+            <div>
                 <div class="img-box">
                 <img src="<?php echo URL; ?>public/img/p5.png" alt="">
                 </div>
                 <div class="detail-box">
-                  <h5>
-                  Mionetto Brut
-                  </h5>
-                  <p>
-                  El vino Prosecco Mionetto Brut es un espumoso italiano. El tipo de uva es Glera 100%. ¡Disfruta de un espumoso en tus celebraciones!
-                  </p>
-                  <div class="options">
+                <h5>
+                Mionetto Brut
+                </h5>
+                <p>
+                El vino Prosecco Mionetto Brut es un espumoso italiano. El tipo de uva es Glera 100%. ¡Disfruta de un espumoso en tus celebraciones!
+                </p>
+                <div class="options">
                     <h6>
-                      $68.000
+                    $68.000
                     </h6>
                     <a href="">
                     <svg fill="#000000" height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-	 viewBox="0 0 308 308" xml:space="preserve">
+	viewBox="0 0 308 308" xml:space="preserve">
 <g id="XMLID_468_">
 	<path id="XMLID_469_" d="M227.904,176.981c-0.6-0.288-23.054-11.345-27.044-12.781c-1.629-0.585-3.374-1.156-5.23-1.156
 		c-3.032,0-5.579,1.511-7.563,4.479c-2.243,3.334-9.033,11.271-11.131,13.642c-0.274,0.313-0.648,0.687-0.872,0.687
@@ -750,38 +400,38 @@
 	<path id="XMLID_470_" d="M156.734,0C73.318,0,5.454,67.354,5.454,150.143c0,26.777,7.166,52.988,20.741,75.928L0.212,302.716
 		c-0.484,1.429-0.124,3.009,0.933,4.085C1.908,307.58,2.943,308,4,308c0.405,0,0.813-0.061,1.211-0.188l79.92-25.396
 		c21.87,11.685,46.588,17.853,71.604,17.853C240.143,300.27,308,232.923,308,150.143C308,67.354,240.143,0,156.734,0z
-		 M156.734,268.994c-23.539,0-46.338-6.797-65.936-19.657c-0.659-0.433-1.424-0.655-2.194-0.655c-0.407,0-0.815,0.062-1.212,0.188
+		M156.734,268.994c-23.539,0-46.338-6.797-65.936-19.657c-0.659-0.433-1.424-0.655-2.194-0.655c-0.407,0-0.815,0.062-1.212,0.188
 		l-40.035,12.726l12.924-38.129c0.418-1.234,0.209-2.595-0.561-3.647c-14.924-20.392-22.813-44.485-22.813-69.677
 		c0-65.543,53.754-118.867,119.826-118.867c66.064,0,119.812,53.324,119.812,118.867
 		C276.546,215.678,222.799,268.994,156.734,268.994z"/>
 </g>
 </svg>
                     </a>
-                  </div>
                 </div>
-              </div>
+                </div>
             </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 all pizza">
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 all pizza">
             <div class="box">
-              <div>
+            <div>
                 <div class="img-box">
                 <img src="<?php echo URL; ?>public/img/p2.png" alt="">
                 </div>
                 <div class="detail-box">
-                  <h5>
-                  Montes Alpha
-                  </h5>
-                  <p>
-                  De color rojo rubí profundo, la expresión del cabernet sauvignon es evidente aportando estructura y elegancia. Muchas frutas del bosque y toques de tabaco y vainilla.
-                  </p>
-                  <div class="options">
+                <h5>
+                Montes Alpha
+                </h5>
+                <p>
+                De color rojo rubí profundo, la expresión del cabernet sauvignon es evidente aportando estructura y elegancia. Muchas frutas del bosque y toques de tabaco y vainilla.
+                </p>
+                <div class="options">
                     <h6>
-                      $115.000
+                    $115.000
                     </h6>
                     <a href="">
                     <svg fill="#000000" height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-	 viewBox="0 0 308 308" xml:space="preserve">
+	viewBox="0 0 308 308" xml:space="preserve">
 <g id="XMLID_468_">
 	<path id="XMLID_469_" d="M227.904,176.981c-0.6-0.288-23.054-11.345-27.044-12.781c-1.629-0.585-3.374-1.156-5.23-1.156
 		c-3.032,0-5.579,1.511-7.563,4.479c-2.243,3.334-9.033,11.271-11.131,13.642c-0.274,0.313-0.648,0.687-0.872,0.687
@@ -796,25 +446,25 @@
 	<path id="XMLID_470_" d="M156.734,0C73.318,0,5.454,67.354,5.454,150.143c0,26.777,7.166,52.988,20.741,75.928L0.212,302.716
 		c-0.484,1.429-0.124,3.009,0.933,4.085C1.908,307.58,2.943,308,4,308c0.405,0,0.813-0.061,1.211-0.188l79.92-25.396
 		c21.87,11.685,46.588,17.853,71.604,17.853C240.143,300.27,308,232.923,308,150.143C308,67.354,240.143,0,156.734,0z
-		 M156.734,268.994c-23.539,0-46.338-6.797-65.936-19.657c-0.659-0.433-1.424-0.655-2.194-0.655c-0.407,0-0.815,0.062-1.212,0.188
+		M156.734,268.994c-23.539,0-46.338-6.797-65.936-19.657c-0.659-0.433-1.424-0.655-2.194-0.655c-0.407,0-0.815,0.062-1.212,0.188
 		l-40.035,12.726l12.924-38.129c0.418-1.234,0.209-2.595-0.561-3.647c-14.924-20.392-22.813-44.485-22.813-69.677
 		c0-65.543,53.754-118.867,119.826-118.867c66.064,0,119.812,53.324,119.812,118.867
 		C276.546,215.678,222.799,268.994,156.734,268.994z"/>
 </g>
 </svg>
                     </a>
-                  </div>
                 </div>
-              </div>
+                </div>
             </div>
-          </div>
+            </div>
         </div>
-      </div>
-      <div class="btn-box">
+        </div>
+    </div>
+    <div class="btn-box">
         <a href="">
-          View More
+        View More
         </a>
-      </div>
+    </div>
     </div>
     </section>
     <!-- end section -->
@@ -837,7 +487,7 @@
                             <div class="testimony-wrap text-center">
                                 <div class="text p-3">
                                     <p class="mb-4">Los productos de calidad y la frescura de sus vinos hacen que nos convirtamos
-                                         en sus clientes fieles y fidelicemos a los nuestros.</p>
+                                        en sus clientes fieles y fidelicemos a los nuestros.</p>
                                     <div class="user-img mb-4"
                                         style="background-image: url(<?php echo URL; ?>drinkPoint/images/person_1.jpg)">
                                         <span class="quote d-flex align-items-center justify-content-center">
@@ -903,190 +553,6 @@
         </div>
     </section>
 
-    <!-- SECCION DE CHEF -->
-    <!-- <section class="ftco-section bg-light">
-		<div class="container">
-			<div class="row justify-content-center mb-5 pb-2">
-				<div class="col-md-7 text-center heading-section ftco-animate">
-					<span class="subheading">Chef</span>
-					<h2 class="mb-4">Our Master Chef</h2>
-				</div>
-			</div>	
-			<div class="row">
-				<div class="col-md-6 col-lg-3 ftco-animate">
-					<div class="staff">
-						<div class="img" style="background-image: url(<?php echo URL; ?>drinkPoint/images/chef-4.jpg);"></div>
-						<div class="text px-4 pt-2">
-							<h3>John Gustavo</h3>
-							<span class="position mb-2">CEO, Co Founder</span>
-							<div class="faded">
-								<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-								<ul class="ftco-social d-flex">
-									<li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-									<li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-									<li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-									<li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 ftco-animate">
-					<div class="staff">
-						<div class="img" style="background-image: url(<?php echo URL; ?>drinkPoint/images/chef-2.jpg);"></div>
-						<div class="text px-4 pt-2">
-							<h3>Michelle Fraulen</h3>
-							<span class="position mb-2">Head Chef</span>
-							<div class="faded">
-								<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-								<ul class="ftco-social d-flex">
-									<li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-									<li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-									<li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-									<li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 ftco-animate">
-					<div class="staff">
-						<div class="img" style="background-image: url(<?php echo URL; ?>drinkPoint/images/chef-3.jpg);"></div>
-						<div class="text px-4 pt-2">
-							<h3>Alfred Smith</h3>
-							<span class="position mb-2">Chef Cook</span>
-							<div class="faded">
-								<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-								<ul class="ftco-social d-flex">
-									<li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-									<li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-									<li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-									<li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 ftco-animate">
-					<div class="staff">
-						<div class="img" style="background-image: url(<?php echo URL; ?>drinkPoint/images/chef-1.jpg);"></div>
-						<div class="text px-4 pt-2">
-							<h3>Antonio Santibanez</h3>
-							<span class="position mb-2">Chef Cook</span>
-							<div class="faded">
-								<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-								<ul class="ftco-social d-flex">
-									<li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-									<li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-									<li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-									<li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
-
-    <!-- SECCION NUESTRO INGREDIENTE SECRETO -->
-    <!-- <section class="ftco-section ftco-no-pt ftco-no-pb">
-		<div class="container">
-			<div class="row d-flex">
-				<div class="col-md-6 d-flex">
-					<div class="img img-2 w-100 mr-md-2" style="background-image: url(<?php echo URL; ?>drinkPoint/images/bg_6.jpg);"></div>
-					<div class="img img-2 w-100 ml-md-2" style="background-image: url(<?php echo URL; ?>drinkPoint/images/bg_4.jpg);"></div>
-				</div>
-				<div class="col-md-6 ftco-animate makereservation p-4 p-md-5">
-					<div class="heading-section ftco-animate mb-5">
-						<span class="subheading">This is our secrets</span>
-						<h2 class="mb-4">Perfect Ingredients</h2>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
-						</p>
-						<p><a href="#" class="btn btn-primary">Learn more</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
-
-    <!-- SECCION DEL BLOG -->
-    <!-- <section class="ftco-section bg-light">
-		<div class="container">
-			<div class="row justify-content-center mb-5 pb-2">
-				<div class="col-md-7 text-center heading-section ftco-animate">
-					<span class="subheading">Blog</span>
-					<h2 class="mb-4">Recent Blog</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4 ftco-animate">
-					<div class="blog-entry">
-						<a href="blog-single.html" class="block-20" style="background-image: url('<?php echo URL; ?>drinkPoint/images/image_1.jpg');">
-						</a>
-						<div class="text px-4 pt-3 pb-4">
-							<div class="meta">
-								<div><a href="#">August 3, 2020</a></div>
-								<div><a href="#">Admin</a></div>
-							</div>
-							<h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-							<p class="clearfix">
-								<a href="#" class="float-left read btn btn-primary">Read more</a>
-								<a href="#" class="float-right meta-chat"><span class="fa fa-comment"></span> 3</a>
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 ftco-animate">
-					<div class="blog-entry">
-						<a href="blog-single.html" class="block-20" style="background-image: url('<?php echo URL; ?>drinkPoint/images/image_2.jpg');">
-						</a>
-						<div class="text px-4 pt-3 pb-4">
-							<div class="meta">
-								<div><a href="#">August 3, 2020</a></div>
-								<div><a href="#">Admin</a></div>
-							</div>
-							<h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-							<p class="clearfix">
-								<a href="#" class="float-left read btn btn-primary">Read more</a>
-								<a href="#" class="float-right meta-chat"><span class="fa fa-comment"></span> 3</a>
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 ftco-animate">
-					<div class="blog-entry">
-						<a href="blog-single.html" class="block-20" style="background-image: url('<?php echo URL; ?>drinkPoint/images/image_3.jpg');">
-						</a>
-						<div class="text px-4 pt-3 pb-4">
-							<div class="meta">
-								<div><a href="#">August 3, 2020</a></div>
-								<div><a href="#">Admin</a></div>
-							</div>
-							<h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-							<p class="clearfix">
-								<a href="#" class="float-left read btn btn-primary">Read more</a>
-								<a href="#" class="float-right meta-chat"><span class="fa fa-comment"></span> 3</a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
-
-    <!-- SECCION DE LLAMADO A LA ACCION DE RESERVACION -->
-    <!-- <section class="ftco-section ftco-no-pt ftco-no-pb ftco-intro bg-primary">
-		<div class="container py-5">
-			<div class="row py-2">
-				<div class="col-md-12 text-center">
-					<h2>We Make Delicious &amp; Nutritious Food</h2>
-					<a href="#" class="btn btn-white btn-outline-white">Book A Table Now</a>
-				</div>
-			</div>
-		</div>
-	</section> -->
-
     <!-- SECCION DE CONTACTO -->
     <section id="contact" class="ftco-section contact-section bg-light">
         <div class="container">
@@ -1144,7 +610,6 @@
                     </form>
                 </div>
                 <div class="col-md-6 d-flex align-items-stretch">
-                    <!-- <div id="map"></div> -->
                     <div id="mapa"> 
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.4114972117086!2d-75.57026262588637!3d6.209331643778538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428299b5aa6d9%3A0x2020c055ff96b671!2sEl%20Poblado%2C%20Medell%C3%ADn%2C%20El%20Poblado%2C%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses-419!2sco!4v1715037658373!5m2!1ses-419!2sco" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
@@ -1266,8 +731,6 @@
     </script>
     <script src="<?php echo URL; ?>drinkPoint/js/google-map.js"></script>
     <script src="<?php echo URL; ?>drinkPoint/js/main.js"></script>
-
-    
 
 </body>
 

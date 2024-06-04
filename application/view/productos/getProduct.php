@@ -136,10 +136,7 @@
                         </label>
                         <div class="col-md-6 col-sm-6 ">
                             <div class="btn-group">
-                                <!-- <a class="btn" title="Insert picture (or just drag & drop)" id="pictureBtn"><i
-                                        class="fa fa-picture-o"></i></a> -->
-                                <input type="file" name="txtImage" data-role="magic-overlay" data-target="#pictureBtn"
-                                    data-edit="insertImage" />
+                                <input type="file" name="txtImage" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" />
                             </div>
                         </div>
                     </div>
@@ -155,48 +152,14 @@
                             </select>
                         </div>
                     </div>
-
-                    <!-- <div class="item form-group">
-                        <label for="Phone" class="col-form-label col-md-3 col-sm-3 label-align">Teléfono <span
-                                class="required">*</span></label>
-                        <div class="col-md-6 col-sm-6 ">
-                            <input id="txtPhone" class="form-control" type="number" name="txtPhone" required="required">
-                        </div>
-                    </div>
-
-                    <div class="item form-group">
-                        <label for="Address" class="col-form-label col-md-3 col-sm-3 label-align">Dirección <span
-                                class="required">*</span></label>
-                        <div class="col-md-6 col-sm-6 ">
-                            <input id="txtAddress" class="form-control" type="text" name="txtAddress"
-                                required="required">
-                        </div>
-                    </div>
-
-                    <div class="item form-group">
-                        <label for="Username" class="col-form-label col-md-3 col-sm-3 label-align">Usuario <span
-                                class="required">*</span></label>
-                        <div class="col-md-6 col-sm-6 ">
-                            <input id="txtUser" class="form-control" type="text" name="txtUser" required="required">
-                        </div>
-                    </div>
-
-                    <div class="item form-group">
-                        <label for="Password" class="col-form-label col-md-3 col-sm-3 label-align">Contraseña <span
-                                class="required">*</span></label>
-                        <div class="col-md-6 col-sm-6 ">
-                            <input id="txtPassword" class="form-control" type="password" name="txtPassword"
-                                required="required">
-                        </div>
-                    </div> -->
                 
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                         <button type="submit" class="btn btn-primary " name="btnUpdate">Guardar</button>
                     </div>
+                    
                 </form>
             </div>
-
         </div>
     </div>
 </div>

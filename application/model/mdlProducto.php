@@ -55,25 +55,6 @@ class mdlProducto {
         return $resultado;
     }
 
-    //método para validar el usuario
-    // public function validateProduct(){
-    //     //crear la variable de consulta
-    //     $sql = "SELECT P.Documento, P.Nombres, P.Apellidos, U.idUsuario, U.Usuario, R.Descripcion FROM personas AS P 
-    //     INNER JOIN tiposdocumentos AS TD ON P.idTipoDocumento = TD.idTipoDocumento
-    //     INNER JOIN usuarios AS U ON P.idPersona = U.idPersona
-    //     INNER JOIN roles AS R ON U.idRol = R.idRol WHERE U.Usuario = ? AND U.Clave = ? AND U.Estado = 1";
-
-    //     //vamos a crear una variable que controlará todo el resultado
-    //     $stm = $this->db->prepare($sql);
-    //     $stm -> bindParam(1, $this->usuario);
-    //     $stm -> bindParam(2, $this->clave);
-    //     $stm->execute();
-
-    //     //crear una variable para la respuesta de los datos
-    //     $user = $stm->fetch(PDO::FETCH_ASSOC);
-    //     return $user;
-    // }
-
     //Metodo para  registrar los usuarios
     public function productRegister(){
         //Vamos a crear la consulta
@@ -116,11 +97,6 @@ class mdlProducto {
     //Metodo para filtrar, tomar,edita, eliminar y reclamar el ID de los usuarios 
     public function getProductByID($id){
         //Consulta
-        // $sql = "SELECT P.*, U.*, R.idRol, R.Descripcion AS rol, TD.Descripcion AS tipoDoc FROM personas AS P 
-        // INNER JOIN usuarios AS U ON P.idPersona = U.idPersona 
-        // INNER JOIN roles AS R ON R.idRol = U.idRol 
-        // INNER JOIN tiposdocumentos AS TD ON P.idTipoDocumento = TD.idTipoDocumento WHERE U.idUsuario = ?";
-
         $sql = "SELECT idProducto, Nombre, Descripcion, Precio, Imagen, idCategoria FROM productos WHERE idProducto = ?";
 
         //Preparacion y ejecucion de la consulta
@@ -154,8 +130,6 @@ class mdlProducto {
     //Metodo para actualizar
     public function updateProduct(){
         //Consulta
-        // $sql = "UPDATE personas AS P INNER JOIN usuarios AS U ON P.idPersona = U.idPersona  SET P.idTipoDocumento = ?, P.Documento = ?, P.Nombres = ?, P.Apellidos =?, P.Telefono = ?, P.Direccion = ?, P.Email = ?, U.Usuario = ?, U.Clave = ? WHERE U.idUsuario =  ?";
-
         $sql = "UPDATE productos AS P SET P.Nombre = ?, P.Descripcion = ?, P.Precio = ?, P.Imagen =?, P.idCategoria = ? WHERE P.idProducto = ?";
 
         //Preparar y enviar la consulta

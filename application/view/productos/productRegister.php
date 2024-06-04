@@ -59,9 +59,7 @@
                         </label>
                         <div class="col-md-6 col-sm-6 ">
                             <div class="btn-group">
-                                <!-- <a class="btn" title="Insert picture (or just drag & drop)" id="pictureBtn"><i
-                                        class="fa fa-picture-o"></i></a> -->
-                                <input type="file" name="txtImage" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" required="required"/>
+                            <input type="file" name="txtImage" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" required="required"/>
                             </div>
                         </div>
                     </div>
@@ -77,13 +75,6 @@
                             </select>
                         </div>
                     </div>
-
-                    <!-- <div class="item form-group">
-						<label for="Category" class="col-form-label col-md-3 col-sm-3 label-align">Categoría <span class="required">*</span></label>
-						<div class="col-md-6 col-sm-6 ">
-							<input id="txtCategory" class="form-control" type="text" name="txtCategory" required="required">
-						</div>
-					</div> -->
 
                     <div class="ln_solid"></div>
                     <div class="item form-group">

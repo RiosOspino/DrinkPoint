@@ -50,10 +50,7 @@
                 header("Location: " .URL."categoriaController/getCategory");
             }
 
-            //Vamos a crear variables para hacer los llamados a los metodos a los diversos modelos (Traer los demas metodos necesarios)
-            // $documentType = $this->modeloP->getTypeDocument();
-            // $categorias = $this ->modeloC->getCategorias();
-
+            //Para que funcione el metodo requiere los archivos visuales 
             require APP . 'view/_templates/header.php';
             require APP . 'view/categorias/categoryRegister.php';
             require APP . 'view/_templates/footer.php';
@@ -97,8 +94,6 @@
 
             //Variables para llamar los metodos de los modelos
             $Categorias = $this->modeloC->getCategory();
-            // $categorias = $this->modeloC->getCategorias();
-            // $documentType = $this->modeloP->getTypeDocument();
 
             //Para que funcione el metodo requiere los archivos visuales 
             require APP . 'view/_templates/header.php';

@@ -82,32 +82,32 @@
                 $this->modeloU->__SET('direccion', $_POST['Register_Address']);
                 $this->modeloU->__SET('genero', $_POST['Register_Gender']);
                 $this->modeloU->__SET('fechaNacimiento', $_POST['Register_Birthdate']);
- 
+
                 // Registrar datos del cliente en Personas
                 $person = $this->modeloU->registerPerson();
- 
+
                 // Validar si se creó correctamente la persona                  
                 if($person == true) {
                     // Obtener el ID de la persona recién creada
                     $ultimoId = $this->modeloU->lastIdPerson();
- 
+
                     //foreach que se encarga de tomar los datos explicitos 
                     foreach($ultimoId as $value){
                         $ultimoIdValue = $value['lastIdPerson'];
                     }
                 }
- 
+
                 // Obtener y asignar datos del cliente
                 $this->modeloU->__SET('idPersona', $ultimoIdValue);
                 $this->modeloU->__SET('usuario', $_POST['Register_UserName']);
                 $this->modeloU->__SET('clave', $_POST['Register_Password']);
                 $this->modeloU->__SET('idRol', 3);
- 
+
                 // Guardar datos del cliente en Usuario
                 $user = $this->modeloU->userRegister();
- 
-                 // Validar si se registro exitosamente el cliente
-                 if($person == true && $user == true) {
+
+                // Validar si se registro exitosamente el cliente
+                if($person == true && $user == true) {
                     $_SESSION['alert'] = "Swal.fire({
                         position:'',
                         icon: 'success',
@@ -117,7 +117,7 @@
 
                         header("Location: " . URL."usuarioController/login");
                         exit();
-                 } else {
+                } else {
                     $_SESSION['alert'] = "Swal.fire({
                         position:'',
                         icon: 'error',
@@ -127,9 +127,7 @@
 
                         header("Location:" . URL."usuarioController/login");
                         exit();  
-                 }
- 
-                //  header("Location: " .URL."usuarioController/getUsers");
+                }
             }
 
             // Obtener tipos de documentos
