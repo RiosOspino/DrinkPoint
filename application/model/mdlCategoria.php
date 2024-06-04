@@ -30,15 +30,17 @@ class mdlCategoria {
     //crear el método para registrar las categorias
     public function registerCategory(){
         //vamos a crear una variable que guardará la consulta
-        $sql = "INSERT INTO categorias(Nombre) VALUES (?)";
+        $sql = "INSERT INTO categorias(Nombre,Estado) VALUES (?,?)";
 
         //Vamos a crear una variable para mandaar el estado activo por defecto
         $Estado = 1;
 
         //vamos a crear una variable para mantener lista siempre la consulta y poder enviarla o ejecutarla cada que sea llamada
         $stm = $this->db->prepare($sql);
-        // $stm->bindParam(1, $this->idCategoria);
+        
         $stm->bindParam(1, $this->Nombre);
+        $stm->bindParam(2, $Estado);
+
 
         //respuesta
         $resultado = $stm->execute();
@@ -102,7 +104,7 @@ class mdlCategoria {
     //Metodo para filtrar, tomar,edita, eliminar y reclamar el ID de los usuarios 
     public function getCategoryByID($id){
         //Consulta
-        $sql = "SELECT idCategoria, Nombre, FROM categorias WHERE idCategoria = ?";
+        $sql = "SELECT idCategoria, Nombre FROM categorias WHERE idCategoria = ?";
 
         //Preparacion y ejecucion de la consulta
         $query = $this->db->prepare($sql);
@@ -124,22 +126,22 @@ class mdlCategoria {
     //Metodo para eliminar el usuario
     public function deleteCategory($id){
         //Consulta
-        $sql = "DELETE FROM categorias WHERE Nombre = ?";
+        $sql = "DELETE FROM categorias WHERE idCategoria = ?";
 
         $query = $this->db->prepare($sql);
         $query -> bindParam(1, $id);
         return $query->execute();
     }
 
-    //Metodo para actualizar
+    //Metodo para editar
     public function updateCategory(){
         //Consulta
-        $sql = "UPDATE categorias AS P SET P.Nombre = ?, WHERE P.idCategoria = ?";
+        $sql = "UPDATE categorias SET Nombre = ? WHERE idCategoria = ?";
 
         //Preparar y enviar la consulta
         $stm = $this->db->prepare($sql);
-        // $stm->bindParam(1, $this->idCategoria);
-        $stm->bindParam(2, $this->Nombre);
+        $stm->bindParam(1, $this->Nombre);
+        $stm->bindParam(2, $this->idCategoria);
 
         //Respuesta
         $result = $stm->execute();

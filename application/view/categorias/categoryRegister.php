@@ -35,15 +35,6 @@
                         </div>
                     </div>
 
-                
-
-                    <!-- <div class="item form-group">
-						<label for="Category" class="col-form-label col-md-3 col-sm-3 label-align">Categoría <span class="required">*</span></label>
-						<div class="col-md-6 col-sm-6 ">
-							<input id="txtCategory" class="form-control" type="text" name="txtCategory" required="required">
-						</div>
-					</div> -->
-
                     <div class="ln_solid"></div>
                     <div class="item form-group">
                         <div class="col-md-6 col-sm-6 offset-md-3">

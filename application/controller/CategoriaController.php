@@ -68,6 +68,8 @@
                 // $this->modeloP->__SET('idProducto', $_POST['selCategory']);
                 // $this->modeloC->__SET('idCategoria', $_POST['txtNumber']);
                 $this->modeloC->__SET('Nombre', $_POST['txtName']);
+                $this->modeloC->__SET('idCategoria', $_POST['txtIdCategory']);
+
 
                 //Variable para el actualizar
                 $update = $this->modeloC->updateCategory();
@@ -107,12 +109,12 @@
             require APP . 'view/_templates/footer.php';
         }
 
-        // //Metodo para traer el ID 
-        // public function categoryId(){
-        //     //Vamos a crear una variable para controlar el dato
-        //     $dataCategory = $this->modeloP->categoryId($_POST['id']);
-        //     echo json_encode($dataCategory);
-        // }
+        //Metodo para traer el ID 
+        public function categoryId(){
+            //Vamos a crear una variable para controlar el dato
+            $dataCategory = $this->modeloC->categoryId($_POST['id']);
+            echo json_encode($dataCategory);
+        }
 
         //Metodo para cambiar el estado
         public function changeStatus(){

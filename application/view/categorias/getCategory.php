@@ -80,23 +80,13 @@
         <div class="modal-content">
 
             <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel">Editar Usuario</h4>
+                <h4 class="modal-title" id="myModalLabel">Editar Categoria</h4>
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
                 </button>
             </div>
             <div class="modal-body">
                 <form method="post">
                     <input type="hidden" name="txtIdCategory" id="txtIdCategory">
-
-
-                    <!-- <div class="item form-group">
-                        <label class="col-form-label col-md-3 col-sm-3 label-align" for="Document">ID Categoria <span
-                                class="required">*</span>
-                        </label>
-                        <div class="col-md-6 col-sm-6 ">
-                            <input type="text" id="txtNumber" required="required" class="form-control" name="txtNumber">
-                        </div>
-                    </div> -->
 
                     <div class="item form-group">
                         <label class="col-form-label col-md-3 col-sm-3 label-align" for="Document">Nombre <span
@@ -106,55 +96,6 @@
                             <input type="text" id="txtName" required="required" class="form-control" name="txtName">
                         </div>
                     </div>
-
-
-
-                    <!-- <div class="form-group row">
-                        <label class="col-form-label col-md-3 col-sm-3 label-align">Nombre</label>
-                        <div class="col-md-6 col-sm-6 ">
-                            <select class="form-control" name="selCategory" id="selCategory">
-                                <option>Elija una opción</option>
-                                <?php foreach($documentType as $value):?>
-                                <option value="<?php echo $value['idCategoria'];?>"><?php echo $value['doc'];?>
-                                </option>
-                                <?php endforeach;?>
-                            </select>
-                        </div>
-                    </div> -->
-
-                    <!-- <div class="item form-group">
-                        <label for="Phone" class="col-form-label col-md-3 col-sm-3 label-align">Teléfono <span
-                                class="required">*</span></label>
-                        <div class="col-md-6 col-sm-6 ">
-                            <input id="txtPhone" class="form-control" type="number" name="txtPhone" required="required">
-                        </div>
-                    </div>
-
-                    <div class="item form-group">
-                        <label for="Address" class="col-form-label col-md-3 col-sm-3 label-align">Dirección <span
-                                class="required">*</span></label>
-                        <div class="col-md-6 col-sm-6 ">
-                            <input id="txtAddress" class="form-control" type="text" name="txtAddress"
-                                required="required">
-                        </div>
-                    </div>
-
-                    <div class="item form-group">
-                        <label for="Username" class="col-form-label col-md-3 col-sm-3 label-align">Usuario <span
-                                class="required">*</span></label>
-                        <div class="col-md-6 col-sm-6 ">
-                            <input id="txtUser" class="form-control" type="text" name="txtUser" required="required">
-                        </div>
-                    </div>
-
-                    <div class="item form-group">
-                        <label for="Password" class="col-form-label col-md-3 col-sm-3 label-align">Contraseña <span
-                                class="required">*</span></label>
-                        <div class="col-md-6 col-sm-6 ">
-                            <input id="txtPassword" class="form-control" type="password" name="txtPassword"
-                                required="required">
-                        </div>
-                    </div> -->
                 
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
