@@ -38,7 +38,7 @@ Swal.fire({
                 setTimeout(() => {
                     window.location = url + "CategoriaController/getCategory";
                     window.reload();
-                }, 3000);
+                }, 1500);
             }else{
                 Swal.fire('Error al cambiar el estado','','Error');
             }
