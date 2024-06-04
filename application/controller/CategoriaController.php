@@ -110,9 +110,9 @@
         }
 
         //Metodo para traer el ID 
-        public function categoryId(){
+        public function getCategoryByID(){
             //Vamos a crear una variable para controlar el dato
-            $dataCategory = $this->modeloC->categoryId($_POST['id']);
+            $dataCategory = $this->modeloC->getCategoryByID($_POST['id']);
             echo json_encode($dataCategory);
         }
 
