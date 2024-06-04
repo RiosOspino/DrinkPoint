@@ -45,6 +45,7 @@
                     $_SESSION['Documento'] = $validate['Documento'];
                     $_SESSION['Usuario'] = $validate['Usuario'];
                     $_SESSION['Descripcion'] = $validate['Descripcion'];
+                    $_SESSION['idRol'] = $validate['idRol'];
 
                     // SI es admin, ingrese al dashboard
                     if ($validate['idRol'] === 1) {

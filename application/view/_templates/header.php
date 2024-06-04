@@ -66,12 +66,19 @@
               <div class="menu_section">
                 <!-- <h3>General</h3> -->
                 <ul class="nav side-menu">
-                  <li><a><i class="fa fa-users"></i>USUARIOS <span class="fa fa-chevron-down"></span></a>
-                    <ul class="nav child_menu">
-                      <li><a href="<?php echo URL; ?>usuarioController/userRegister">Registrar Usuarios</a></li>
-                      <li><a href="<?php echo URL; ?>usuarioController/getUsers">Ver Usuarios</a></li>
-                    </ul>
-                  </li>
+                  <?php 
+                      if ( isset( $_SESSION['idRol'] ) ) {
+                        if ( $_SESSION['idRol'] == 1 ) {
+                          # Mostrar Cerrar sesión
+                          echo '<li><a><i class="fa fa-users"></i>USUARIOS <span class="fa fa-chevron-down"></span></a>
+                            <ul class="nav child_menu">
+                              <li><a href="' . URL . 'usuarioController/userRegister">Registrar Usuarios</a></li>
+                              <li><a href="' . URL . 'usuarioController/getUsers">Ver Usuarios</a></li>
+                            </ul>
+                          </li>';
+                        }
+                      }                  
+                  ?>
 
                   <li><a><i class="fa fa-users"></i>PRODUTOS <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
