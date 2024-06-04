@@ -65,11 +65,8 @@
             //Vamos a tener el condicional para cuando sea el momento de editar los productos
             if(isset($_POST['btnUpdate'])){
                 //Comunicacion con el modelo y el formulario
-                // $this->modeloP->__SET('idProducto', $_POST['selCategory']);
-                // $this->modeloC->__SET('idCategoria', $_POST['txtNumber']);
-                $this->modeloC->__SET('Nombre', $_POST['txtName']);
                 $this->modeloC->__SET('idCategoria', $_POST['txtIdCategory']);
-
+                $this->modeloC->__SET('Nombre', $_POST['txtName']);
 
                 //Variable para el actualizar
                 $update = $this->modeloC->updateCategory();

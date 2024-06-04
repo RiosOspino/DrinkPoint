@@ -6,9 +6,8 @@ function dataCategory(id){
         dataType: 'json',
         data:{'id':id}
     }).done(function(resp){ 
-        $('#txtIdCategoria').val(resp[0].idCategoria);       
-        $('#txtName').val(resp[0].Nombre);
-        
+        $('#txtIdCategory').val(resp[0].idCategoria);       
+        $('#txtName').val(resp[0].Nombre);        
     }).fail(function(error){
         console.log(error)
     })
