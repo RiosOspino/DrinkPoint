@@ -10,19 +10,29 @@
  */
 class Home extends Controller
 {
-    
     public $modeloP;
+    public $modeloC;
+    
     public function __construct(){
         $this->modeloP = $this->loadModel('mdlProducto');
+        $this->modeloC = $this->loadModel('mdlCategoria');
     }
+
     /**
      * PAGE: index
      * This method handles what happens when you move to http://yourproject/home/index (which is the default page btw)
      */
     public function index()
     {
-        // load views
+        // Consulta productos
         $products =  $this->modeloP->getProduct();
+        
+        // Consulta categorias
+        $categories =  $this->modeloC->getCategory();
+
+        $url_publica = URL;
+        
+        // load views
         require APP . 'view/home/index.php';
     }
 
