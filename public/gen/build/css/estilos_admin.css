@@ -181,3 +181,8 @@ button.btn.btn-primary.btn-xs {
 button.btn.btn-secondary {
     width: 70px;
 }
+
+footer {
+    margin: 20px;
+    background: #191c24;
+}
