@@ -272,11 +272,11 @@
             }
 
             //Validamos si existe un envío o post de busqueda con una condicion
-            if(isset($_POST['usersFilter'])){
+            if(isset($_POST['usersFilter']) && $_POST['FilterRol'] ){
                 // Obtiene lista de usuarios filtrados por rol
                 $users = $this->modeloU->getUsersByRol( $_POST['FilterRol'] );
             }else{
-                // Obtiene lista de usuarios
+                // Consulta todos los usuarios
                 $users = $this->modeloU->getUsers();
             }
 
