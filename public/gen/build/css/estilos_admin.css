@@ -183,6 +183,12 @@ button.btn.btn-secondary {
 }
 
 footer {
-    margin: 20px;
+    margin: 30px;
     background: #191c24;
+}
+
+form {
+    border: none;
+    padding: 70px 426px -1px;
+    color: blue;
 }

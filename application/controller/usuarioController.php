@@ -61,8 +61,8 @@
                     
                     // SI es cliente, redireccionar al home para que pueda comprar
                     if ($validate['idRol'] === 3) {
-                        //después de la validación que me dirija a un admin
-                        header("Location:" . URL);
+                        //después de la validación que me dirija a los productos
+                        header("Location:" . URL . "/#products");
                     }
 
                 }else{

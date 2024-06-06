@@ -204,7 +204,7 @@
                                 <div class="options">
                                     <h6><?php echo "$" . number_format($product['Precio']); ?></h6>
 
-                                    <!-- SI esta logiueado, mostrar cerrar sesión Sino, mostrar iniciar sesión -->
+                                    <!-- SI esta logiueado, mostrar el boton de whatsaap Sino, mostrar iniciar sesión -->
                                     <?php if ( isset( $_SESSION['SESSION_START'] ) ) : ?>
                                         <a class="whatsaap" href='https://web.whatsapp.com/send?phone=573108368409&text=Hola%2C+deseo+comprar%3A%0D%0A%0D%0A*Producto:* <?php echo $product['Nombre']; ?>%0D%0A*Precio:* $<?php echo number_format($product['Precio']); ?>%0D%0A*URL:* http:<?php echo $url_publica; ?>%0D%0A%0D%0AMuchas+gracias%21' target="_blank">
                                             <svg fill="#000000" height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 308 308" xml:space="preserve">

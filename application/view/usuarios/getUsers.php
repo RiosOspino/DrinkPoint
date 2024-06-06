@@ -1,3 +1,11 @@
+<div class="container">
+        <form action="" method="post">
+            <input type="search" name="valueTosearch" placeholder="Buscar usuario">
+            <button:sumit class="signupbtn"></button:sumit>
+            <button type="submit" class="signupbtn" name="Search">Buscar </button>
+        </form>
+</div>
+
 <div class="row">
     <div class="col-md-12 col-sm-12 ">
         <div class="x_panel">
