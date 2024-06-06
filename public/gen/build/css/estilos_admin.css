@@ -187,8 +187,6 @@ footer {
     background: #191c24;
 }
 
-form {
-    border: none;
-    padding: 70px 426px -1px;
-    color: blue;
+.filtroUsuarios {
+    float: right;
 }

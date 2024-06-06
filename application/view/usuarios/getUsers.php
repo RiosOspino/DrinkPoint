@@ -1,30 +1,24 @@
-<div class="container">
-        <form action="" method="post">
-            <input type="search" name="valueTosearch" placeholder="Buscar usuario">
-            <button:sumit class="signupbtn"></button:sumit>
-            <button type="submit" class="signupbtn" name="Search">Buscar </button>
-        </form>
-</div>
-
 <div class="row">
     <div class="col-md-12 col-sm-12 ">
         <div class="x_panel">
             <div class="x_title">
                 <h2>LISTA DE USUARIOS</h2>
-                <ul class="nav navbar-right panel_toolbox">
-                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                            aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Settings 1</a>
-                            <a class="dropdown-item" href="#">Settings 2</a>
-                        </div>
-                    </li>
-                    <li><a class="close-link"><i class="fa fa-close"></i></a>
-                    </li>
-                </ul>
+
+                <div class="filtroUsuarios">
+                    <form action="" method="post">                      
+                        <select class="form-control" id='FilterRol' name="FilterRol">
+                            <option value=''>Todos</option>
+                            <?php foreach($roles as $value):?>
+                                <option value="<?php echo $value['idRol'];?>"><?php echo $value['Descripcion'];?></option>
+                            <?php endforeach;?>
+                        </select>
+
+                        <input type="submit" class="btn btn-primary " name="usersFilter" value="Filtrar">
+
+                        <!-- <button type="submit" class="btn btn-primary " name="btnUpdate">Guardar</button> -->
+                    </form>
+                </div>
+
                 <div class="clearfix"></div>
             </div>
             <div class="x_content">

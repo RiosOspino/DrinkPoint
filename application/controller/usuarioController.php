@@ -271,9 +271,19 @@
                 }
             }
 
-            //Variables para llamar los metodos de los modelos
-            $users = $this->modeloU->getUsers();
+            //Validamos si existe un envío o post de busqueda con una condicion
+            if(isset($_POST['usersFilter'])){
+                // Obtiene lista de usuarios filtrados por rol
+                $users = $this->modeloU->getUsersByRol( $_POST['FilterRol'] );
+            }else{
+                // Obtiene lista de usuarios
+                $users = $this->modeloU->getUsers();
+            }
+
+            // Obtener lista de roles
             $roles = $this->modeloR->getRoles();
+
+            // Obtener tipos de documentos
             $documentType = $this->modeloU->getTypeDocument();
 
             //Para que funcione el metodo requiere los archivos visuales 
