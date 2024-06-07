@@ -66,7 +66,15 @@
                     }
 
                 }else{
-                    $error = true;
+                    $_SESSION['alert'] = "Swal.fire({
+                        position:'',
+                        icon: 'error',
+                        title: 'Error al iniciar sesión',
+                        showConfirmButton: false,
+                        timer:3000})";
+
+                        header("Location:" . URL."usuarioController/login");
+                        exit(); 
                 }
             }
             
