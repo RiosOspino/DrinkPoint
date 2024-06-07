@@ -101,16 +101,7 @@
 
             <!-- /menu footer buttons -->
             <div class="sidebar-footer hidden-small">
-              <a data-toggle="tooltip" data-placement="top" title="Ajustes">
-                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-              </a>
-              <a data-toggle="tooltip" data-placement="top" title="Pantalla Completa">
-                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
-              </a>
-              <a data-toggle="tooltip" data-placement="top" title="Cerrar">
-                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
-              </a>
-              <a data-toggle="tooltip" data-placement="top" title="Cerrar Sesión" href="<?php echo URL;?>usuarioController/logOut">
+              <a data-toggle="tooltip" data-placement="top" title="Cerrar sesión" href="<?php echo URL;?>usuarioController/logOut">
                 <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
               </a>
             </div>
@@ -131,13 +122,12 @@
                     <img src="<?php echo URL;?>gen/production/images/user.png" alt=""><?php echo $_SESSION['Nombres'] . ' ' . $_SESSION['Apellidos'] ; ?>
                   </a>
                   <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item"  href="javascript:;"> Perfiles</a>
+                    <a class="dropdown-item"  href="javascript:;"> Perfil</a>
                       <a class="dropdown-item"  href="javascript:;">
-                        <span class="badge bg-red pull-right">50%</span>
                         <span>Ajustes</span>
                       </a>
                   <a class="dropdown-item"  href="javascript:;">Ayuda</a>
-                    <a class="dropdown-item"  href="<?php echo URL;?>usuarioController/logOut"><i class="fa fa-sign-out pull-right"></i> Cerrar Sesion </a>
+                    <a class="dropdown-item"  href="<?php echo URL;?>usuarioController/logOut"><i class="fa fa-sign-out pull-right"></i> Cerrar sesión </a>
                   </div>
                 </li>
 
