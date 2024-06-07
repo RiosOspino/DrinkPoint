@@ -36,11 +36,11 @@
                         <form method="POST" class="register-form" id="login-form">
                             <div class="form-group">
                                 <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="text" name="txtUser" id="your_name" placeholder="Username" required="required"/>
+                                <input type="text" name="txtUser" id="your_name" placeholder="Usuario" required="required"/>
                             </div>
                             <div class="form-group">
                                 <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
-                                <input type="password" name="txtPassword" id="your_pass" placeholder="Password" required="required"/>
+                                <input type="password" name="txtPassword" id="your_pass" placeholder="Contraseña" required="required"/>
                             </div>
                             <div class="form-group">
                                 <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />

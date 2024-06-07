@@ -80,7 +80,7 @@
                       }                  
                   ?>
 
-                  <li><a><i class="fa fa-users"></i>PRODUTOS <span class="fa fa-chevron-down"></span></a>
+                  <li><a><i class="fa fa-users"></i>PRODUCTOS <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="<?php echo URL; ?>ProductoController/productRegister">Registrar Productos</a></li>
                       <li><a href="<?php echo URL; ?>ProductoController/getProduct">Ver Productos</a></li>
