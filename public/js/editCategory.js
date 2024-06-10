@@ -68,7 +68,7 @@ function deleteCategory(id){
                 data: {'id':id,}
             }).done(function(answer){
                 if(answer == 1){
-                    Swal.fire('Categoria eliminado','','success');
+                    Swal.fire('Categoria eliminada','','success');
 
                     setTimeout(() => {
                         window.location = url + "CategoriaController/getCategory";

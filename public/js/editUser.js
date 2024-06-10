@@ -55,7 +55,7 @@ Swal.fire({
                 setTimeout(() => {
                     window.location = url + "usuarioController/getUsers";
                     window.reload();
-                }, 3000);
+                }, 2000);
             }else{
                 Swal.fire('Error al cambiar el estado','','Error');
             }

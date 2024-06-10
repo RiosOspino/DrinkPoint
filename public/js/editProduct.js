@@ -49,7 +49,7 @@ function product_changeStatus(id){
                     setTimeout(() => {
                         window.location = url + "ProductoController/getProduct";
                         window.reload();
-                    }, 3000);
+                    }, 2000);
                 }else{
                     Swal.fire('Error al cambiar el estado','','Error');
                 }
@@ -85,7 +85,7 @@ function deleteProduct(id){
                     setTimeout(() => {
                         window.location = url + "ProductoController/getProduct";
                         window.reload();
-                    }, 3000);
+                    }, 2000);
                 }else{
                     Swal.fire('Error al eliminar','','Error');
                 }
