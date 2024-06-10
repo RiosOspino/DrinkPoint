@@ -130,16 +130,15 @@ class mdlProducto {
     //Metodo para actualizar
     public function updateProduct(){
         //Consulta
-        $sql = "UPDATE productos AS P SET P.Nombre = ?, P.Descripcion = ?, P.Precio = ?, P.Imagen =?, P.idCategoria = ? WHERE P.idProducto = ?";
+        $sql = "UPDATE productos AS P SET P.Nombre = ?, P.Descripcion = ?, P.Precio = ?, P.idCategoria = ? WHERE P.idProducto = ?";
 
         //Preparar y enviar la consulta
         $stm = $this->db->prepare($sql);
         $stm->bindParam(1, $this->Nombre);
         $stm->bindParam(2, $this->Descripcion);
         $stm->bindParam(3, $this->Precio);
-        $stm->bindParam(4, $this->Imagen);
-        $stm->bindParam(5, $this->idCategoria);
-        $stm->bindParam(6, $this->idProducto);
+        $stm->bindParam(4, $this->idCategoria);
+        $stm->bindParam(5, $this->idProducto);
 
         //Respuesta
         $result = $stm->execute();

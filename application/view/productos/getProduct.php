@@ -116,17 +116,6 @@
                         </div>
                     </div>
 
-                    <div class="item form-group">
-                    <label for="Image" class="col-form-label col-md-3 col-sm-3 label-align">Imagen <span
-                                class="required">*</span>
-                        </label>
-                        <div class="col-md-6 col-sm-6 ">
-                            <div class="btn-group">
-                                <input type="file" name="txtImage" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" />
-                            </div>
-                        </div>
-                    </div>
-
                     <div class="form-group row">
                         <label class="col-form-label col-md-3 col-sm-3 label-align">Categoría</label>
                         <div class="col-md-6 col-sm-6 ">

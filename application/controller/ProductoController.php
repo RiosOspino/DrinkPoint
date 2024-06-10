@@ -74,9 +74,6 @@
                 $this->modeloP->__SET('Nombre', $_POST['txtName']);
                 $this->modeloP->__SET('Descripcion', $_POST['txtDescription']);
                 $this->modeloP->__SET('Precio', $_POST['txtPrice']);
-                if($_FILES['txtImage']['tmp_name'] !=null){
-                    $this->modeloP->__SET("Imagen",
-                    file_get_contents($_FILES['txtImage']["tmp_name"]));}
                 $this->modeloP->__SET('idCategoria', $_POST['selCategory']);
 
                 //Variable para el actualizar
