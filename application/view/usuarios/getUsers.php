@@ -14,8 +14,6 @@
                         </select>
 
                         <input type="submit" class="btn btn-primary " name="usersFilter" value="Filtrar">
-
-                        <!-- <button type="submit" class="btn btn-primary " name="btnUpdate">Guardar</button> -->
                     </form>
                 </div>
 
