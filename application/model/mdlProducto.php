@@ -107,6 +107,20 @@ class mdlProducto {
         return $query->fetch(PDO::FETCH_ASSOC);
     }
 
+    //Metodo para filtrar productos por categoría
+    public function getProductsByCategory($id){
+        //Consulta o sentencia SQL
+        // $sql = "SELECT idProducto, Nombre, Descripcion, Precio, Imagen, idCategoria FROM productos WHERE idCategoria = ?";
+        $sql = "SELECT * FROM productos WHERE idCategoria = ?";
+
+        //Preparacion y ejecucion de la consulta
+        $query = $this->db->prepare($sql);
+        $query->bindParam(1, $id);
+        $query->execute();
+
+        return $query->fetchAll(PDO::FETCH_ASSOC);
+    }
+
     //Metodo para cambiar estados
     public function changeStatus($id){
         //Consulta

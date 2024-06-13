@@ -24,8 +24,13 @@ class Home extends Controller
      */
     public function index()
     {
-        // Consulta productos
-        $products =  $this->modeloP->getProduct();
+        if (isset($_GET['idCategoria'])) {
+            // Consulta los productos por categoría 
+            $products =  $this->modeloP->getProductsByCategory($_GET['idCategoria']);
+        } else {
+            // Consulta todos los productos
+            $products =  $this->modeloP->getProduct();
+        }
         
         // Consulta categorias
         $categories =  $this->modeloC->getCategory();

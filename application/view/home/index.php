@@ -177,9 +177,9 @@
             </div>
 
             <ul class="filters_menu">
-                <li class="active" data-filter="*">Todos</li>
+                <a href="<?php echo URL ?>#products"><li class="active" data-filter="*">Todos</li></a>
                 <?php foreach ($categories as $category) : ?>
-                    <li data-filter=".pasta"><?php echo $category['Nombre']; ?></li>
+                    <a href="<?php echo URL ?>?idCategoria=<?php echo $category['idCategoria']; ?>#products"><li data-filter=".pasta"><?php echo $category['Nombre']; ?></li></a>
                 <?php endforeach; ?>
             </ul>
 
