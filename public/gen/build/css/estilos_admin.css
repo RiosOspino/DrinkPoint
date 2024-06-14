@@ -200,3 +200,10 @@ select#FilterRol {
 .sidebar-footer {
     padding: 0;
 }
+
+img {
+    width: 1000px;
+    padding-left: 55px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}

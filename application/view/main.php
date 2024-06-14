@@ -1,5 +1,8 @@
 <!-- top tiles -->
-          <div class="row" style="display: inline-block;" >
+
+          <img src="<?php echo URL;?>gen/production/images/vinoss.png" alt="">
+
+          <!-- <div class="row" style="display: inline-block;" >
           <div class="tile_count">
 
             <div class="col-md-2 col-sm-4  tile_stats_count">
@@ -94,7 +97,7 @@
               </div>
               <div class="row">
 
-        <br/>
+        <br/> -->
 
         
     <!-- jQuery -->
