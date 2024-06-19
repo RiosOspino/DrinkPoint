@@ -1,6 +1,6 @@
 <!-- top tiles -->
 
-          <img src="<?php echo URL;?>gen/production/images/vinoss.png" alt="">
+          <img src="<?php echo URL;?>gen/production/images/main.jpg" alt="">
 
           <!-- <div class="row" style="display: inline-block;" >
           <div class="tile_count">
